@@ -1,0 +1,117 @@
+[
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.1 ::date 2013-05-02T11:31:47 ::snt-type date ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "2002-01-05",
+    "graph": "(d / date-entity\n   :year 2002\n   :month 1\n   :day 5)"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.2 ::date 2013-05-01T11:37:06 ::snt-type country ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "Saudi Arabia (SA)",
+    "graph": "(c / country\n   :wiki \"Saudi_Arabia\"\n   :name (n / name\n            :op1 \"Saudi\"\n            :op2 \"Arabia\"))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.3 ::date 2013-05-02T11:31:34 ::snt-type topic ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "International; military; terrorism",
+    "graph": "(a / and\n   :op1 (i / international)\n   :op2 (m / military)\n   :op3 (t / terrorism))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.4 ::date 2013-05-02T11:36:07 ::snt-type summary ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "The Riyadh-based Naif Arab Academy for Security Sciences said in a statement that it was running a two-week workshop for 50 anti-terrorism experts.",
+    "graph": "(s / say-01\n   :ARG0 (u / university\n            :wiki -\n            :name (n / name\n                     :op1 \"Naif\"\n                     :op2 \"Arab\"\n                     :op3 \"Academy\"\n                     :op4 \"for\"\n                     :op5 \"Security\"\n                     :op6 \"Sciences\")\n            :ARG1-of (b / base-01\n                        :location (c / city\n                                     :wiki \"Riyadh\"\n                                     :name (n2 / name\n                                               :op1 \"Riyadh\"))))\n   :ARG1 (r / run-01\n            :ARG0 u\n            :ARG1 (w / workshop\n                     :beneficiary (p / person\n                                     :quant 50\n                                     :ARG1-of (e / expert-01\n                                                 :ARG2 (c2 / counter-01\n                                                           :ARG1 (t2 / terrorism))))\n                     :duration (t / temporal-quantity\n                                  :quant 2\n                                  :unit (w2 / week))))\n   :medium (s2 / statement))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.5 ::date 2013-05-08T11:25:14 ::snt-type body ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "On 5 January 2002 pan-Arab anti-terror academy Naif Arab Academy for Security Sciences reopened for the first time since the September 2001 terror attacks on the US.",
+    "graph": "(r / reopen-01\n   :ARG1 (u / university\n            :wiki -\n            :name (n / name\n                     :op1 \"Naif\"\n                     :op2 \"Arab\"\n                     :op3 \"Academy\"\n                     :op4 \"for\"\n                     :op5 \"Security\"\n                     :op6 \"Sciences\")\n            :purpose (o / oppose-01\n                        :ARG1 (t / terror))\n            :mod (e / ethnic-group\n                    :wiki \"Arabs\"\n                    :name (n3 / name\n                              :op1 \"Arab\")\n                    :mod (p / pan)))\n   :time (d / date-entity\n            :year 2002\n            :month 1\n            :day 5)\n   :frequency (f / first\n                 :time (s / since\n                          :op1 (a3 / attack-01\n                                   :ARG1 (c / country\n                                            :wiki \"United_States\"\n                                            :name (n2 / name\n                                                      :op1 \"US\"))\n                                   :time (d2 / date-entity\n                                             :year 2001\n                                             :month 9)))))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.6 ::date 2013-05-08T11:36:40 ::snt-type body ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "Naif Arab Academy for Security Sciences is based in Riyadh.",
+    "graph": "(b / base-01\n   :ARG1 (u / university\n            :wiki -\n            :name (n / name\n                     :op1 \"Naif\"\n                     :op2 \"Arab\"\n                     :op3 \"Academy\"\n                     :op4 \"for\"\n                     :op5 \"Security\"\n                     :op6 \"Sciences\"))\n   :location (c / city\n                :wiki \"Riyadh\"\n                :name (n2 / name\n                          :op1 \"Riyadh\")))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.7 ::date 2013-05-08T11:38:23 ::snt-type body ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "Naif Arab Academy for Security Sciences is run by an Arab Interior Ministers' Council.",
+    "graph": "(r / run-01\n   :ARG0 (o / organization\n            :wiki -\n            :name (n / name\n                     :op1 \"Arab\"\n                     :op2 \"Interior\"\n                     :op3 \"Ministers'\"\n                     :op4 \"Council\"))\n   :ARG1 (u / university\n            :wiki -\n            :name (n2 / name\n                      :op1 \"Naif\"\n                      :op2 \"Arab\"\n                      :op3 \"Academy\"\n                      :op4 \"for\"\n                      :op5 \"Security\"\n                      :op6 \"Sciences\")))"
+  },
+  {
+    "id": "PROXY_AFP_ENG_20020105_0162.8 ::date 2013-05-08T11:45:01 ::snt-type body ::annotator LDC-AMR-14 ::preferred",
+    "sentence": "In a statement Naif Arab Academy for Security Sciences announced --",
+    "graph": "(a / announce-01\n   :ARG0 (u / university\n            :wiki -\n            :name (n / name\n                     :op1 \"Naif\"\n                     :op2 \"Arab\"\n                     :op3 \"Academy\"\n                     :op4 \"for\"\n                     :op5 \"Security\"\n                     :op6 \"Sciences\"))\n   :manner (t / thing\n              :ARG1-of (s / state-01\n                          :ARG0 u)))"
+  },
+  {
+    "id": "wb.c2e_0008.1 ::date 2012-11-15T12:53:07 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "EBay Announces Today It will Acquire Ticket Website StubHub for 310 Million US Dollars",
+    "graph": "(a / announce-01\n   :ARG0 (c / company\n            :wiki \"EBay\"\n            :name (n / name\n                     :op1 \"EBay\"))\n   :ARG1 (a2 / acquire-01\n             :ARG0 c\n             :ARG1 (c3 / company\n                       :wiki \"StubHub\"\n                       :name (n2 / name\n                                 :op1 \"StubHub\")\n                       :mod (w / website\n                               :purpose (t2 / ticket)))\n             :ARG3 (m / monetary-quantity\n                      :quant 310000000\n                      :unit (d / dollar\n                               :mod (c2 / country\n                                        :wiki \"United_States\"\n                                        :name (n3 / name\n                                                  :op1 \"US\")))))\n   :time (t / today))"
+  },
+  {
+    "id": "wb.c2e_0008.2 ::date 2012-11-16T09:32:08 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "eのsnail",
+    "graph": "(e / esnail)"
+  },
+  {
+    "id": "wb.c2e_0008.3 ::date 2012-11-16T09:33:43 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "According to the international reports on January 11 , eBay announced that it will acquire online ticket website StubHub for 310 million US dollars in cash to further expand its influence on electronic commerce .",
+    "graph": "(s / say-01\n   :ARG0 (r / report-01\n            :mod (i2 / international))\n   :ARG1 (a / announce-01\n            :ARG0 (c / company\n                     :wiki \"EBay\"\n                     :name (n / name\n                              :op1 \"eBay\"))\n            :ARG1 (a2 / acquire-01\n                      :ARG0 c\n                      :ARG1 (c2 / company\n                                :wiki \"StubHub\"\n                                :name (n2 / name\n                                          :op1 \"StubHub\")\n                                :mod (w / website\n                                        :purpose (t / ticket)\n                                        :mod (o / online)))\n                      :ARG3 (m / monetary-quantity\n                               :quant 310000000\n                               :unit (d / dollar)\n                               :mod (c3 / country\n                                        :wiki \"United_States\"\n                                        :name (n3 / name\n                                                  :op1 \"US\"))\n                               :consist-of (c4 / cash))\n                      :purpose (e / expand-01\n                                  :ARG0 c\n                                  :ARG1 (i / influence-01\n                                           :ARG0 c\n                                           :ARG1 (c5 / commerce\n                                                     :mod (e2 / electronic)))\n                                  :degree (f / further))))\n   :time (d2 / date-entity\n             :month 1\n             :day 11))"
+  },
+  {
+    "id": "wb.c2e_0008.4 ::date 2012-11-16T09:33:54 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "The acquisition is expected to be completed before April .",
+    "graph": "(e / expect-01\n   :ARG1 (c / complete-01\n            :ARG1 (a / acquire-01)\n            :time (b / before\n                     :op1 (d / date-entity\n                             :month 4))))"
+  },
+  {
+    "id": "wb.c2e_0008.5 ::date 2012-11-16T10:13:34 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "More than six years ago , Jeff Fluhr and Stanford School of Business graduate Eric Baker founded StubHub with Fluhr as its chief executive officer .",
+    "graph": "(a2 / and\n    :op1 (f / found-01\n            :ARG0 (a / and\n                     :op1 (p / person\n                             :wiki -\n                             :name (n / name\n                                      :op1 \"Jeff\"\n                                      :op2 \"Fluhr\"))\n                     :op2 (p2 / person\n                              :wiki -\n                              :name (n2 / name\n                                        :op1 \"Eric\"\n                                        :op2 \"Baker\")\n                              :ARG1-of (g / graduate-01\n                                          :ARG2 (s / school\n                                                   :wiki \"Stanford_Graduate_School_of_Business\"\n                                                   :name (n3 / name\n                                                             :op1 \"Stanford\"\n                                                             :op2 \"School\"\n                                                             :op3 \"of\"\n                                                             :op4 \"Business\")))))\n            :ARG1 (c / company\n                     :wiki \"StubHub\"\n                     :name (n4 / name\n                               :op1 \"StubHub\"))\n            :time (b / before\n                     :op1 (n5 / now)\n                     :quant (m / more-than\n                               :op1 (t / temporal-quantity\n                                       :quant 6\n                                       :unit (y / year)))))\n    :op2 (h / have-org-role-91\n            :ARG0 p\n            :ARG1 c\n            :ARG2 (o / officer\n                     :topic (e / execute-02)\n                     :mod (c2 / chief))))"
+  },
+  {
+    "id": "wb.c2e_0008.6 ::date 2012-11-16T11:06:02 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Fluhr said in a statement : \" StubHub 's business model is an excellent fit with eBay , and we have admired eBay for a long time . \"",
+    "graph": "(s / say-01\n   :ARG0 (p / person\n            :wiki -\n            :name (n / name\n                     :op1 \"Fluhr\"))\n   :ARG1 (a / and\n            :op1 (f / fit-06\n                    :ARG1 (m / model\n                             :poss (c2 / company\n                                       :wiki \"StubHub\"\n                                       :name (n3 / name\n                                                 :op1 \"StubHub\"))\n                             :mod (b / business))\n                    :ARG2 (c / company\n                             :wiki \"EBay\"\n                             :name (n2 / name\n                                       :op1 \"eBay\"))\n                    :ARG1-of (e / excellent-02))\n            :op2 (a2 / admire-01\n                     :ARG0 c2\n                     :ARG1 c\n                     :ARG1-of (l / long-03)))\n   :medium (t / thing\n              :ARG1-of (s2 / state-01)))"
+  },
+  {
+    "id": "nw.chtb_0012.1 ::date 2012-11-01T12:21:26 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Xinhua News Agency , Hong Kong , February 23rd",
+    "graph": "(b / byline-91\n   :ARG0 (p / publication\n            :wiki \"Xinhua_News_Agency\"\n            :name (n / name\n                     :op1 \"Xinhua\"\n                     :op2 \"News\"\n                     :op3 \"Agency\"))\n   :location (c2 / city\n                 :wiki \"Hong_Kong\"\n                 :name (n2 / name\n                           :op1 \"Hong\"\n                           :op2 \"Kong\"))\n   :time (d / date-entity\n            :month 2\n            :day 23))"
+  },
+  {
+    "id": "nw.chtb_0012.2 ::date 2012-11-01T12:24:32 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "According to Taiwan 's \" Ministry of Economy \" statistics , the volume of trade between mainland and Taiwan last year was 20.9 billion US dollars .",
+    "graph": "(s / say-01\n   :ARG0 (s2 / statistic\n             :source (g / government-organization\n                        :wiki \"Ministry_of_Economic_Affairs_(Taiwan)\"\n                        :name (n / name\n                                 :op1 \"Ministry\"\n                                 :op2 \"of\"\n                                 :op3 \"Economy\")\n                        :poss c))\n   :ARG1 (m2 / monetary-quantity\n             :quant 20900000000\n             :unit (d / dollar\n                      :mod (c2 / country\n                               :wiki \"United_States\"\n                               :name (n3 / name\n                                         :op1 \"US\")))\n             :domain (v / volume\n                        :quant-of (t / trade-01\n                                     :ARG0 (m / mainland)\n                                     :ARG2 (c / country\n                                              :wiki \"Taiwan\"\n                                              :name (n2 / name\n                                                        :op1 \"Taiwan\")))\n                        :time (y / year\n                                 :mod (l / last)))))"
+  },
+  {
+    "id": "nw.chtb_0012.3 ::date 2012-11-01T13:14:28 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Of this volume , the value of Taiwan 's exports to the mainland was 17.8 billion US dollars , having increased by 20 percent compared with last year ; the import value was 3.1 billion US dollars , having increased by 74 percent compared with last year .",
+    "graph": "(a / and\n   :op1 (v / value-01\n           :ARG1 (t / thing\n                    :ARG1-of (e / export-01\n                                :ARG0 (c / country\n                                         :wiki \"Taiwan\"\n                                         :name (n / name\n                                                  :op1 \"Taiwan\"))\n                                :ARG2 (m / mainland)))\n           :ARG2 (m2 / monetary-quantity\n                     :quant 17800000000\n                     :unit (d / dollar\n                              :mod (c4 / country\n                                       :wiki \"United_States\"\n                                       :name (n2 / name\n                                                 :op1 \"US\"))))\n           :ARG1-of (i / increase-01\n                       :ARG2 (p / percentage-entity\n                                :value 20)\n                       :ARG4 m2\n                       :ARG1-of (c2 / compare-01\n                                    :ARG2 (y / year\n                                             :mod (l / last)))))\n   :op2 (v3 / value-01\n            :ARG1 (t4 / thing\n                      :ARG1-of (i3 / import-01))\n            :ARG2 (m3 / monetary-quantity\n                      :quant 3100000000\n                      :unit (d3 / dollar\n                                :mod c4))\n            :ARG1-of (i2 / increase-01\n                         :ARG2 (p2 / percentage-entity\n                                   :value 74)\n                         :ARG4 m3\n                         :ARG1-of (c3 / compare-01\n                                      :ARG2 y)))\n   :part-of (v2 / volume\n                :mod (t3 / this)))"
+  },
+  {
+    "id": "nw.chtb_0012.4 ::date 2012-11-01T14:24:10 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Taiwan 's surplus in trade between the two shores was 14.7 billion US dollars .",
+    "graph": "(m / monetary-quantity\n   :quant 14700000000\n   :unit (d / dollar\n            :mod (c2 / country\n                     :wiki \"United_States\"\n                     :name (n2 / name\n                               :op1 \"US\")))\n   :domain (s2 / surplus\n               :mod (t / trade-01\n                       :ARG1 (s / shore\n                                :quant 2))\n               :poss (c / country\n                        :wiki \"Taiwan\"\n                        :name (n / name\n                                 :op1 \"Taiwan\"))))"
+  },
+  {
+    "id": "nw.chtb_0012.5 ::date 2012-11-01T14:40:39 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Statistics also revealed that Taiwanese business investments in the mainland is tending to increase .",
+    "graph": "(r / reveal-01\n   :ARG0 (s / statistic)\n   :ARG1 (t / tend-02\n            :ARG1 (t2 / thing\n                      :ARG1-of (i / invest-01\n                                  :ARG0 (c / country\n                                           :wiki \"Taiwan\"\n                                           :name (n / name\n                                                    :op1 \"Taiwan\"))\n                                  :ARG2 (m / mainland)\n                                  :mod (b / business)))\n            :ARG2 (i2 / increase-01\n                      :ARG1 t2))\n   :mod (a / also))"
+  },
+  {
+    "id": "nw.chtb_0012.6 ::date 2012-11-01T14:47:47 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Last year , the number of investment proposals presented by Taiwanese businesses and approved by Taiwan authorities totaled 490 , with a value of 1.092 billion US dollars .",
+    "graph": "(t / total-01\n   :ARG2 490\n   :ARG1 (n2 / number\n             :quant-of (p2 / propose-01\n                           :ARG1 (i / invest-01)\n                           :ARG1-of (p / present-01\n                                       :ARG0 (b / business\n                                                :mod (c / country\n                                                        :wiki \"Taiwan\"\n                                                        :name (n / name\n                                                                 :op1 \"Taiwan\"))))\n                           :ARG1-of (a2 / approve-01\n                                        :ARG0 (a3 / authority\n                                                  :mod c)))\n             :ARG1-of (v / value-01\n                         :ARG2 (m / monetary-quantity\n                                  :quant 1092000000\n                                  :unit (d / dollar\n                                           :mod (c2 / country\n                                                    :wiki \"United_States\"\n                                                    :name (n3 / name\n                                                              :op1 \"US\"))))))\n   :time (y / year\n            :mod (l / last)))"
+  },
+  {
+    "id": "nw.chtb_0012.7 ::date 2012-11-01T15:15:08 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "The number of investment projects dropped by 444 as compared with last year , but the value of investments rose by more than 130 million US dollars as compared with last year .",
+    "graph": "(c / contrast-01\n   :ARG1 (d / drop-01\n            :ARG2 444\n            :ARG1 (n / number\n                     :quant-of (p / project\n                                  :mod (i / invest-01)))\n            :ARG1-of (c2 / compare-01\n                         :ARG2 (y / year\n                                  :mod (l / last))))\n   :ARG2 (r / rise-01\n            :ARG1 (v / value\n                     :mod (i2 / invest-01))\n            :ARG2 (m2 / more-than\n                      :op1 (m / monetary-quantity\n                              :quant 130000000\n                              :unit (d2 / dollar\n                                        :mod (c4 / country\n                                                 :wiki \"United_States\"\n                                                 :name (n2 / name\n                                                           :op1 \"US\")))))\n            :ARG1-of (c3 / compare-01\n                         :ARG2 y)))"
+  },
+  {
+    "id": "nw.chtb_0012.8 ::date 2012-11-06T14:41:45 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "( End )",
+    "graph": "(e / end-01)"
+  },
+  {
+    "id": "nw.chtb_0021.1 ::date 2012-11-06T14:41:54 ::annotator SDL-AMR-09 ::preferred",
+    "sentence": "Xinhua News Agency , Yichang , March 8th , by reporter Yongfeng Shi",
+    "graph": "(b / byline-91\n   :ARG0 (p2 / publication\n             :wiki \"Xinhua_News_Agency\"\n             :name (n / name\n                      :op1 \"Xinhua\"\n                      :op2 \"News\"\n                      :op3 \"Agency\"))\n   :ARG1 (p / person\n            :wiki -\n            :name (n2 / name\n                      :op1 \"Yongfeng\"\n                      :op2 \"Shi\")\n            :ARG0-of (r / report-01))\n   :time (d / date-entity\n            :month 3\n            :day 8)\n   :location (c2 / city\n                 :wiki \"Yichang\"\n                 :name (n3 / name\n                           :op1 \"Yichang\")))"
+  }
+]

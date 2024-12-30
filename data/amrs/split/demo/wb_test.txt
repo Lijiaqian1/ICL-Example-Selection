@@ -1,0 +1,105 @@
+# AMR release; corpus: wb; section: training; number of AMRs: 866 (generated on Fri Mar 4, 2016 at 21:04:07)
+
+# ::id wb.c2e_0008.1 ::date 2012-11-15T12:53:07 ::annotator SDL-AMR-09 ::preferred
+# ::snt EBay Announces Today It will Acquire Ticket Website StubHub for 310 Million US Dollars
+# ::save-date Fri Nov 16, 2012 ::file wb_c2e_0008_1.txt
+(a / announce-01
+      :ARG0 (c / company :wiki "EBay"
+            :name (n / name :op1 "EBay"))
+      :ARG1 (a2 / acquire-01
+            :ARG0 c
+            :ARG1 (c3 / company :wiki "StubHub"
+                  :name (n2 / name :op1 "StubHub")
+                  :mod (w / website
+                        :purpose (t2 / ticket)))
+            :ARG3 (m / monetary-quantity :quant 310000000
+                  :unit (d / dollar
+                        :mod (c2 / country :wiki "United_States"
+                              :name (n3 / name :op1 "US")))))
+      :time (t / today))
+
+# ::id wb.c2e_0008.2 ::date 2012-11-16T09:32:08 ::annotator SDL-AMR-09 ::preferred
+# ::snt eのsnail
+# ::save-date Sun Apr 6, 2014 ::file wb_c2e_0008_2.txt
+(e / esnail)
+
+# ::id wb.c2e_0008.3 ::date 2012-11-16T09:33:43 ::annotator SDL-AMR-09 ::preferred
+# ::snt According to the international reports on January 11 , eBay announced that it will acquire online ticket website StubHub for 310 million US dollars in cash to further expand its influence on electronic commerce .
+# ::save-date Tue Apr 1, 2014 ::file wb_c2e_0008_3.txt
+(s / say-01
+      :ARG0 (r / report-01
+            :mod (i2 / international))
+      :ARG1 (a / announce-01
+            :ARG0 (c / company :wiki "EBay"
+                  :name (n / name :op1 "eBay"))
+            :ARG1 (a2 / acquire-01
+                  :ARG0 c
+                  :ARG1 (c2 / company :wiki "StubHub"
+                        :name (n2 / name :op1 "StubHub")
+                        :mod (w / website
+                              :purpose (t / ticket)
+                              :mod (o / online)))
+                  :ARG3 (m / monetary-quantity :quant 310000000
+                        :unit (d / dollar)
+                        :mod (c3 / country :wiki "United_States"
+                              :name (n3 / name :op1 "US"))
+                        :consist-of (c4 / cash))
+                  :purpose (e / expand-01
+                        :ARG0 c
+                        :ARG1 (i / influence-01
+                              :ARG0 c
+                              :ARG1 (c5 / commerce
+                                    :mod (e2 / electronic)))
+                        :degree (f / further))))
+      :time (d2 / date-entity :month 1 :day 11))
+
+# ::id wb.c2e_0008.4 ::date 2012-11-16T09:33:54 ::annotator SDL-AMR-09 ::preferred
+# ::snt The acquisition is expected to be completed before April .
+# ::save-date Tue Apr 1, 2014 ::file wb_c2e_0008_4.txt
+(e / expect-01
+      :ARG1 (c / complete-01
+            :ARG1 (a / acquire-01)
+            :time (b / before
+                  :op1 (d / date-entity :month 4))))
+
+# ::id wb.c2e_0008.5 ::date 2012-11-16T10:13:34 ::annotator SDL-AMR-09 ::preferred
+# ::snt More than six years ago , Jeff Fluhr and Stanford School of Business graduate Eric Baker founded StubHub with Fluhr as its chief executive officer .
+# ::save-date Fri Oct 16, 2015 ::file wb_c2e_0008_5.txt
+(a2 / and
+      :op1 (f / found-01
+            :ARG0 (a / and
+                  :op1 (p / person :wiki - :name (n / name :op1 "Jeff" :op2 "Fluhr"))
+                  :op2 (p2 / person :wiki - :name (n2 / name :op1 "Eric" :op2 "Baker")
+                        :ARG1-of (g / graduate-01
+                              :ARG2 (s / school :wiki "Stanford_Graduate_School_of_Business" :name (n3 / name :op1 "Stanford" :op2 "School" :op3 "of" :op4 "Business")))))
+            :ARG1 (c / company :wiki "StubHub" :name (n4 / name :op1 "StubHub"))
+            :time (b / before
+                  :op1 (n5 / now)
+                  :quant (m / more-than
+                        :op1 (t / temporal-quantity :quant 6
+                              :unit (y / year)))))
+      :op2 (h / have-org-role-91
+            :ARG0 p
+            :ARG1 c
+            :ARG2 (o / officer
+                  :topic (e / execute-02)
+                  :mod (c2 / chief))))
+
+# ::id wb.c2e_0008.6 ::date 2012-11-16T11:06:02 ::annotator SDL-AMR-09 ::preferred
+# ::snt Fluhr said in a statement : " StubHub 's business model is an excellent fit with eBay , and we have admired eBay for a long time . "
+# ::save-date Sun Jul 26, 2015 ::file wb_c2e_0008_6.txt
+(s / say-01
+      :ARG0 (p / person :wiki - :name (n / name :op1 "Fluhr"))
+      :ARG1 (a / and
+            :op1 (f / fit-06
+                  :ARG1 (m / model
+                        :poss (c2 / company :wiki "StubHub" :name (n3 / name :op1 "StubHub"))
+                        :mod (b / business))
+                  :ARG2 (c / company :wiki "EBay" :name (n2 / name :op1 "eBay"))
+                  :ARG1-of (e / excellent-02))
+            :op2 (a2 / admire-01
+                  :ARG0 c2
+                  :ARG1 c
+                  :ARG1-of (l / long-03)))
+      :medium (t / thing
+            :ARG1-of (s2 / state-01)))

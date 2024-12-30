@@ -1,0 +1,156 @@
+# AMR release; corpus: xinhua; section: training; number of AMRs: 741 (generated on Fri Mar 4, 2016 at 21:03:38)
+
+# ::id nw.chtb_0012.1 ::date 2012-11-01T12:21:26 ::annotator SDL-AMR-09 ::preferred
+# ::snt Xinhua News Agency , Hong Kong , February 23rd
+# ::save-date Sat Nov 30, 2013 ::file nw_chtb_0012_1.txt
+(b / byline-91
+      :ARG0 (p / publication :wiki "Xinhua_News_Agency"
+            :name (n / name :op1 "Xinhua" :op2 "News" :op3 "Agency"))
+      :location (c2 / city :wiki "Hong_Kong"
+            :name (n2 / name :op1 "Hong" :op2 "Kong"))
+      :time (d / date-entity :month 2 :day 23))
+
+# ::id nw.chtb_0012.2 ::date 2012-11-01T12:24:32 ::annotator SDL-AMR-09 ::preferred
+# ::snt According to Taiwan 's " Ministry of Economy " statistics , the volume of trade between mainland and Taiwan last year was 20.9 billion US dollars .
+# ::save-date Thu Dec 19, 2013 ::file nw_chtb_0012_2.txt
+(s / say-01
+      :ARG0 (s2 / statistic
+            :source (g / government-organization :wiki "Ministry_of_Economic_Affairs_(Taiwan)"
+                  :name (n / name :op1 "Ministry" :op2 "of" :op3 "Economy")
+                  :poss c))
+      :ARG1 (m2 / monetary-quantity :quant 20900000000
+            :unit (d / dollar
+                  :mod (c2 / country :wiki "United_States"
+                        :name (n3 / name :op1 "US")))
+            :domain (v / volume
+                  :quant-of (t / trade-01
+                        :ARG0 (m / mainland)
+                        :ARG2 (c / country :wiki "Taiwan"
+                              :name (n2 / name :op1 "Taiwan")))
+                  :time (y / year
+                        :mod (l / last)))))
+
+# ::id nw.chtb_0012.3 ::date 2012-11-01T13:14:28 ::annotator SDL-AMR-09 ::preferred
+# ::snt Of this volume , the value of Taiwan 's exports to the mainland was 17.8 billion US dollars , having increased by 20 percent compared with last year ; the import value was 3.1 billion US dollars , having increased by 74 percent compared with last year .
+# ::save-date Sun Dec 1, 2013 ::file nw_chtb_0012_3.txt
+(a / and
+      :op1 (v / value-01
+            :ARG1 (t / thing
+                  :ARG1-of (e / export-01
+                        :ARG0 (c / country :wiki "Taiwan"
+                              :name (n / name :op1 "Taiwan"))
+                        :ARG2 (m / mainland)))
+            :ARG2 (m2 / monetary-quantity :quant 17800000000
+                  :unit (d / dollar
+                        :mod (c4 / country :wiki "United_States"
+                              :name (n2 / name :op1 "US"))))
+            :ARG1-of (i / increase-01
+                  :ARG2 (p / percentage-entity :value 20)
+                  :ARG4 m2
+                  :ARG1-of (c2 / compare-01
+                        :ARG2 (y / year
+                              :mod (l / last)))))
+      :op2 (v3 / value-01
+            :ARG1 (t4 / thing
+                  :ARG1-of (i3 / import-01))
+            :ARG2 (m3 / monetary-quantity :quant 3100000000
+                  :unit (d3 / dollar
+                        :mod c4))
+            :ARG1-of (i2 / increase-01
+                  :ARG2 (p2 / percentage-entity :value 74)
+                  :ARG4 m3
+                  :ARG1-of (c3 / compare-01
+                        :ARG2 y)))
+      :part-of (v2 / volume
+            :mod (t3 / this)))
+
+# ::id nw.chtb_0012.4 ::date 2012-11-01T14:24:10 ::annotator SDL-AMR-09 ::preferred
+# ::snt Taiwan 's surplus in trade between the two shores was 14.7 billion US dollars .
+# ::save-date Sun Dec 1, 2013 ::file nw_chtb_0012_4.txt
+(m / monetary-quantity :quant 14700000000
+      :unit (d / dollar
+            :mod (c2 / country :wiki "United_States"
+                  :name (n2 / name :op1 "US")))
+      :domain (s2 / surplus
+            :mod (t / trade-01
+                  :ARG1 (s / shore :quant 2))
+            :poss (c / country :wiki "Taiwan"
+                  :name (n / name :op1 "Taiwan"))))
+
+# ::id nw.chtb_0012.5 ::date 2012-11-01T14:40:39 ::annotator SDL-AMR-09 ::preferred
+# ::snt Statistics also revealed that Taiwanese business investments in the mainland is tending to increase .
+# ::save-date Sat Nov 30, 2013 ::file nw_chtb_0012_5.txt
+(r / reveal-01
+      :ARG0 (s / statistic)
+      :ARG1 (t / tend-02
+            :ARG1 (t2 / thing
+                  :ARG1-of (i / invest-01
+                        :ARG0 (c / country :wiki "Taiwan"
+                              :name (n / name :op1 "Taiwan"))
+                        :ARG2 (m / mainland)
+                        :mod (b / business)))
+            :ARG2 (i2 / increase-01
+                  :ARG1 t2))
+      :mod (a / also))
+
+# ::id nw.chtb_0012.6 ::date 2012-11-01T14:47:47 ::annotator SDL-AMR-09 ::preferred
+# ::snt Last year , the number of investment proposals presented by Taiwanese businesses and approved by Taiwan authorities totaled 490 , with a value of 1.092 billion US dollars .
+# ::save-date Sat Nov 30, 2013 ::file nw_chtb_0012_6.txt
+(t / total-01 :ARG2 490
+      :ARG1 (n2 / number
+            :quant-of (p2 / propose-01
+                  :ARG1 (i / invest-01)
+                  :ARG1-of (p / present-01
+                        :ARG0 (b / business
+                              :mod (c / country :wiki "Taiwan"
+                                    :name (n / name :op1 "Taiwan"))))
+                  :ARG1-of (a2 / approve-01
+                        :ARG0 (a3 / authority
+                              :mod c)))
+            :ARG1-of (v / value-01
+                  :ARG2 (m / monetary-quantity :quant 1092000000
+                        :unit (d / dollar
+                              :mod (c2 / country :wiki "United_States"
+                                    :name (n3 / name :op1 "US"))))))
+      :time (y / year
+            :mod (l / last)))
+
+# ::id nw.chtb_0012.7 ::date 2012-11-01T15:15:08 ::annotator SDL-AMR-09 ::preferred
+# ::snt The number of investment projects dropped by 444 as compared with last year , but the value of investments rose by more than 130 million US dollars as compared with last year .
+# ::save-date Sun May 10, 2015 ::file nw_chtb_0012_7.txt
+(c / contrast-01
+      :ARG1 (d / drop-01 :ARG2 444
+            :ARG1 (n / number
+                  :quant-of (p / project
+                        :mod (i / invest-01)))
+            :ARG1-of (c2 / compare-01
+                  :ARG2 (y / year
+                        :mod (l / last))))
+      :ARG2 (r / rise-01
+            :ARG1 (v / value
+                  :mod (i2 / invest-01))
+            :ARG2 (m2 / more-than
+                  :op1 (m / monetary-quantity :quant 130000000
+                        :unit (d2 / dollar
+                              :mod (c4 / country :wiki "United_States"
+                                    :name (n2 / name :op1 "US")))))
+            :ARG1-of (c3 / compare-01
+                  :ARG2 y)))
+
+# ::id nw.chtb_0012.8 ::date 2012-11-06T14:41:45 ::annotator SDL-AMR-09 ::preferred
+# ::snt ( End )
+# ::save-date Tue Nov 6, 2012 ::file nw_chtb_0012_8.txt
+(e / end-01)
+
+# ::id nw.chtb_0021.1 ::date 2012-11-06T14:41:54 ::annotator SDL-AMR-09 ::preferred
+# ::snt Xinhua News Agency , Yichang , March 8th , by reporter Yongfeng Shi
+# ::save-date Sat Nov 30, 2013 ::file nw_chtb_0021_1.txt
+(b / byline-91
+      :ARG0 (p2 / publication :wiki "Xinhua_News_Agency"
+            :name (n / name :op1 "Xinhua" :op2 "News" :op3 "Agency"))
+      :ARG1 (p / person :wiki -
+            :name (n2 / name :op1 "Yongfeng" :op2 "Shi")
+            :ARG0-of (r / report-01))
+      :time (d / date-entity :month 3 :day 8)
+      :location (c2 / city :wiki "Yichang"
+            :name (n3 / name :op1 "Yichang")))
