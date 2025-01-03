@@ -1,0 +1,301 @@
+[
+  {
+    "anchor_idx": 0,
+    "candidate_idx": 6717,
+    "parse_similarity": 0.6666666666666666,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 0,
+    "candidate_idx": 8022,
+    "parse_similarity": 0.9689040270902933,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 0,
+    "candidate_idx": 2717,
+    "parse_similarity": 0.6575418007505702,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 0,
+    "candidate_idx": 5412,
+    "parse_similarity": 0.9796086032596064,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 0,
+    "candidate_idx": 8194,
+    "parse_similarity": 0.6527014805796052,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 1,
+    "candidate_idx": 8562,
+    "parse_similarity": 0.310186190418107,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 1,
+    "candidate_idx": 2855,
+    "parse_similarity": 0.12162539063883214,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 1,
+    "candidate_idx": 2058,
+    "parse_similarity": 0.19385956088419018,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 1,
+    "candidate_idx": 9005,
+    "parse_similarity": 0.1401548000613167,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 1,
+    "candidate_idx": 235,
+    "parse_similarity": 0.23498514436656687,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 2,
+    "candidate_idx": 4133,
+    "parse_similarity": 0.4884056162446862,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 2,
+    "candidate_idx": 5071,
+    "parse_similarity": 0.4789378317066385,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 2,
+    "candidate_idx": 2387,
+    "parse_similarity": 0.911402253763313,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 2,
+    "candidate_idx": 9460,
+    "parse_similarity": 0.47722437927595235,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 2,
+    "candidate_idx": 6866,
+    "parse_similarity": 0.911402253763313,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 3,
+    "candidate_idx": 6225,
+    "parse_similarity": 1.0000000119209291,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 3,
+    "candidate_idx": 2570,
+    "parse_similarity": 0.24652672640710496,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 3,
+    "candidate_idx": 7339,
+    "parse_similarity": 0.2755461181134777,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 3,
+    "candidate_idx": 5453,
+    "parse_similarity": 0.24666982527009065,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 3,
+    "candidate_idx": 2822,
+    "parse_similarity": 0.24595972662396756,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 4,
+    "candidate_idx": 9259,
+    "parse_similarity": 0.9440478930707145,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 4,
+    "candidate_idx": 1393,
+    "parse_similarity": 0.9440478930707145,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 4,
+    "candidate_idx": 9780,
+    "parse_similarity": 0.9440478930707145,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 4,
+    "candidate_idx": 4234,
+    "parse_similarity": 0.8871265500505351,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 4,
+    "candidate_idx": 9238,
+    "parse_similarity": 0.3333333333333333,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 5,
+    "candidate_idx": 895,
+    "parse_similarity": 0.3266111942109192,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 5,
+    "candidate_idx": 6475,
+    "parse_similarity": 0.2461996368161137,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 5,
+    "candidate_idx": 6683,
+    "parse_similarity": 0.9025399215926857,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 5,
+    "candidate_idx": 5006,
+    "parse_similarity": 0.25000000074505807,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 5,
+    "candidate_idx": 3151,
+    "parse_similarity": 0.38413249701993485,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 6,
+    "candidate_idx": 841,
+    "parse_similarity": 0.6666666666666666,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 6,
+    "candidate_idx": 1434,
+    "parse_similarity": 0.2857142857142857,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 6,
+    "candidate_idx": 1764,
+    "parse_similarity": 0.25,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 6,
+    "candidate_idx": 4487,
+    "parse_similarity": 0.3333333333333333,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 6,
+    "candidate_idx": 3753,
+    "parse_similarity": 0.5,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 7,
+    "candidate_idx": 3269,
+    "parse_similarity": 0.9871177235490878,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 7,
+    "candidate_idx": 6002,
+    "parse_similarity": 0.14285714285714285,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 7,
+    "candidate_idx": 6326,
+    "parse_similarity": 0.14285714285714285,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 7,
+    "candidate_idx": 2313,
+    "parse_similarity": 0.14285714285714285,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 7,
+    "candidate_idx": 5618,
+    "parse_similarity": 0.14285714285714285,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 8,
+    "candidate_idx": 710,
+    "parse_similarity": 0.99235082268858,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 8,
+    "candidate_idx": 6417,
+    "parse_similarity": 0.99235082268858,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 8,
+    "candidate_idx": 2028,
+    "parse_similarity": 0.99235082268858,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 8,
+    "candidate_idx": 3742,
+    "parse_similarity": 0.49808036385351606,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 8,
+    "candidate_idx": 7807,
+    "parse_similarity": 0.49808036385351606,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 9,
+    "candidate_idx": 6028,
+    "parse_similarity": 0.8849655376770678,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 9,
+    "candidate_idx": 7188,
+    "parse_similarity": 0.2203311650738092,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 9,
+    "candidate_idx": 7327,
+    "parse_similarity": 0.8755451342480907,
+    "label": "pos"
+  },
+  {
+    "anchor_idx": 9,
+    "candidate_idx": 4891,
+    "parse_similarity": 0.2466955706672435,
+    "label": "neg"
+  },
+  {
+    "anchor_idx": 9,
+    "candidate_idx": 8529,
+    "parse_similarity": 0.595037480388169,
+    "label": "pos"
+  }]
