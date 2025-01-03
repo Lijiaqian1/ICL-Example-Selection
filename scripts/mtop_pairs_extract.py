@@ -5,10 +5,6 @@ import random
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
-
-# 假设你在同目录下有 "mtop_parse_sim.py",
-# 其中定义了 `mtop_tree_similarity(parseA, parseB)`
-# 若你想直接内联，可复制相应函数到此处。
 from mtop_parse_sim import mtop_tree_similarity
 
 def gather_contrastive_pairs(

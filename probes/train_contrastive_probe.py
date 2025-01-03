@@ -62,11 +62,13 @@ class MLPProbe(nn.Module):
         super().__init__()
         # 这里举例: concat => 2 * hidden_dim => 256 => 64 => 1
         self.fc = nn.Sequential(
-            nn.Linear(hidden_dim*2, 256),
+            nn.Linear(hidden_dim * 2, 256),  # 第一隐藏层
             nn.ReLU(),
-            nn.Linear(256, 64),
+            nn.Linear(256, 128),            # 第二隐藏层
             nn.ReLU(),
-            nn.Linear(64, out_dim)
+            nn.Linear(128, 64),             # 第三隐藏层
+            nn.ReLU(),
+            nn.Linear(64, out_dim)   
         )
         # 最后一层输出 raw logits => 用 BCEWithLogitsLoss
     def forward(self, anchor_vec, cand_vec):
@@ -155,8 +157,10 @@ def train_probe(
         avg_val_loss = val_loss / len(val_loader.dataset)
         val_acc = correct / total
         print(f"Epoch {epoch}/{epochs} => train_loss={avg_loss:.4f}, val_loss={avg_val_loss:.4f}, val_acc={val_acc:.4f}")
-
     print("Training finished.")
+    torch.save(model.state_dict(), "mlp_probe.pth")
+    print("Model saved to mlp_probe.pth.")
+    
 
 
 ########################################################
@@ -180,7 +184,7 @@ def main():
     train_probe(
         dataset=ds,
         model=model,
-        epochs=50,
+        epochs=10,
         batch_size=64,
         lr=1e-3,
         val_ratio=0.1,

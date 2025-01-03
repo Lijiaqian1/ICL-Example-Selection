@@ -1,0 +1,17 @@
+Below are examples of converting user utterances into Mtop semantic parses:
+
+Example 1:
+User: i want you to record a video message for amy since she is not available now
+Parse: [IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT amy ] ]
+
+Example 2:
+User: i want you to record a video message for my grandma jess
+Parse: [IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandma ] [SL:CONTACT jess ] ] ] ]
+
+Example 3:
+User: video messaging please record a video for Kelsey with directions
+Parse: [IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Kelsey ] ]
+
+Now I have a new user utterance.
+User: i want you to start recording a video message for Amelia
+LLAMA2 Parse:
