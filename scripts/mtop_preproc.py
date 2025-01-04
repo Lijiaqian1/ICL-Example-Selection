@@ -23,8 +23,13 @@ def preprocess_train_file(input_file, output_file):
         json.dump(result, json_file, ensure_ascii=False, indent=4)
 
 # 定义输入文件和输出文件路径
+'''
 input_file = "../data/mtop/en/train.txt"
 output_file = "../data/mtop/en/mtop_train.json"
+'''
+
+input_file = "../data/mtop/en/test.txt"
+output_file = "../data/mtop/en/mtop_test.json"
 
 # 运行预处理函数
 preprocess_train_file(input_file, output_file)

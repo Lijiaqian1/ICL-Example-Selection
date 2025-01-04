@@ -1,0 +1,42 @@
+[
+  {
+    "original_sentence": "send a vide message to the bff chat",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP bff ] ]"
+  },
+  {
+    "original_sentence": "begin timer",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "play 1470 radio",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_RADIO_ID 1470 ] [SL:MUSIC_TYPE radio ] ]"
+  },
+  {
+    "original_sentence": "Set the alarm for am every day until Friday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for am every day until Friday ] ]"
+  },
+  {
+    "original_sentence": "Can you call Amy",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Amy ] ]"
+  },
+  {
+    "original_sentence": "Best chicken recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_RATING Best ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "original_sentence": "i would like to message Izzy that Messenger message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:CONTACT Izzy ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "Let me listen to Selena Gomez' new album",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Selena Gomez ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "I want you to hang up this call from Rita.",
+    "mtop_parsing": "[IN:END_CALL [SL:CONTACT Rita ] ]"
+  },
+  {
+    "original_sentence": "play all romantic songs from Spotify please",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE romantic ] [SL:MUSIC_TYPE songs ] [SL:MUSIC_PROVIDER_NAME Spotify ] ]"
+  }
+]

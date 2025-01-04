@@ -1,0 +1,52 @@
+[
+  {
+    "idx": 0,
+    "original_sentence": "send a vide message to the bff chat",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:GROUP bff chat ] ]"
+  },
+  {
+    "idx": 1,
+    "original_sentence": "begin timer",
+    "generated_parse": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "idx": 2,
+    "original_sentence": "play 1470 radio",
+    "generated_parse": "[IN:PLAY_MUSIC [SL:MUSIC_RADIO_ID 1470 ] ]"
+  },
+  {
+    "idx": 3,
+    "original_sentence": "Set the alarm for am every day until Friday",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME for am every day until Friday ] ]"
+  },
+  {
+    "idx": 4,
+    "original_sentence": "Can you call Amy",
+    "generated_parse": "[IN:CREATE_CALL [SL:CONTACT Amy ] ]"
+  },
+  {
+    "idx": 5,
+    "original_sentence": "Best chicken recipe",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_ATTRIBUTE best ] [SL:RECIPES_DISH chicken ] ]"
+  },
+  {
+    "idx": 6,
+    "original_sentence": "i would like to message Izzy that Messenger message",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:RECIPIENT Izzy ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "idx": 7,
+    "original_sentence": "Let me listen to Selena Gomez' new album",
+    "generated_parse": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Selena Gomez ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "idx": 8,
+    "original_sentence": "I want you to hang up this call from Rita.",
+    "generated_parse": "[IN:HANGUP_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Rita ] ] ] ]"
+  },
+  {
+    "idx": 9,
+    "original_sentence": "play all romantic songs from Spotify please",
+    "generated_parse": "[IN:PLAY_MUSIC [SL:MUSIC_PROVIDER_NAME Spotify ] [SL:MUSIC_TYPE music ] [SL:MUSIC_GENRE romantic ] ]"
+  }
+]
