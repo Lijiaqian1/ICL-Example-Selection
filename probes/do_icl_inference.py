@@ -65,10 +65,9 @@ def main():
 
     #first_keys = list(results_data[0].keys())
     #candidate_key = "embedding_topk" if "embedding_topk" in first_keys else "probe_topk"
-    filename = os.path.basename(args.results_file)  # 获取文件名，例如 "embedding_results.json"
-    prefix = filename.split("_")[0]                # 提取第一个下划线前的部分，例如 "embedding"
-    candidate_key = prefix + "_topk"               # 拼接得到 "embedding_topk"
-
+    filename = os.path.basename(args.results_file)  
+    prefix = filename.split("_")[0]                
+    candidate_key = prefix + "_topk"            
     with open(args.test_file, "r", encoding="utf-8") as f:
         test_data = json.load(f)
 

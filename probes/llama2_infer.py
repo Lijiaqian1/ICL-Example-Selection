@@ -3,10 +3,8 @@ import argparse
 from transformers import LlamaForCausalLM, AutoTokenizer
 
 def main():
-    # 模型名称
     model_name = "meta-llama/Llama-2-7b-hf"
 
-    # 加载模型和tokenizer
     print(f"Loading LLaMA2-7B from {model_name} ...")
     access_token = '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'
     tokenizer = AutoTokenizer.from_pretrained(model_name, token=access_token)

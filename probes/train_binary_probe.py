@@ -78,9 +78,7 @@ class MLPProbe(nn.Module):
         logits = self.fc(x)  # shape => (batch, 1)
         return logits
 
-########################################################
-# 3. 训练函数
-########################################################
+
 
 def train_probe(
     dataset,
@@ -91,13 +89,8 @@ def train_probe(
     val_ratio=0.1,
     parse_sim_weight=False
 ):
-    """
-    dataset: ContrastivePairsDataset
-    model: MLPProbe
-    parse_sim_weight: 若想要把 parse_similarity 也纳入loss, 这里可以写自定义。
-                      当前例子只是用pos/neg做二分类.
-    """
-    # 拆分训练/验证
+
+
     val_size = int(len(dataset)*val_ratio)
     train_size= len(dataset)- val_size
     train_ds, val_ds = random_split(dataset, [train_size, val_size])
@@ -108,7 +101,7 @@ def train_probe(
     criterion = nn.BCEWithLogitsLoss()
     optimizer = optim.Adam(model.parameters(), lr=lr)
 
-    device = next(model.parameters()).device  # assume model on device
+    device = next(model.parameters()).device  
     print(f"Start training: epochs={epochs}, device={device}, train_size={train_size}, val_size={val_size}")
 
     for epoch in range(1, epochs+1):
