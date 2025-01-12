@@ -11,7 +11,7 @@ def load_mtop_data(mtop_sampled_json):
     """
     with open(mtop_sampled_json, "r", encoding="utf-8") as f:
         data = json.load(f)
-    return data  # e.g. data[i] => {"original_sentence": ..., "mtop_parsing": ...}
+    return data  
 
 def load_pairs(pairs_json):
     """
@@ -25,7 +25,7 @@ def load_pairs(pairs_json):
 def get_llama_hidden_states_batched(
     model,
     tokenizer,
-    texts,            # list of strings
+    texts,            
     device,
     target_layer=None
 ):

@@ -3,34 +3,24 @@ import numpy as np
 from zss import Node, distance
 from sentence_transformers import SentenceTransformer
 
-####################################
-# 0. 全局准备
-####################################
 
-# 用于叶子embedding
 embedder = SentenceTransformer('all-MiniLM-L6-v2', device='cuda')
 
 def embedding_distance(text1, text2):
-    """用 Sentence-BERT 计算叶节点语义距离, 返回 [0,1+]"""
+
     embeddings = embedder.encode([text1, text2])
     vec1, vec2 = embeddings[0], embeddings[1]
     cos_sim = np.dot(vec1, vec2) / (np.linalg.norm(vec1)*np.linalg.norm(vec2))
-    dist = 1 - cos_sim  # 距离
+    dist = 1 - cos_sim  
     return dist
 
-####################################
-# 1. 解析 bracket -> zss.Node
-#    + 无序化
-####################################
+
 
 def parse_mtop_bracket(parse_str):
-    """
-    将 MTop bracket parse => zss.Node 树.
-    e.g. "[IN:GET_MESSAGE [SL:TYPE_CONTENT video ] [SL:SENDER Atlas ] ]"
-    """
+
     tokens = tokenize_bracket(parse_str)
     root, _ = build_tree(tokens, 0)
-    reorder_children(root)  # 无序 => sort children
+    reorder_children(root) 
     return root
 
 def tokenize_bracket(parse_str):
@@ -42,11 +32,9 @@ def tokenize_bracket(parse_str):
 def build_tree(tokens, start_idx):
     idx = start_idx
     if tokens[idx] != "[":
-        # 叶子
         leaf_node = Node(tokens[idx])
         return leaf_node, idx+1
 
-    # 否则是内节点
     idx += 1
     label = tokens[idx]
     root = Node(label)
@@ -58,18 +46,14 @@ def build_tree(tokens, start_idx):
             root.addkid(child_tree)
             idx = new_pos
         else:
-            # 叶子节点
             leaf_node = Node(tokens[idx])
             root.addkid(leaf_node)
             idx += 1
 
-    idx += 1  # consume "]"
+    idx += 1  
     return root, idx
 
 def reorder_children(root: Node):
-    """
-    对每个节点的 children 按 label 排序, 以减少无序插入造成的编辑距离.
-    """
     kids = root.children
     if not kids:
         return
@@ -84,32 +68,23 @@ def reorder_children(root: Node):
             return ("LEAF", label)
     kids.sort(key=lambda n: parse_label(n.label))
 
-####################################
-# 2. 自定义 label_distance
-####################################
+
 
 def label_distance(labelA, labelB):
-    """
-    节点替换代价:
-    1) 同为IN: => 0或1
-    2) 同为SL: => 0或0.5
-    3) 叶子 => embedding
-    4) 不同type => 1
-    """
+
     if labelA.startswith("IN:") and labelB.startswith("IN:"):
         intentA = labelA[3:]
         intentB = labelB[3:]
         
-        # 获取第一个 "_" 前的部分
         prefixA = intentA.split("_")[0]
         prefixB = intentB.split("_")[0]
         
         if intentA == intentB:
-            return 0  # 完全相同
+            return 0  
         elif prefixA == prefixB:
-            return 0.5  # 前缀相同但整体不同
+            return 0.5  
         else:
-            return 1  # 完全不同
+            return 1  
 
 
     if labelA.startswith("SL:") and labelB.startswith("SL:"):
@@ -117,60 +92,43 @@ def label_distance(labelA, labelB):
         slotB = labelB[3:]
         return 0 if slotA==slotB else 0.5
 
-    # 同为叶子 => embedding distance
     isLeafA = (not labelA.startswith("IN:")) and (not labelA.startswith("SL:"))
     isLeafB = (not labelB.startswith("IN:")) and (not labelB.startswith("SL:"))
     if isLeafA and isLeafB:
         return embedding_distance(labelA, labelB)*0.1
 
-    # 否则 => 1
     return 1
 
 def node_distance(nodeA: Node, nodeB: Node):
-    """封装下, 供 zss.distance调用."""
     if nodeA is None or nodeB is None:
-        return 1  # 如果出现空节点, cost=1
+        return 1 
     return label_distance(nodeA.label, nodeB.label)
 
-####################################
-# 3. 计算zss distance & similarity
-####################################
+
 
 def mtop_tree_distance(parseA, parseB):
     treeA = parse_mtop_bracket(parseA)
     treeB = parse_mtop_bracket(parseB)
 
-    # zss.distance 要求:
-    # distance(A, B, get_children, insert_cost, remove_cost, update_cost)
-    #   - insert_cost, remove_cost可以是常量或函数
-    #   - update_cost = 函(nodeA, nodeB) -> cost
+
     dist = distance(
         treeA,
         treeB,
         get_children=lambda n: n.children,
-        insert_cost=lambda n: 1,  # 插入节点 cost=1
-        remove_cost=lambda n: 1,  # 删除节点 cost=1
-        update_cost=node_distance # 替换节点 cost= node_distance(nodeA, nodeB)
+        insert_cost=lambda n: 1,  
+        remove_cost=lambda n: 1,  
+        update_cost=node_distance 
     )
     return dist
 
 def mtop_tree_similarity(parseA, parseB):
     dist = mtop_tree_distance(parseA, parseB)
-    # 以 1/(1+dist) 返回 [0,1), 距离越小 相似度越大
     return 1/(1+dist)
 
-####################################
-# DEMO
-####################################
+
 def embedding_similarity(sentence1, sentence2):
-    """
-    计算两个句子的嵌入相似度。
-    返回值为 0 到 1，1 表示完全相似。
-    """
-    # 计算句子嵌入
     embeddings = embedder.encode([sentence1, sentence2])
     vec1, vec2 = embeddings[0], embeddings[1]
-    # 计算余弦相似度
     cos_sim = np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
     return cos_sim
 

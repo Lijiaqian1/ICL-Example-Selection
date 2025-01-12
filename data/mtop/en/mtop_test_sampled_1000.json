@@ -1,0 +1,4002 @@
+[
+  {
+    "original_sentence": "Remind me to make bars for the picnic on Sunday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO make bars for the picnic ] [SL:DATE_TIME on Sunday ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for each hour and half hour",
+    "mtop_parsing": "[IN:CREATE_ALARM ]"
+  },
+  {
+    "original_sentence": "How much time until my alarm goes off?",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "play me song",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "What recurring alarms do I have?",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "Where does Nate live?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Nate ] ]"
+  },
+  {
+    "original_sentence": "What close friends of mine are online?",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "open iheartradio and play Tonight",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_PROVIDER_NAME iheartradio ] [SL:MUSIC_ALBUM_TITLE Tonight ] ]"
+  },
+  {
+    "original_sentence": "Access the phone app and call Jim",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jim ] ]"
+  },
+  {
+    "original_sentence": "What events are this month in katy",
+    "mtop_parsing": "[IN:GET_EVENT [SL:DATE_TIME this month ] [SL:LOCATION katy ] ]"
+  },
+  {
+    "original_sentence": "What should I put vinegar on?",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES ]"
+  },
+  {
+    "original_sentence": "Please create a recurring alarm for 7am everyday this week",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 7 am everyday this week ] ]"
+  },
+  {
+    "original_sentence": "Confirm the weather in Sydney",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Sydney ] ]"
+  },
+  {
+    "original_sentence": "Dismiss the reminder to send a card to my pen pal",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO send a card to my pen pal ] ]"
+  },
+  {
+    "original_sentence": "what's the latest news in my area",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC my area ] ]"
+  },
+  {
+    "original_sentence": "I want to be visible now",
+    "mtop_parsing": "[IN:SET_AVAILABLE ]"
+  },
+  {
+    "original_sentence": "Is there anything happening",
+    "mtop_parsing": "[IN:GET_EVENT ]"
+  },
+  {
+    "original_sentence": "doe rich live in ocean city",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT rich ] [SL:LOCATION ocean city ] ]"
+  },
+  {
+    "original_sentence": "Remind me to create a Facebook event for back to school party.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO create a Facebook event for back to school party ] ]"
+  },
+  {
+    "original_sentence": "Let Don know that I will arrive later than planned.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Don ] [SL:CONTENT_EXACT I will arrive later than planned ] ]"
+  },
+  {
+    "original_sentence": "make itunes as main music provider",
+    "mtop_parsing": "[IN:SET_DEFAULT_PROVIDER_MUSIC [SL:MUSIC_PROVIDER_NAME itunes ] ]"
+  },
+  {
+    "original_sentence": "What temperature does lasagna cook at",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE temperature ] [SL:RECIPES_DISH lasagna ] ]"
+  },
+  {
+    "original_sentence": "Make a call to my Anime group on Whatsapp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP Anime ] [SL:NAME_APP Whatsapp ] ]"
+  },
+  {
+    "original_sentence": "What are the countries biggest headlines?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY countries ] [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "original_sentence": "Details on where to vote",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE Details ] [SL:NEWS_TOPIC where to vote ] ]"
+  },
+  {
+    "original_sentence": "what is the temp like outside now",
+    "mtop_parsing": "[IN:GET_WEATHER ]"
+  },
+  {
+    "original_sentence": "get events I RSVPd yes to",
+    "mtop_parsing": "[IN:GET_EVENT [SL:USER_ATTENDEE_EVENT I ] ]"
+  },
+  {
+    "original_sentence": "set an alarm for 4 a.m. tomorrow",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 4 a.m . tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Read the new york times latest stories",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_SOURCE new york times ] [SL:DATE_TIME latest ] [SL:NEWS_TYPE stories ] ]"
+  },
+  {
+    "original_sentence": "what is the weather at the erie county fair tomorrow morning?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME tomorrow morning ] ]"
+  },
+  {
+    "original_sentence": "change my plant watering reminder to tuesday",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:TODO plant watering ] [SL:DATE_TIME to tuesday ] ]"
+  },
+  {
+    "original_sentence": "Who works in Jakarta?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:LOCATION Jakarta ] ]"
+  },
+  {
+    "original_sentence": "Set a reminder an hour before my 10:30 AM eye appointment tomorrow.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:DATE_TIME an hour before ] [SL:TODO [IN:GET_TODO [SL:DATE_TIME 10 : 30 AM ] [SL:TODO eye appointment ] [SL:DATE_TIME tomorrow ] ] ] ]"
+  },
+  {
+    "original_sentence": "what is the percentage chance of rain for tonight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME for tonight ] ]"
+  },
+  {
+    "original_sentence": "Grams of protein in 6 oz of chicken",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_UNIT_NUTRITION Grams ] [SL:RECIPES_UNIT_NUTRITION protein ] [SL:RECIPES_UNIT_MEASUREMENT oz ] [SL:RECIPES_DISH chicken ] ]"
+  },
+  {
+    "original_sentence": "Events in Plano next month",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Plano ] [SL:DATE_TIME next month ] ]"
+  },
+  {
+    "original_sentence": "Please make an alarm for August 5th at 10:00 am to go to my friend's wedding.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for August 5th at 10 : 00 am ] [SL:ALARM_NAME go to my friend 's wedding ] ]"
+  },
+  {
+    "original_sentence": "Create a repeating alarm that goes off every Wednesday at 3pm.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME off every Wednesday at 3 pm ] ]"
+  },
+  {
+    "original_sentence": "Festivals in August 2018 in Jacksonville, Florida",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT Festivals ] [SL:DATE_TIME in August 2018 ] [SL:LOCATION Jacksonville , Florida ] ]"
+  },
+  {
+    "original_sentence": "remind me to buy my daughter a card on august 1st, 2019",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO buy my daughter a card ] [SL:DATE_TIME on august 1st , 2019 ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for July 18th at 5:30am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for July 18th at 5 : 30 am ] ]"
+  },
+  {
+    "original_sentence": "please call nick",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT nick ] ]"
+  },
+  {
+    "original_sentence": "Who sang that last song?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Will it be below 27 in degrees Celsius for Shanghai tonight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE below ] [SL:WEATHER_ATTRIBUTE 27 ] [SL:WEATHER_TEMPERATURE_UNIT Celsius ] [SL:LOCATION Shanghai ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "remind me to  bring the cake to Ronnie house at 5PM",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:GET_TODO [SL:TODO bring the cake ] [SL:LOCATION [IN:GET_LOCATION [SL:CONTACT Ronnie ] ] ] ] ] [SL:DATE_TIME at 5 PM ] ]"
+  },
+  {
+    "original_sentence": "What is happening on Friday",
+    "mtop_parsing": "[IN:GET_EVENT [SL:DATE_TIME on Friday ] ]"
+  },
+  {
+    "original_sentence": "has ali worked for Mr. Adam before?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT ali ] [SL:EMPLOYER Mr . Adam ] ]"
+  },
+  {
+    "original_sentence": "Remind me to call Amy 500 pm",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT Amy ] ] ] [SL:DATE_TIME 500 pm ] ]"
+  },
+  {
+    "original_sentence": "What type of event is Hocus Pocus?",
+    "mtop_parsing": "[IN:GET_CATEGORY_EVENT [SL:TITLE_EVENT Hocus Pocus ] ]"
+  },
+  {
+    "original_sentence": "When did Mike graduate?",
+    "mtop_parsing": "[IN:GET_LIFE_EVENT_TIME [SL:CONTACT Mike ] [SL:LIFE_EVENT graduate ] ]"
+  },
+  {
+    "original_sentence": "call journalist",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT journalist ] ]"
+  },
+  {
+    "original_sentence": "Tell me who is the best friend of Anna",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION best friend ] [SL:CONTACT_RELATED Anna ] ]"
+  },
+  {
+    "original_sentence": "look for: how to bake red potatos",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_DISH red potatos ] ]"
+  },
+  {
+    "original_sentence": "what was the news last night",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:DATE_TIME last night ] ]"
+  },
+  {
+    "original_sentence": "What are my reminders for next Sunday?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME for next Sunday ] ]"
+  },
+  {
+    "original_sentence": "Is there anyone I know who went to Full Sail?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:SCHOOL Full Sail ] ]"
+  },
+  {
+    "original_sentence": "How much time left on timer?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER time ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Stop being a video call.",
+    "mtop_parsing": "[IN:UPDATE_METHOD_CALL ]"
+  },
+  {
+    "original_sentence": "Please furnish me with all my reminders.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER furnish ] [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] ]"
+  },
+  {
+    "original_sentence": "Any unread messages from the last 5 hours?",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:DATE_TIME from the last 5 hours ] ]"
+  },
+  {
+    "original_sentence": "please play Wizkid",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Wizkid ] ]"
+  },
+  {
+    "original_sentence": "how you make pancakes",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH pancakes ] ]"
+  },
+  {
+    "original_sentence": "Set the alarm to go off in 24 hours from now",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME 24 hours from now ] ]"
+  },
+  {
+    "original_sentence": "Please skip",
+    "mtop_parsing": "[IN:SKIP_TRACK_MUSIC ]"
+  },
+  {
+    "original_sentence": "Could you please help me setup my default phone call provider as Whatsapp",
+    "mtop_parsing": "[IN:SET_DEFAULT_PROVIDER_CALLING [SL:NAME_APP Whatsapp ] ]"
+  },
+  {
+    "original_sentence": "change my reminder for eastern time zone",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:DATE_TIME for eastern time zone ] ]"
+  },
+  {
+    "original_sentence": "please cancel the reminder of go shopping this saturday",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO go shopping ] [SL:DATE_TIME this saturday ] ]"
+  },
+  {
+    "original_sentence": "Set alarm for 9 pm tonight only.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 9 pm tonight ] ]"
+  },
+  {
+    "original_sentence": "Phone Sue.",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Sue ] ]"
+  },
+  {
+    "original_sentence": "What is the cause of Venezuela's current unrest",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Venezuela 's current unrest ] ]"
+  },
+  {
+    "original_sentence": "dial Gregory right away",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Gregory ] ]"
+  },
+  {
+    "original_sentence": "call Whatsapp Rylie Shannon",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP Whatsapp ] [SL:CONTACT Rylie Shannon ] ]"
+  },
+  {
+    "original_sentence": "Is it going to hit 100 degrees today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Can I verify I have reminders set for Show Choir practice?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO Show Choir practice ] ]"
+  },
+  {
+    "original_sentence": "add ten minutes to the timer please",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:DATE_TIME ten minutes ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "How hot will it be in Arizona next week",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE hot ] [SL:LOCATION Arizona ] [SL:DATE_TIME next week ] ]"
+  },
+  {
+    "original_sentence": "Find friends of Darren and Todd",
+    "mtop_parsing": "[IN:GET_MUTUAL_FRIENDS [SL:CONTACT_RELATED Darren ] [SL:CONTACT_RELATED Todd ] ]"
+  },
+  {
+    "original_sentence": "is it going to be cloudy all day",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE cloudy ] [SL:DATE_TIME all day ] ]"
+  },
+  {
+    "original_sentence": "Delete my lunch reminder",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:TODO lunch ] ]"
+  },
+  {
+    "original_sentence": "call Steven N",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Steven N ] ]"
+  },
+  {
+    "original_sentence": "Can I hear that song again?",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Play Tory Lanez",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Tory Lanez ] ]"
+  },
+  {
+    "original_sentence": "Whats the latest news with North Korea?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC North Korea ] ]"
+  },
+  {
+    "original_sentence": "Tell me about the weather today.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "put up a timer for 14 minutes and one for three hours",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 14 minutes ] [SL:AMOUNT one ] [SL:DATE_TIME for three hours ] ]"
+  },
+  {
+    "original_sentence": "Talk to me about the weather for Monday",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for Monday ] ]"
+  },
+  {
+    "original_sentence": "I need an alarm at 6am please",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 6 am ] ]"
+  },
+  {
+    "original_sentence": "Message Mom and tell her that I understand why she had to leave and that I love her.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION Mom ] ] ] [SL:CONTENT_EXACT I understand why she had to leave and that I love her ] ]"
+  },
+  {
+    "original_sentence": "Subtract 3 minutes",
+    "mtop_parsing": "[IN:SUBTRACT_TIME_TIMER [SL:DATE_TIME 3 minutes ] ]"
+  },
+  {
+    "original_sentence": "Cancel my reminder to go on a run.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:TODO go on a run ] ]"
+  },
+  {
+    "original_sentence": "Show me my reminder to buy milk for the kids before I go home.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:PERSON_REMINDED my ] [SL:TODO buy milk for the kids before I go home ] ]"
+  },
+  {
+    "original_sentence": "video call with elderly on Messenger",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP elderly ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "What is the political news for today?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY political ] [SL:NEWS_TYPE news ] [SL:DATE_TIME for today ] ]"
+  },
+  {
+    "original_sentence": "repeat alarm in 20 mins",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME in 20 mins ] ]"
+  },
+  {
+    "original_sentence": "Show me all reminders for my yoga classes.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] [SL:TODO yoga classes ] ]"
+  },
+  {
+    "original_sentence": "Ring at midnight",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at midnight ] ]"
+  },
+  {
+    "original_sentence": "how do you make cranberry sauce",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH cranberry sauce ] ]"
+  },
+  {
+    "original_sentence": "remind me to play soccer",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO play soccer ] ]"
+  },
+  {
+    "original_sentence": "call Enrique Iglesias",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Enrique Iglesias ] ]"
+  },
+  {
+    "original_sentence": "remind Brian to leave at 4 and send him an alert 10 minutes before.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED Brian ] [SL:TODO [IN:GET_TODO [SL:TODO leave ] [SL:DATE_TIME at 4 ] ] ] [SL:DATE_TIME 10 minutes before ] ]"
+  },
+  {
+    "original_sentence": "How much fat is in lasagna",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How much ] [SL:RECIPES_TYPE_NUTRITION fat ] [SL:RECIPES_DISH lasagna ] ]"
+  },
+  {
+    "original_sentence": "Remind me to meet Chris for lunch on Tuesday at 11:30am",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO meet Chris for lunch ] [SL:DATE_TIME on Tuesday at 11 : 30 am ] ]"
+  },
+  {
+    "original_sentence": "Change the time of the upcoming alarm to 7pm",
+    "mtop_parsing": "[IN:UPDATE_ALARM [SL:ORDINAL upcoming ] [SL:DATE_TIME to 7 pm ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for 10 AM",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 AM ] ]"
+  },
+  {
+    "original_sentence": "Is it going to be warm in New York next week?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE warm ] [SL:LOCATION New York ] [SL:DATE_TIME next week ] ]"
+  },
+  {
+    "original_sentence": "forecast for victoria please",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION victoria ] ]"
+  },
+  {
+    "original_sentence": "did is rain on october 29th, 2001 in arizona?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME on october ] ]"
+  },
+  {
+    "original_sentence": "stop timer names cookies",
+    "mtop_parsing": "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Set alarm for 10 am on Wednesday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 am on Wednesday ] ]"
+  },
+  {
+    "original_sentence": "What's the top story in national news?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE top ] [SL:NEWS_TYPE story ] [SL:NEWS_CATEGORY national ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Show me all the birthdays reminders on my agenda.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:AMOUNT all ] [SL:TODO birthdays ] [SL:PERSON_REMINDED my ] ]"
+  },
+  {
+    "original_sentence": "Is it going to rain in Marana, Arizona today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:LOCATION Marana , Arizona ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "call with Vegetarian cooking on Hangouts",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP Vegetarian cooking ] [SL:NAME_APP Hangouts ] ]"
+  },
+  {
+    "original_sentence": "call Mariana whatsapp video",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Mariana ] [SL:NAME_APP whatsapp ] ]"
+  },
+  {
+    "original_sentence": "call Betty number one",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Betty ] [SL:ORDINAL one ] ]"
+  },
+  {
+    "original_sentence": "what album is this on?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "call Reese 's granddaughter",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Reese ] [SL:TYPE_RELATION granddaughter ] ] ] ]"
+  },
+  {
+    "original_sentence": "Where does Rhonda work now?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Rhonda ] ]"
+  },
+  {
+    "original_sentence": "Repeat Playlist",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE Playlist ] ]"
+  },
+  {
+    "original_sentence": "cancel reminder to take dog to the vet",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO take dog to the vet ] ]"
+  },
+  {
+    "original_sentence": "Create alarm called 'wake up' at 6am tomorrow.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:ALARM_NAME wake up ] [SL:DATE_TIME at 6 am tomorrow ] ]"
+  },
+  {
+    "original_sentence": "set timer for 10 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 10 minutes ] ]"
+  },
+  {
+    "original_sentence": "Does my cousin Jane live in New Jersey?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION cousin ] [SL:CONTACT Jane ] [SL:LOCATION New Jersey ] ]"
+  },
+  {
+    "original_sentence": "Set the timer for the next 15 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for the next 15 minutes ] ]"
+  },
+  {
+    "original_sentence": "Can you please show me all of my alarms?",
+    "mtop_parsing": "[IN:GET_ALARM [SL:AMOUNT all ] ]"
+  },
+  {
+    "original_sentence": "When does the snow start tonight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Play the riff-off from the Pitch Perfect soundtrack",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ALBUM_TITLE Pitch Perfect ] [SL:MUSIC_TYPE soundtrack ] ]"
+  },
+  {
+    "original_sentence": "Do I have friends that live in Baltimore?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:TYPE_RELATION friends ] [SL:LOCATION Baltimore ] ]"
+  },
+  {
+    "original_sentence": "When does the sun set tomorrow?",
+    "mtop_parsing": "[IN:GET_SUNSET [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "take my girlfriend out of the video call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_REMOVED [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION girlfriend ] ] ] ]"
+  },
+  {
+    "original_sentence": "Whats the rain forecast for sunday",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME for sunday ] ]"
+  },
+  {
+    "original_sentence": "let me see messages from my grandmother Marilyn",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:SENDER [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandmother ] [SL:CONTACT Marilyn ] ] ] ]"
+  },
+  {
+    "original_sentence": "Snooze alarm.",
+    "mtop_parsing": "[IN:SNOOZE_ALARM ]"
+  },
+  {
+    "original_sentence": "call camille's mobile number",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT camille ] ]"
+  },
+  {
+    "original_sentence": "What concerts are happening in Las Vegas on Thursday",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT concerts ] [SL:LOCATION Las Vegas ] [SL:DATE_TIME on Thursday ] ]"
+  },
+  {
+    "original_sentence": "can you hit up Jake King on WhatsApp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jake King ] [SL:NAME_APP WhatsApp ] ]"
+  },
+  {
+    "original_sentence": "What the percentage of rain for Wednesday night?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME for Wednesday night ] ]"
+  },
+  {
+    "original_sentence": "postpone alarm 5 minutes",
+    "mtop_parsing": "[IN:SNOOZE_ALARM [SL:DATE_TIME 5 minutes ] ]"
+  },
+  {
+    "original_sentence": "where in NJ does Mark live",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:LOCATION NJ ] [SL:CONTACT Mark ] ]"
+  },
+  {
+    "original_sentence": "set me available",
+    "mtop_parsing": "[IN:SET_AVAILABLE ]"
+  },
+  {
+    "original_sentence": "show me all the reminders for the wedding dress fittings this month",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER show ] [SL:PERSON_REMINDED me ] [SL:AMOUNT all ] [SL:TODO the wedding dress fittings ] [SL:DATE_TIME this month ] ]"
+  },
+  {
+    "original_sentence": "How many seconds are left on my timer?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Go through my messages please",
+    "mtop_parsing": "[IN:GET_MESSAGE ]"
+  },
+  {
+    "original_sentence": "Expected weather for London England",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION London England ] ]"
+  },
+  {
+    "original_sentence": "Has Mary worked at Starbucks before?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Mary ] [SL:EMPLOYER Starbucks ] ]"
+  },
+  {
+    "original_sentence": "Does Miguel is still living in Arkansas",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Miguel ] [SL:LOCATION Arkansas ] ]"
+  },
+  {
+    "original_sentence": "Did anyone I know attend graduate school in new york",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:EDUCATION_DEGREE graduate ] [SL:LOCATION new york ] ]"
+  },
+  {
+    "original_sentence": "can you start two timers please",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:AMOUNT two ] [SL:METHOD_TIMER timers ] ]"
+  },
+  {
+    "original_sentence": "can you play nicki minaj's latest single",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME nicki minaj ] [SL:MUSIC_TYPE single ] ]"
+  },
+  {
+    "original_sentence": "Tell me about events happening in Long Island on Wednesday",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Long Island ] [SL:DATE_TIME on Wednesday ] ]"
+  },
+  {
+    "original_sentence": "What was the last measure that Donald Trump signed?",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Donald Trump ] ]"
+  },
+  {
+    "original_sentence": "sound alarm at 835h",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 835h ] ]"
+  },
+  {
+    "original_sentence": "Delete my reminders for today.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME for today ] ]"
+  },
+  {
+    "original_sentence": "call Jackson Miranda now",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jackson Miranda ] ]"
+  },
+  {
+    "original_sentence": "Play Stay with me by Sam Smith",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE Stay with me ] [SL:MUSIC_ARTIST_NAME Sam Smith ] ]"
+  },
+  {
+    "original_sentence": "call Adriel through whatsapp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Adriel ] [SL:NAME_APP whatsapp ] ]"
+  },
+  {
+    "original_sentence": "Call Andy",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Andy ] ]"
+  },
+  {
+    "original_sentence": "How do you make sugar cookies",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH sugar cookies ] ]"
+  },
+  {
+    "original_sentence": "I want to listen to Tamela Mann's new album",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Tamela Mann ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "Remind me to call Janice at 5pm.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT Janice ] ] ] [SL:DATE_TIME at 5 pm ] ]"
+  },
+  {
+    "original_sentence": "tell me the latest news",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "show message",
+    "mtop_parsing": "[IN:GET_MESSAGE ]"
+  },
+  {
+    "original_sentence": "Set an alarm at 2.55pm on 27th July 2019",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 2.55pm on 27th July 2019 ] ]"
+  },
+  {
+    "original_sentence": "Set and alarm for 7 AM on Sunday.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 7 AM on Sunday ] ]"
+  },
+  {
+    "original_sentence": "begin call with sisters",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION sisters ] ] ] ]"
+  },
+  {
+    "original_sentence": "What are my reminders for the first half of September?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME for the first half of September ] ]"
+  },
+  {
+    "original_sentence": "Remind me not to contact my brother Roger for his birthday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO not to contact my brother Roger for his birthday ] ]"
+  },
+  {
+    "original_sentence": "how do i bake chicken",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "original_sentence": "best recipe for scramble eggs",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_RATING best ] [SL:RECIPES_DISH scramble eggs ] ]"
+  },
+  {
+    "original_sentence": "Which of Verbit mama have birthdays coming up?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Verbit ] [SL:TYPE_RELATION mama ] ]"
+  },
+  {
+    "original_sentence": "what's this song called?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Could you read details regarding dead body found in Funk Nebraska?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE details ] [SL:NEWS_TOPIC dead body found in Funk Nebraska ] ]"
+  },
+  {
+    "original_sentence": "Stop playing this music halfway through",
+    "mtop_parsing": "[IN:STOP_MUSIC [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "sdet a reminder for joes baseball game at 7pm tonight",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO joes baseball game ] [SL:DATE_TIME at 7 pm tonight ] ]"
+  },
+  {
+    "original_sentence": "set a timer for 27 minutes and a second timer for 15 seconds",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 27 minutes ] [SL:ORDINAL second ] [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 15 seconds ] ]"
+  },
+  {
+    "original_sentence": "Play God is a woman by J. Cole",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE God is a woman ] [SL:MUSIC_ARTIST_NAME J . Cole ] ]"
+  },
+  {
+    "original_sentence": "any new news about trump today",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE new ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC trump ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Cancel the reminder for the kids soccer practice, it was cancelled.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO the kids soccer practice ] ]"
+  },
+  {
+    "original_sentence": "Set my timer for 1 minute and 30 seconds",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 1 minute and 30 seconds ] ]"
+  },
+  {
+    "original_sentence": "change my reminder alert to 4pm.",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:DATE_TIME to 4 pm ] ]"
+  },
+  {
+    "original_sentence": "who is Chelsea Ann Kramer's dad?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT Chelsea Ann Kramer ] [SL:TYPE_RELATION dad ] ]"
+  },
+  {
+    "original_sentence": "Remind me to call my mom in 15 minutes.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION mom ] ] ] ] ] [SL:DATE_TIME in 15 minutes ] ]"
+  },
+  {
+    "original_sentence": "Set",
+    "mtop_parsing": "[IN:CREATE_TIMER ]"
+  },
+  {
+    "original_sentence": "delete all my gym alarm",
+    "mtop_parsing": "[IN:DELETE_ALARM [SL:AMOUNT all ] [SL:ALARM_NAME gym ] ]"
+  },
+  {
+    "original_sentence": "Adjust my alarm to 6pm",
+    "mtop_parsing": "[IN:UPDATE_ALARM [SL:DATE_TIME to 6 pm ] ]"
+  },
+  {
+    "original_sentence": "Has the timer gone off yet?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Start time for fifteen minutes.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER time ] [SL:DATE_TIME for fifteen minutes ] ]"
+  },
+  {
+    "original_sentence": "call Aubrie 's friend",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Aubrie ] [SL:TYPE_RELATION friend ] ] ] ]"
+  },
+  {
+    "original_sentence": "Anything interesting happening in Brooklyn tomorrow",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Brooklyn ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "set alarm for 1 hour from now",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 1 hour from now ] ]"
+  },
+  {
+    "original_sentence": "Video message to Blake",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT Video ] [SL:RECIPIENT Blake ] ]"
+  },
+  {
+    "original_sentence": "Start a video call with my Christian group",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP Christian ] ]"
+  },
+  {
+    "original_sentence": "call Xavier Norman call Ava Hester in Whatsapp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Xavier Norman ] [SL:CONTACT Ava Hester ] [SL:NAME_APP Whatsapp ] ]"
+  },
+  {
+    "original_sentence": "when did ian start at ucla",
+    "mtop_parsing": "[IN:GET_EDUCATION_TIME [SL:CONTACT ian ] [SL:SCHOOL ucla ] ]"
+  },
+  {
+    "original_sentence": "Please pause timer",
+    "mtop_parsing": "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Give me a 10 day weather forecast.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME 10 day ] ]"
+  },
+  {
+    "original_sentence": "Who is Breanna Carlson's brother?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT Breanna Carlson ] [SL:TYPE_RELATION brother ] ]"
+  },
+  {
+    "original_sentence": "Who does Lester Holt anchor for",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Lester Holt anchor ] ]"
+  },
+  {
+    "original_sentence": "start my running timer",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:TIMER_NAME running ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "tell me about Ted's friends",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Ted ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "whats weather forecast for tomorrow",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for tomorrow ] ]"
+  },
+  {
+    "original_sentence": "set a practice test taking timer for 90 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 90 minutes ] ]"
+  },
+  {
+    "original_sentence": "Where does Kenneth Jr work?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Kenneth Jr ] ]"
+  },
+  {
+    "original_sentence": "Which of tricia stepsisters were born on June 6th, 1979?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED tricia ] [SL:TYPE_RELATION stepsisters ] [SL:DATE_TIME on June 6th , 1979 ] ]"
+  },
+  {
+    "original_sentence": "List joe fathers in law upcoming birthdays",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED joe ] [SL:TYPE_RELATION fathers in law ] ]"
+  },
+  {
+    "original_sentence": "what's going on in the news?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Does it snow  in Las Vegas?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:LOCATION Las Vegas ] ]"
+  },
+  {
+    "original_sentence": "is there rain in the forecast?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] ]"
+  },
+  {
+    "original_sentence": "Could you put the call on hold",
+    "mtop_parsing": "[IN:HOLD_CALL ]"
+  },
+  {
+    "original_sentence": "Things to do in San Jose",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION San Jose ] ]"
+  },
+  {
+    "original_sentence": "Please remind me what time the ferry leaves dock today and remind me in 30 minutes too",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:GET_TODO [SL:TODO the ferry leaves dock ] [SL:DATE_TIME today ] ] ] [SL:DATE_TIME in 30 minutes ] ]"
+  },
+  {
+    "original_sentence": "Snooze alarm for 5 more minutes",
+    "mtop_parsing": "[IN:SNOOZE_ALARM [SL:DATE_TIME for 5 more minutes ] ]"
+  },
+  {
+    "original_sentence": "remind me to facetime Autumn on Friday morning",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT Autumn ] ] ] [SL:DATE_TIME on Friday morning ] ]"
+  },
+  {
+    "original_sentence": "Find me an Italian meatball recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE Italian ] [SL:RECIPES_DISH meatball ] ]"
+  },
+  {
+    "original_sentence": "Ask Jordan to come over on my birthday",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Jordan ] [SL:CONTENT_EXACT come over on my birthday ] ]"
+  },
+  {
+    "original_sentence": "add alarm wednesday 4:45 am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME wednesday 4 : 45 am ] ]"
+  },
+  {
+    "original_sentence": "Tell me what movies Benedict Cumberbatch has been in.",
+    "mtop_parsing": "[IN:GET_INFO_CONTACT [SL:CONTACT Benedict Cumberbatch ] ]"
+  },
+  {
+    "original_sentence": "Can you remind me what I had to do today?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "make timer longer by 1628 seconds",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by 1628 seconds ] ]"
+  },
+  {
+    "original_sentence": "i would like to message Kenny on Facebook a message saying are you free",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Kenny ] [SL:NAME_APP Facebook ] [SL:CONTENT_EXACT are you free ] ]"
+  },
+  {
+    "original_sentence": "Can you check to see who is calling me now",
+    "mtop_parsing": "[IN:GET_CALL_CONTACT ]"
+  },
+  {
+    "original_sentence": "Switch to the next track",
+    "mtop_parsing": "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE track ] ]"
+  },
+  {
+    "original_sentence": "Make a video message to send to Dad.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION Dad ] ] ] ]"
+  },
+  {
+    "original_sentence": "SET ALARM FOR 6 AM FOR WEEKDAYS",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME FOR 6 AM FOR WEEKDAYS ] ]"
+  },
+  {
+    "original_sentence": "Change genre to \"Hip Hop\".",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE Hip Hop ] ]"
+  },
+  {
+    "original_sentence": "Pause the timer and resume in 5 minutes",
+    "mtop_parsing": "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Can you get my past events please?",
+    "mtop_parsing": "[IN:GET_EVENT [SL:USER_ATTENDEE_EVENT my ] [SL:DATE_TIME past ] ]"
+  },
+  {
+    "original_sentence": "erase all set timers please",
+    "mtop_parsing": "[IN:DELETE_TIMER [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]"
+  },
+  {
+    "original_sentence": "new timer for 15 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 15 minutes ] ]"
+  },
+  {
+    "original_sentence": "What was yesterday's low temperature",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME yesterday ] ]"
+  },
+  {
+    "original_sentence": "What time will it get hot tomorrow?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE hot ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "sound alarm at 1700h",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 1700h ] ]"
+  },
+  {
+    "original_sentence": "play BTS music",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME BTS ] [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "Please wake me at 7am.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 7 am ] ]"
+  },
+  {
+    "original_sentence": "Any news on Justin Bieber today?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Justin Bieber ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "answer new call",
+    "mtop_parsing": "[IN:ANSWER_CALL ]"
+  },
+  {
+    "original_sentence": "DO I NEED TO BRING AN UMBRELLA WITH ME TODAY?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE UMBRELLA ] [SL:DATE_TIME TODAY ] ]"
+  },
+  {
+    "original_sentence": "I'd like to call Dad",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION Dad ] ] ] ]"
+  },
+  {
+    "original_sentence": "I need to call Jimmy",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jimmy ] ]"
+  },
+  {
+    "original_sentence": "How much time before my alarm goes off?",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "How much time is left until my alarm goes off?",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "half moon bay weather tomorrow?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION half moon bay ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "When is it likely to snow next in Boston",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:LOCATION Boston ] ]"
+  },
+  {
+    "original_sentence": "I'd like to call with my cousins Justine, Jakob, Alejandro, and Johnathan on Hangouts",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION cousins ] [SL:CONTACT Justine ] [SL:CONTACT Jakob ] [SL:CONTACT Alejandro ] [SL:CONTACT Johnathan ] ] ] [SL:NAME_APP Hangouts ] ]"
+  },
+  {
+    "original_sentence": "play the song 22",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE song ] [SL:MUSIC_TRACK_TITLE 22 ] ]"
+  },
+  {
+    "original_sentence": "back to the 80's please",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE 80 ] ]"
+  },
+  {
+    "original_sentence": "What tennis games are happening",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT tennis games ] ]"
+  },
+  {
+    "original_sentence": "Please set a timer for 60 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 60 minutes ] ]"
+  },
+  {
+    "original_sentence": "WhatsApp call to Kallie Davis",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP WhatsApp ] [SL:CONTACT Kallie Davis ] ]"
+  },
+  {
+    "original_sentence": "Stop me at 2:30pm",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 2 : 30 pm ] ]"
+  },
+  {
+    "original_sentence": "set a reminder to take out the trash at 7 pm",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO take out the trash ] [SL:DATE_TIME at 7 pm ] ]"
+  },
+  {
+    "original_sentence": "Will it be sunny this week",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "Has Macie messaged me?",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:CONTACT Macie ] [SL:RECIPIENT me ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for 7pm",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 7 pm ] ]"
+  },
+  {
+    "original_sentence": "phone Sadie Bean's partner",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Sadie Bean ] [SL:TYPE_RELATION partner ] ] ] ]"
+  },
+  {
+    "original_sentence": "Is molasses vegan",
+    "mtop_parsing": "[IN:IS_TRUE_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT molasses ] [SL:RECIPES_DIET vegan ] ]"
+  },
+  {
+    "original_sentence": "Play Lupe Fiasco's latest song",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Lupe Fiasco ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Show this week's reminders.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "Send a message to my sisters to let them know that we should meet in New York next Saturday",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION sisters ] ] ] [SL:CONTENT_EXACT we should meet in New York next Saturday ] ]"
+  },
+  {
+    "original_sentence": "Give me Thanksgiving dinner ideas",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE Thanksgiving ] [SL:RECIPES_MEAL dinner ] ]"
+  },
+  {
+    "original_sentence": "Set me as online",
+    "mtop_parsing": "[IN:SET_AVAILABLE ]"
+  },
+  {
+    "original_sentence": "Can you tell me Brian's address?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Brian ] ]"
+  },
+  {
+    "original_sentence": "stick to iheartradio as my default",
+    "mtop_parsing": "[IN:SET_DEFAULT_PROVIDER_MUSIC [SL:MUSIC_PROVIDER_NAME iheartradio ] ]"
+  },
+  {
+    "original_sentence": "open Pandora and play My Everything (Italian Edition) on shuffle",
+    "mtop_parsing": "[IN:START_SHUFFLE_MUSIC [SL:MUSIC_PROVIDER_NAME Pandora ] [SL:MUSIC_ALBUM_TITLE My Everything ( Italian Edition ) ] ]"
+  },
+  {
+    "original_sentence": "Start up a call Baylee Wilkinson and Mohamed Mckay",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Baylee Wilkinson ] [SL:CONTACT Mohamed Mckay ] ]"
+  },
+  {
+    "original_sentence": "Add Terri to the call with Dave.",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED Terri ] [SL:CONTACT Dave ] ]"
+  },
+  {
+    "original_sentence": "How long do you bake cupcakes",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How long ] [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_DISH cupcakes ] ]"
+  },
+  {
+    "original_sentence": "Alert me at 3pm tomorrow.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 3 pm tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Play The Middle, Juice WRLD, please.",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE The Middle ] [SL:MUSIC_ARTIST_NAME Juice WRLD ] ]"
+  },
+  {
+    "original_sentence": "Record a video message for sibling",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION sibling ] ] ] ]"
+  },
+  {
+    "original_sentence": "Is butter necessary in baking cookies",
+    "mtop_parsing": "[IN:IS_TRUE_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT butter ] [SL:RECIPES_DISH cookies ] ]"
+  },
+  {
+    "original_sentence": "i would like to message Izzy that Messenger message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:CONTACT Izzy ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "What is the heat index outside?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE heat index ] ]"
+  },
+  {
+    "original_sentence": "Can I listen to Mac Miller Make Believe on Spotify?",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Mac Miller ] [SL:MUSIC_TRACK_TITLE Make Believe ] [SL:MUSIC_PROVIDER_NAME Spotify ] ]"
+  },
+  {
+    "original_sentence": "Remind me to close the door",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO close the door ] ]"
+  },
+  {
+    "original_sentence": "Tell me the time of my last missed call",
+    "mtop_parsing": "[IN:GET_CALL_TIME ]"
+  },
+  {
+    "original_sentence": "Set a reminder for Melanie to call her aunt next Thursday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED Melanie ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED her ] [SL:TYPE_RELATION aunt ] ] ] ] ] [SL:DATE_TIME next Thursday ] ]"
+  },
+  {
+    "original_sentence": "call Archer Garcia and Alyssa Brown",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Archer Garcia ] [SL:CONTACT Alyssa Brown ] ]"
+  },
+  {
+    "original_sentence": "What are the ingredients in Chicken Masala",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH Chicken Masala ] ]"
+  },
+  {
+    "original_sentence": "When will the alert for mom's appointment will be off?",
+    "mtop_parsing": "[IN:GET_REMINDER_DATE_TIME [SL:TODO mom 's appointment ] ]"
+  },
+  {
+    "original_sentence": "Can I hear Avril Lavigne's latest music?",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Avril Lavigne ] [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "Ask Juan about when he starts his new job.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Juan ] [SL:CONTENT_EXACT when he starts his new job ] ]"
+  },
+  {
+    "original_sentence": "What's going on in Birmingham this weekend",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Birmingham ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "original_sentence": "please set a reminder for dinner with jessica on saturday night at 9pm",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:GET_TODO [SL:TODO dinner ] [SL:ATTENDEE jessica ] ] ] [SL:DATE_TIME on saturday night at 9 pm ] ]"
+  },
+  {
+    "original_sentence": "SET MY ALARM",
+    "mtop_parsing": "[IN:CREATE_ALARM ]"
+  },
+  {
+    "original_sentence": "How do you make a grilled cheese",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH grilled cheese ] ]"
+  },
+  {
+    "original_sentence": "Tell me who Chris' girlfriend is",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Chris ] [SL:TYPE_RELATION girlfriend ] ]"
+  },
+  {
+    "original_sentence": "Update me the Victoria weather",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Victoria ] ]"
+  },
+  {
+    "original_sentence": "things to do in columbus next month",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION columbus ] [SL:DATE_TIME next month ] ]"
+  },
+  {
+    "original_sentence": "Do I know anyone from Ireland?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:LOCATION Ireland ] ]"
+  },
+  {
+    "original_sentence": "set reminder for the cast party",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO the cast party ] ]"
+  },
+  {
+    "original_sentence": "Can you tell me next weeks forecast?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME next weeks ] ]"
+  },
+  {
+    "original_sentence": "Put in a reminder for me to call Tinky's teacher tomorrow afternoon.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT Tinky 's teacher ] ] ] [SL:DATE_TIME tomorrow afternoon ] ]"
+  },
+  {
+    "original_sentence": "delete the reminder for tomorrow's dr appointment",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO [IN:GET_TODO [SL:DATE_TIME for tomorrow ] [SL:TODO dr appointment ] ] ] ]"
+  },
+  {
+    "original_sentence": "do I need a jacket for tonight?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME for tonight ] ]"
+  },
+  {
+    "original_sentence": "play Boy With Luv",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE Boy With Luv ] ]"
+  },
+  {
+    "original_sentence": "Events in Cocoa Village this month",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Cocoa Village ] [SL:DATE_TIME this month ] ]"
+  },
+  {
+    "original_sentence": "Remind Kal about Jazz Fest on Saturday in IL.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED Kal ] [SL:TODO [IN:GET_TODO [SL:TODO Jazz Fest ] [SL:DATE_TIME on Saturday ] [SL:LOCATION IL ] ] ] ]"
+  },
+  {
+    "original_sentence": "Remind me what I use to make BBQ sauce",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_DISH BBQ sauce ] ]"
+  },
+  {
+    "original_sentence": "Will be able to see the stars tonight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE stars ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Who lives in new jersey",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:LOCATION new jersey ] ]"
+  },
+  {
+    "original_sentence": "Is there any progress in negotiations among Canada, the US and Mexico?",
+    "mtop_parsing": "[IN:GET_DETAILS_NEWS [SL:NEWS_TOPIC progress in negotiations among Canada , the US and Mexico ] ]"
+  },
+  {
+    "original_sentence": "I want to change my alarm to 3pm.",
+    "mtop_parsing": "[IN:UPDATE_ALARM [SL:DATE_TIME to 3 pm ] ]"
+  },
+  {
+    "original_sentence": "What time was the call from John today?",
+    "mtop_parsing": "[IN:GET_CALL_TIME [SL:CONTACT John ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Take Sophie out of this call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_REMOVED Sophie ] ]"
+  },
+  {
+    "original_sentence": "Remind me to pack hubby's lunch bag for work tomorrow.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO pack hubby 's lunch bag for work ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "I need to find a contact in Hartford.",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:LOCATION Hartford ] ]"
+  },
+  {
+    "original_sentence": "show me all my friends birthdays that are on this Saturday",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:DATE_TIME on this Saturday ] ]"
+  },
+  {
+    "original_sentence": "Has Gael messaged me today?",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:CONTACT Gael ] [SL:RECIPIENT me ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Set a timer for soft boiled eggs",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:TIMER_NAME soft boiled eggs ] ]"
+  },
+  {
+    "original_sentence": "What is the highs for Orlando today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE highs ] [SL:LOCATION Orlando ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Time left",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER Time ] ]"
+  },
+  {
+    "original_sentence": "anyone of my friends live in West Virginia",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:LOCATION West Virginia ] ]"
+  },
+  {
+    "original_sentence": "put my sisters into call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION sisters ] ] ] ]"
+  },
+  {
+    "original_sentence": "did any of my family members go to Alabama?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION family ] [SL:LOCATION Alabama ] ]"
+  },
+  {
+    "original_sentence": "Tell me if anyone is online",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "my You aren’t done brushing until this goes off timer can you resume it",
+    "mtop_parsing": "[IN:RESUME_TIMER [SL:TIMER_NAME You aren’t done brushing until this goes off ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Fast forward to the chorus.",
+    "mtop_parsing": "[IN:FAST_FORWARD_MUSIC ]"
+  },
+  {
+    "original_sentence": "i would like to message that video to Harvey, Raul, and Jerry Ward",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Harvey ] [SL:RECIPIENT Raul ] [SL:RECIPIENT Jerry Ward ] ]"
+  },
+  {
+    "original_sentence": "Recommend some music events happening on Easter in Rota Island",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT music ] [SL:DATE_TIME on Easter ] [SL:LOCATION Rota Island ] ]"
+  },
+  {
+    "original_sentence": "Open Spotify and play Coldplay station.",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_PROVIDER_NAME Spotify ] [SL:MUSIC_ARTIST_NAME Coldplay ] [SL:MUSIC_TYPE station ] ]"
+  },
+  {
+    "original_sentence": "What time is dusk on February 6th",
+    "mtop_parsing": "[IN:GET_SUNSET [SL:DATE_TIME on February 6th ] ]"
+  },
+  {
+    "original_sentence": "I want timer to start now",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "What's the most popular news on CNN right now",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE most popular ] [SL:NEWS_TYPE news ] [SL:NEWS_SOURCE CNN ] ]"
+  },
+  {
+    "original_sentence": "Anything fun to do tomorrow evening",
+    "mtop_parsing": "[IN:GET_EVENT [SL:DATE_TIME tomorrow evening ] ]"
+  },
+  {
+    "original_sentence": "List all my missed calls for yesterday",
+    "mtop_parsing": "[IN:GET_CALL [SL:DATE_TIME for yesterday ] ]"
+  },
+  {
+    "original_sentence": "go ahead and call Francisco Mineau",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Francisco Mineau ] ]"
+  },
+  {
+    "original_sentence": "When is the solar eclipse",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC solar eclipse ] ]"
+  },
+  {
+    "original_sentence": "Things happening in downtown this week",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION downtown ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "Send a message to Austin to see if he wants to help plan a birthday party for Steve next month.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Austin ] [SL:CONTENT_EXACT he wants to help plan a birthday party for Steve next month ] ]"
+  },
+  {
+    "original_sentence": "please send Julia Peterson via Messenger a message saying talk to you later",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Julia Peterson ] [SL:NAME_APP Messenger ] [SL:CONTENT_EXACT talk to you later ] ]"
+  },
+  {
+    "original_sentence": "Set a 7 minute alarm",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME 7 minute ] ]"
+  },
+  {
+    "original_sentence": "Set reminder to check oven in 1 hour",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO check oven ] [SL:DATE_TIME in 1 hour ] ]"
+  },
+  {
+    "original_sentence": "Set alarm for 6:00 am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 6 : 00 am ] ]"
+  },
+  {
+    "original_sentence": "can you find my friends address",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "play my playlist on pandora",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE playlist ] [SL:MUSIC_PROVIDER_NAME pandora ] ]"
+  },
+  {
+    "original_sentence": "Set pick up alarm for  2:30 Monday through friday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:ALARM_NAME pick up alarm ] [SL:DATE_TIME for 2 : 30 Monday through friday ] ]"
+  },
+  {
+    "original_sentence": "set my status as maybe for the second event",
+    "mtop_parsing": "[IN:SET_RSVP_INTERESTED [SL:ORDINAL second ] ]"
+  },
+  {
+    "original_sentence": "local news for san diego",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC san diego ] ]"
+  },
+  {
+    "original_sentence": "what is the temperature today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "play the newest songs",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE songs ] ]"
+  },
+  {
+    "original_sentence": "Will the weather be warmer than 15 degrees Celsius?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE warmer than 15 degrees ] [SL:WEATHER_TEMPERATURE_UNIT Celsius ] ]"
+  },
+  {
+    "original_sentence": "Set a timer for 20 minutes for the frozen pizza",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 20 minutes ] ]"
+  },
+  {
+    "original_sentence": "Play that new mint condition song",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME mint condition ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Play Michael Abels's Django Unchained",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Michael Abels ] [SL:MUSIC_TRACK_TITLE Django Unchained ] ]"
+  },
+  {
+    "original_sentence": "What is the chance of rain today.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "play 1470 radio",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_RADIO_ID 1470 ] [SL:MUSIC_TYPE radio ] ]"
+  },
+  {
+    "original_sentence": "make a timer to last 1 minute",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME 1 minute ] ]"
+  },
+  {
+    "original_sentence": "how do you make chocolate ganache",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH chocolate ganache ] ]"
+  },
+  {
+    "original_sentence": "lengthen my timer by 11 minutes",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by 11 minutes ] ]"
+  },
+  {
+    "original_sentence": "I want to hear Hip Hop music",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE Hip Hop ] [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "we are gonna call Yareli Montes now",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Yareli Montes ] ]"
+  },
+  {
+    "original_sentence": "video message Melody",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Melody ] ]"
+  },
+  {
+    "original_sentence": "Create a reminder that I need to buy baby food tomorrow morning at noon",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO buy baby food ] [SL:DATE_TIME tomorrow morning at noon ] ]"
+  },
+  {
+    "original_sentence": "Cancel all my reminders for next week",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] [SL:DATE_TIME for next week ] ]"
+  },
+  {
+    "original_sentence": "Play some Migos please.",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Migos ] ]"
+  },
+  {
+    "original_sentence": "show me how to bake onions",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_DISH onions ] ]"
+  },
+  {
+    "original_sentence": "please send that video to the church group",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:GROUP church ] ]"
+  },
+  {
+    "original_sentence": "Where is Randy's work?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Randy ] ]"
+  },
+  {
+    "original_sentence": "Will you please call Holly",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Holly ] ]"
+  },
+  {
+    "original_sentence": "Ring Caroline",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Caroline ] ]"
+  },
+  {
+    "original_sentence": "what are the ingredients in chicken noodle soup",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH chicken noodle soup ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for Friday at 6",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for Friday at 6 ] ]"
+  },
+  {
+    "original_sentence": "Create a new sound list",
+    "mtop_parsing": "[IN:CREATE_PLAYLIST_MUSIC [SL:MUSIC_TYPE list ] ]"
+  },
+  {
+    "original_sentence": "Does he live in the US?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT_RELATED he ] [SL:LOCATION US ] ]"
+  },
+  {
+    "original_sentence": "Make a call to Clarissa, Jessie Herring, and Francesca",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Clarissa ] [SL:CONTACT Jessie Herring ] [SL:CONTACT Francesca ] ]"
+  },
+  {
+    "original_sentence": "i want to phone call 555-3813",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:PHONE_NUMBER 555 - 3813 ] ]"
+  },
+  {
+    "original_sentence": "Get me a news update",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Tell me how many calories are in a serving of chicken pot pie",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how many ] [SL:RECIPES_UNIT_NUTRITION calories ] [SL:RECIPES_DISH chicken pot pie ] ]"
+  },
+  {
+    "original_sentence": "Please set an alarm at 5am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 5 am ] ]"
+  },
+  {
+    "original_sentence": "Show me my reminders for my Justice class.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:PERSON_REMINDED my ] [SL:TODO my Justice class ] ]"
+  },
+  {
+    "original_sentence": "resume the current song",
+    "mtop_parsing": "[IN:RESUME_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "interested in going to Katja Petrowskaja: A Family Story Between Memory and Forgetting",
+    "mtop_parsing": "[IN:SET_RSVP_INTERESTED [SL:TITLE_EVENT Katja Petrowskaja : A Family Story Between Memory and Forgetting ] ]"
+  },
+  {
+    "original_sentence": "Change my reminder for my appointment to 6 o clock",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:TODO my appointment ] [SL:DATE_TIME to 6 o clock ] ]"
+  },
+  {
+    "original_sentence": "Remind me to purchase a card for Chris' birthday party Saturday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO purchase a card for Chris ' birthday party ] [SL:DATE_TIME Saturday ] ]"
+  },
+  {
+    "original_sentence": "I want to see availability of contacts",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "call Kara Parker for me",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Kara Parker ] ]"
+  },
+  {
+    "original_sentence": "show me video messages from my grandma",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandma ] ] ] ]"
+  },
+  {
+    "original_sentence": "I need details on the local murder trial",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE details ] [SL:NEWS_CATEGORY local ] [SL:NEWS_TOPIC murder trial ] ]"
+  },
+  {
+    "original_sentence": "change my You aren’t done brushing until this goes off timer",
+    "mtop_parsing": "[IN:UPDATE_TIMER [SL:TIMER_NAME You aren’t done brushing until this goes off ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Any news on the Saints?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Saints ] ]"
+  },
+  {
+    "original_sentence": "How many days has trump been on vacation?",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC How many days has trump been on vacation ] ]"
+  },
+  {
+    "original_sentence": "I'd like to video call with Kennedy Gardner and Alejandro Potts on Whatsapp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Kennedy Gardner ] [SL:CONTACT Alejandro Potts ] [SL:NAME_APP Whatsapp ] ]"
+  },
+  {
+    "original_sentence": "Need to see Juni's friends..",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Juni ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "Tell me the most recent news story about Trump",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME the most recent ] [SL:NEWS_TYPE news story ] [SL:NEWS_TOPIC Trump ] ]"
+  },
+  {
+    "original_sentence": "please pick up this video call",
+    "mtop_parsing": "[IN:ANSWER_CALL ]"
+  },
+  {
+    "original_sentence": "Tell me the calorie count for home made ice cream please",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_UNIT_NUTRITION calorie ] [SL:RECIPES_DISH ice cream ] ]"
+  },
+  {
+    "original_sentence": "how much time left on alarm",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "Repeat current song",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "shuffle the tracks please",
+    "mtop_parsing": "[IN:START_SHUFFLE_MUSIC [SL:MUSIC_TYPE tracks ] ]"
+  },
+  {
+    "original_sentence": "send an alert that there is a road closure on highway 6 due to high water",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:CONTENT_EXACT there is a road closure on highway 6 due to high water ] ]"
+  },
+  {
+    "original_sentence": "what is the recent news about trumps son eric",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME recent ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC trumps son eric ] ]"
+  },
+  {
+    "original_sentence": "what is the weather in vegas next week?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION vegas ] [SL:DATE_TIME next week ] ]"
+  },
+  {
+    "original_sentence": "Add the song waves by Kanye west to my playlist titled jams",
+    "mtop_parsing": "[IN:ADD_TO_PLAYLIST_MUSIC [SL:MUSIC_TYPE song ] [SL:MUSIC_TRACK_TITLE waves ] [SL:MUSIC_ARTIST_NAME Kanye west ] [SL:MUSIC_TYPE playlist ] [SL:MUSIC_PLAYLIST_TITLE jams ] ]"
+  },
+  {
+    "original_sentence": "which of my friends went to duke?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:LOCATION duke ] ]"
+  },
+  {
+    "original_sentence": "edit one week before alert to one day before for all reminders for the  month of October",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:DATE_TIME one week before ] [SL:DATE_TIME to one day before ] [SL:AMOUNT all ] [SL:DATE_TIME for the month of October ] ]"
+  },
+  {
+    "original_sentence": "Delete today's reminders.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "What kind of butter is good for the diet",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT butter ] [SL:RECIPES_RATING good ] ]"
+  },
+  {
+    "original_sentence": "How many minutes left on my timer",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Set a reminder to call my son at 1 pm on Friday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION son ] ] ] ] ] [SL:DATE_TIME at 1 pm on Friday ] ]"
+  },
+  {
+    "original_sentence": "Find me a vegan recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE vegan ] ]"
+  },
+  {
+    "original_sentence": "What is friend of Ali?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION friend ] [SL:CONTACT_RELATED Ali ] ]"
+  },
+  {
+    "original_sentence": "Video message for Susan Smith.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT Video ] [SL:RECIPIENT Susan Smith ] ]"
+  },
+  {
+    "original_sentence": "What is the most recent news headlines from Mexico?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME the most recent ] [SL:NEWS_TYPE news headlines ] [SL:NEWS_TOPIC Mexico ] ]"
+  },
+  {
+    "original_sentence": "set up a reminder for me next wednesday to see if vivian needs a ride to the salon",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME next wednesday ] [SL:TODO see if vivian needs a ride to the salon ] ]"
+  },
+  {
+    "original_sentence": "show me hourly temperature for today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for today ] ]"
+  },
+  {
+    "original_sentence": "send it to Dexter Gurney",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Dexter Gurney ] ]"
+  },
+  {
+    "original_sentence": "call with Quilting",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP Quilting ] ]"
+  },
+  {
+    "original_sentence": "What's Donald Trump's latest tweet?",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Donald Trump 's latest tweet ] ]"
+  },
+  {
+    "original_sentence": "Did my grandparents message me",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:SENDER [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandparents ] ] ] [SL:RECIPIENT me ] ]"
+  },
+  {
+    "original_sentence": "video message Emma Chen",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Emma Chen ] ]"
+  },
+  {
+    "original_sentence": "Any new news about the Russia story?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE new ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Russia story ] ]"
+  },
+  {
+    "original_sentence": "Will the temps be freezing tonight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE freezing ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "how long should i cook the steak to get it medium",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how long ] [SL:RECIPES_INCLUDED_INGREDIENT steak ] [SL:RECIPES_ATTRIBUTE medium ] ]"
+  },
+  {
+    "original_sentence": "Bring in John to this call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED John ] ]"
+  },
+  {
+    "original_sentence": "Is it going to rain this Wednesday?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME this Wednesday ] ]"
+  },
+  {
+    "original_sentence": "How long do I need to bake chocolate chip cookies",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How long ] [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_DISH chocolate chip cookies ] ]"
+  },
+  {
+    "original_sentence": "Message Sally with the deadline date of October 11th for the medical questionnaire to be completed.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Sally ] [SL:CONTENT_EXACT the deadline date of October 11th for the medical questionnaire to be completed ] ]"
+  },
+  {
+    "original_sentence": "Snooze this alarm for 20 minutes",
+    "mtop_parsing": "[IN:SNOOZE_ALARM [SL:DATE_TIME for 20 minutes ] ]"
+  },
+  {
+    "original_sentence": "send the close buddy thread text",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP close buddy ] ]"
+  },
+  {
+    "original_sentence": "Did I miss any calls in the past hour?",
+    "mtop_parsing": "[IN:GET_CALL [SL:DATE_TIME in the past hour ] ]"
+  },
+  {
+    "original_sentence": "should I bring an umbrella today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE umbrella ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Make recurring alarms for Friday at 10am and 10:30am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for Friday at 10 am and 10 : 30 am ] ]"
+  },
+  {
+    "original_sentence": "What is Taylor Swift's most popular song",
+    "mtop_parsing": "[IN:QUESTION_MUSIC [SL:MUSIC_ARTIST_NAME Taylor Swift ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "How much longer on this countdown?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER countdown ] ]"
+  },
+  {
+    "original_sentence": "Weather this afternoon.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME this afternoon ] ]"
+  },
+  {
+    "original_sentence": "Should I bring a jacket to Toronto tomorrow?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE jacket ] [SL:LOCATION Toronto ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "lets see video messages from Mya",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:TYPE_CONTENT video ] [SL:SENDER Mya ] ]"
+  },
+  {
+    "original_sentence": "please dial stepparent",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION stepparent ] ] ] ]"
+  },
+  {
+    "original_sentence": "Who is Danielle?",
+    "mtop_parsing": "[IN:GET_INFO_CONTACT [SL:CONTACT Danielle ] ]"
+  },
+  {
+    "original_sentence": "I need to stop this call now",
+    "mtop_parsing": "[IN:END_CALL ]"
+  },
+  {
+    "original_sentence": "is there a art showing in cleveland this week",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT art showing ] [SL:LOCATION cleveland ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "What's the forecast for tomorrow in San Francisco?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for tomorrow ] [SL:LOCATION San Francisco ] ]"
+  },
+  {
+    "original_sentence": "text Kaden and tell him that ye",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Kaden ] [SL:CONTENT_EXACT ye ] ]"
+  },
+  {
+    "original_sentence": "does she teach at the university",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT she ] ]"
+  },
+  {
+    "original_sentence": "Make a 6pm alarm",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME 6 pm ] ]"
+  },
+  {
+    "original_sentence": "How do I change the recipe to cook two pies at once?",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES ]"
+  },
+  {
+    "original_sentence": "What is the temp going to be this afternoon in hawaii",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME this afternoon ] [SL:LOCATION hawaii ] ]"
+  },
+  {
+    "original_sentence": "call Catalina three",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Catalina ] [SL:ORDINAL three ] ]"
+  },
+  {
+    "original_sentence": "I need to call my brother can you please remind me",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION brother ] ] ] ] ] [SL:PERSON_REMINDED me ] ]"
+  },
+  {
+    "original_sentence": "How much longer do I have for this workout",
+    "mtop_parsing": "[IN:GET_TIMER ]"
+  },
+  {
+    "original_sentence": "would you text Tony and Mark",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Tony ] [SL:RECIPIENT Mark ] ]"
+  },
+  {
+    "original_sentence": "Can you please text my brothers",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION brothers ] ] ] ]"
+  },
+  {
+    "original_sentence": "Make a timer for 45 minutes.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 45 minutes ] ]"
+  },
+  {
+    "original_sentence": "Add girlfriend to phonecall",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED [IN:GET_CONTACT [SL:TYPE_RELATION girlfriend ] ] ] ]"
+  },
+  {
+    "original_sentence": "how to make vegan meatballs",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE vegan ] [SL:RECIPES_DISH meatballs ] ]"
+  },
+  {
+    "original_sentence": "i am not available now",
+    "mtop_parsing": "[IN:SET_UNAVAILABLE ]"
+  },
+  {
+    "original_sentence": "let me take this video call with amy",
+    "mtop_parsing": "[IN:ANSWER_CALL [SL:CONTACT amy ] ]"
+  },
+  {
+    "original_sentence": "reply to the guild members thread with message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP guild members ] ]"
+  },
+  {
+    "original_sentence": "Delete the workout timer.",
+    "mtop_parsing": "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "please call Lillie Lawrence right away",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Lillie Lawrence ] ]"
+  },
+  {
+    "original_sentence": "what can I cook with chicken, spinach and lime juice",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT chicken ] [SL:RECIPES_INCLUDED_INGREDIENT spinach ] [SL:RECIPES_INCLUDED_INGREDIENT lime juice ] ]"
+  },
+  {
+    "original_sentence": "post to sabrina, congrats on the baby",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT sabrina ] [SL:CONTENT_EXACT congrats on the baby ] ]"
+  },
+  {
+    "original_sentence": "DId anyone text me via Facebook",
+    "mtop_parsing": "[IN:GET_MESSAGE_CONTACT [SL:NAME_APP Facebook ] ]"
+  },
+  {
+    "original_sentence": "how many hours until my alarm goes off",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "try giving call to Marina Brandon",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Marina Brandon ] ]"
+  },
+  {
+    "original_sentence": "Send a message to Cal asking what his favorite concert he's ever been to is.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Cal ] [SL:CONTENT_EXACT what his favorite concert he 's ever been to is ] ]"
+  },
+  {
+    "original_sentence": "use google play as my default",
+    "mtop_parsing": "[IN:SET_DEFAULT_PROVIDER_MUSIC [SL:MUSIC_PROVIDER_NAME google play ] ]"
+  },
+  {
+    "original_sentence": "please remove all my reminder",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] ]"
+  },
+  {
+    "original_sentence": "Fox news headlines currently",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_SOURCE Fox news ] [SL:NEWS_TYPE headlines ] [SL:DATE_TIME currently ] ]"
+  },
+  {
+    "original_sentence": "video message A Mathews",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT A Mathews ] ]"
+  },
+  {
+    "original_sentence": "Set timer for 15 seconds",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 15 seconds ] ]"
+  },
+  {
+    "original_sentence": "Don't ever play this song again",
+    "mtop_parsing": "[IN:REMOVE_FROM_PLAYLIST_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "lengthen my timer by 14 minutes",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by 14 minutes ] ]"
+  },
+  {
+    "original_sentence": "anything exciting to do in sarasota tonight",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION sarasota ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Video chat with my cousins",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION cousins ] ] ] ]"
+  },
+  {
+    "original_sentence": "How long do I cook the turkey for",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How long ] [SL:RECIPES_INCLUDED_INGREDIENT turkey ] ]"
+  },
+  {
+    "original_sentence": "we are gonna call Matthew now",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Matthew ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for June 5th at midnight",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for June 5th at midnight ] ]"
+  },
+  {
+    "original_sentence": "play the track Project Dreams",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE track ] [SL:MUSIC_TRACK_TITLE Project Dreams ] ]"
+  },
+  {
+    "original_sentence": "What's today's headlines?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME today ] [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "original_sentence": "can you phone Beckett Wilson on Messenger",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Beckett Wilson ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "what is business news from germany",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY business ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC germany ] ]"
+  },
+  {
+    "original_sentence": "How many reminders for dinner are set for the next month?",
+    "mtop_parsing": "[IN:GET_REMINDER_AMOUNT [SL:TODO dinner ] [SL:DATE_TIME for the next month ] ]"
+  },
+  {
+    "original_sentence": "try calling Sherman Angelica",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Sherman Angelica ] ]"
+  },
+  {
+    "original_sentence": "what is Trump's take on supremacists in America?",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Trump 's take on supremacists in America ] ]"
+  },
+  {
+    "original_sentence": "List of employees at Key Bank please",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER Key Bank ] ]"
+  },
+  {
+    "original_sentence": "Give me the news updates",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "what ingredients are in spaghetti sauce",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH spaghetti sauce ] ]"
+  },
+  {
+    "original_sentence": "Can I make pudding in the microwave",
+    "mtop_parsing": "[IN:IS_TRUE_RECIPES [SL:RECIPES_DISH pudding ] [SL:RECIPES_COOKING_METHOD microwave ] ]"
+  },
+  {
+    "original_sentence": "What is a good dessert recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_ATTRIBUTE good ] [SL:RECIPES_MEAL dessert ] ]"
+  },
+  {
+    "original_sentence": "Temperature in Paris currently please",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Paris ] ]"
+  },
+  {
+    "original_sentence": "Thomas Rhett's latest album please",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Thomas Rhett ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "see if delores will answer right now",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT delores ] ]"
+  },
+  {
+    "original_sentence": "Make repeating alarm for 7am everyday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 7 am everyday ] ]"
+  },
+  {
+    "original_sentence": "will i need gloves for friday?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE gloves ] [SL:DATE_TIME for friday ] ]"
+  },
+  {
+    "original_sentence": "How long to leave pasta dry",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_DISH pasta ] ]"
+  },
+  {
+    "original_sentence": "Tell me if there is rain in the forecast this week.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "Set a reminder for 8 a.m. tomorrow.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:DATE_TIME for 8 a.m . tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Skip to next song",
+    "mtop_parsing": "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "call my Whatsapp contact Jude Mcintosh",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP Whatsapp ] [SL:CONTACT Jude Mcintosh ] ]"
+  },
+  {
+    "original_sentence": "remind me to update my computer",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO update my computer ] ]"
+  },
+  {
+    "original_sentence": "i want to be timely to the event at 19:00 please remind me 60 minutes prior",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:GET_TODO [SL:TODO the event ] [SL:DATE_TIME at 19 : 00 ] ] ] [SL:PERSON_REMINDED me ] [SL:DATE_TIME 60 minutes prior ] ]"
+  },
+  {
+    "original_sentence": "Ring Dave",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Dave ] ]"
+  },
+  {
+    "original_sentence": "What is the highest temperature in Las Vegas",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Las Vegas ] ]"
+  },
+  {
+    "original_sentence": "Forecast for tomorrow in Brisbane.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for tomorrow ] [SL:LOCATION Brisbane ] ]"
+  },
+  {
+    "original_sentence": "How much time do I have left on the timer for my boiled eggs",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "send it to Sherell Grotzinger",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Sherell Grotzinger ] ]"
+  },
+  {
+    "original_sentence": "let me hear Drake's latest single",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Drake ] [SL:MUSIC_TYPE single ] ]"
+  },
+  {
+    "original_sentence": "Message Joseph and ask what does he need that can be mailed easily.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Joseph ] [SL:CONTENT_EXACT what does he need that can be mailed easily ] ]"
+  },
+  {
+    "original_sentence": "Start a call with Emma, Amelia Good, Christine, and Kristin Bryant",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Emma ] [SL:CONTACT Amelia Good ] [SL:CONTACT Christine ] [SL:CONTACT Kristin Bryant ] ]"
+  },
+  {
+    "original_sentence": "get events I'm interested in",
+    "mtop_parsing": "[IN:GET_EVENT [SL:USER_ATTENDEE_EVENT I'm ] ]"
+  },
+  {
+    "original_sentence": "Tell me the recent news.",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME recent ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Put my no cussing timer on hold for now.",
+    "mtop_parsing": "[IN:PAUSE_TIMER [SL:TIMER_NAME no cussing ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Weather on Sunday",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME on Sunday ] ]"
+  },
+  {
+    "original_sentence": "make a whatsapp call to papa",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP whatsapp ] [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION papa ] ] ] ]"
+  },
+  {
+    "original_sentence": "Play Red Hot Chili Peppers songs",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Red Hot Chili Peppers ] [SL:MUSIC_TYPE songs ] ]"
+  },
+  {
+    "original_sentence": "Set my alarm for 9 pm.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 9 pm ] ]"
+  },
+  {
+    "original_sentence": "remind me to go through my email box this weekend",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO go through my email box ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "original_sentence": "what news did I miss yesterday",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:DATE_TIME yesterday ] ]"
+  },
+  {
+    "original_sentence": "show who can talk",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "call on whatsapp Marcus",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP whatsapp ] [SL:CONTACT Marcus ] ]"
+  },
+  {
+    "original_sentence": "instigate group call with family",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION family ] ] ] ]"
+  },
+  {
+    "original_sentence": "Read me the recent news headlines",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME recent ] [SL:NEWS_TYPE news headlines ] ]"
+  },
+  {
+    "original_sentence": "Add the dog's medicine to my list of chore reminders.",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_TODO [SL:TODO the dog 's medicine ] [SL:PERSON_REMINDED my ] [SL:TODO chore ] ]"
+  },
+  {
+    "original_sentence": "send a message to japanese meet group that says happy new years",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP japanese meet ] [SL:CONTENT_EXACT happy new years ] ]"
+  },
+  {
+    "original_sentence": "when does the rain start",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] ]"
+  },
+  {
+    "original_sentence": "Send a Happy Birthday message to Joe",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:CONTENT_EXACT Happy Birthday ] [SL:RECIPIENT Joe ] ]"
+  },
+  {
+    "original_sentence": "does Janice work in Pembroke Pines?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Janice ] [SL:LOCATION Pembroke Pines ] ]"
+  },
+  {
+    "original_sentence": "Houston news headlines.",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TOPIC Houston ] [SL:NEWS_TYPE news headlines ] ]"
+  },
+  {
+    "original_sentence": "Set my alarm for 10:00 AM every Tuesday and Thursday.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 : 00 AM every Tuesday and Thursday ] ]"
+  },
+  {
+    "original_sentence": "Who works at target?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER target ] ]"
+  },
+  {
+    "original_sentence": "How old will Bill be on his next birthday?",
+    "mtop_parsing": "[IN:GET_AGE [SL:CONTACT Bill ] ]"
+  },
+  {
+    "original_sentence": "Can you find a stroganoff recipe with out mushrooms",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH stroganoff ] [SL:RECIPES_EXCLUDED_INGREDIENT mushrooms ] ]"
+  },
+  {
+    "original_sentence": "who works for te data company?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER te data ] ]"
+  },
+  {
+    "original_sentence": "Remind me to set the table at 6 pm.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO set the table ] [SL:DATE_TIME at 6 pm ] ]"
+  },
+  {
+    "original_sentence": "play Legend (Deluxe Edition) on iHeartRadio",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ALBUM_TITLE Legend ( Deluxe Edition ) ] [SL:MUSIC_PROVIDER_NAME iHeartRadio ] ]"
+  },
+  {
+    "original_sentence": "give me Action news local highlights today",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_SOURCE Action news ] [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE highlights ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Please call my cousin now.",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION cousin ] ] ] ]"
+  },
+  {
+    "original_sentence": "dial Tessa Nielsen's papa",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Tessa Nielsen ] [SL:TYPE_RELATION papa ] ] ] ]"
+  },
+  {
+    "original_sentence": "Whats new in Music news?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY Music ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "What reminders do I have for my boss",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO my boss ] ]"
+  },
+  {
+    "original_sentence": "Events in allentown today",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION allentown ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "i want you to start recording a video message for Mohamed",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Mohamed ] ]"
+  },
+  {
+    "original_sentence": "Play Paul Kelly on google play music",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Paul Kelly ] [SL:MUSIC_PROVIDER_NAME google play music ] ]"
+  },
+  {
+    "original_sentence": "Play the Beatles oldest album.",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME the Beatles ] [SL:MUSIC_GENRE oldest ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "Show friends of Liam's to me",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION friends ] [SL:CONTACT_RELATED Liam ] ]"
+  },
+  {
+    "original_sentence": "what items do i need to make deviled eggs",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_DISH deviled eggs ] ]"
+  },
+  {
+    "original_sentence": "play cardi b",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME cardi b ] ]"
+  },
+  {
+    "original_sentence": "Get rid of the reminder for my dog's appointment.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO my dog 's appointment ] ]"
+  },
+  {
+    "original_sentence": "is there any big news",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE big ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Please show reminders to attend Katy's concert for her upcoming tours in Dallas.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER show ] [SL:TODO [IN:GET_TODO [SL:TODO attend Katy 's concert for her upcoming tours ] [SL:LOCATION Dallas ] ] ] ]"
+  },
+  {
+    "original_sentence": "Play Lana Del Rey's new album",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Lana Del Rey ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "Minimum baking time for chicken",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_COOKING_METHOD baking ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "original_sentence": "Clear my walk the dog reminder",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:TODO walk the dog ] ]"
+  },
+  {
+    "original_sentence": "What's going on in Atlanta on Friday",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Atlanta ] [SL:DATE_TIME on Friday ] ]"
+  },
+  {
+    "original_sentence": "give me local news headlines",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news headlines ] ]"
+  },
+  {
+    "original_sentence": "read my Facebook texts",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:NAME_APP Facebook ] ]"
+  },
+  {
+    "original_sentence": "Answer the call when it's Kaleb",
+    "mtop_parsing": "[IN:ANSWER_CALL [SL:CONTACT Kaleb ] ]"
+  },
+  {
+    "original_sentence": "hold on the alarm",
+    "mtop_parsing": "[IN:SNOOZE_ALARM ]"
+  },
+  {
+    "original_sentence": "New 7am alarm needed.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME 7 am ] ]"
+  },
+  {
+    "original_sentence": "i would like to message my siblings message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION siblings ] ] ] ]"
+  },
+  {
+    "original_sentence": "remind me to send sarah a key for the office",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO send sarah a key for the office ] ]"
+  },
+  {
+    "original_sentence": "Can you tell me the weather for 8am?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for 8 am ] ]"
+  },
+  {
+    "original_sentence": "how many oil spoons do put on salad",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how many ] [SL:RECIPES_INCLUDED_INGREDIENT oil ] [SL:RECIPES_UNIT_MEASUREMENT spoons ] [SL:RECIPES_DISH salad ] ]"
+  },
+  {
+    "original_sentence": "could you text Paisley and tell her Here",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Paisley ] [SL:CONTENT_EXACT Here ] ]"
+  },
+  {
+    "original_sentence": "Set timer to 30 minutes.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME to 30 minutes ] ]"
+  },
+  {
+    "original_sentence": "Delete all reminders created on February",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] [SL:DATE_TIME on February ] ]"
+  },
+  {
+    "original_sentence": "Please change my reminder from Grace's Family Church singing from 7 p.m. to 8 p.m. on Saturday night",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:TODO Grace 's Family Church singing ] [SL:DATE_TIME from 7 p.m . ] [SL:DATE_TIME to 8 p.m . on Saturday night ] ]"
+  },
+  {
+    "original_sentence": "show me all of the upcoming reminder I have on Thursday through the rest of 2018",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER show ] [SL:AMOUNT all ] [SL:PERSON_REMINDED I ] [SL:DATE_TIME on Thursday through the rest of 2018 ] ]"
+  },
+  {
+    "original_sentence": "hold and receive new call",
+    "mtop_parsing": "[IN:SWITCH_CALL ]"
+  },
+  {
+    "original_sentence": "Date of release for this song",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Remind me of my flight time at 11:45 AM Tuesday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO my flight time ] [SL:DATE_TIME at 11 : 45 AM Tuesday ] ]"
+  },
+  {
+    "original_sentence": "Is it going to be sunny all day today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME all day today ] ]"
+  },
+  {
+    "original_sentence": "What is the 10 day forecast?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME 10 day ] ]"
+  },
+  {
+    "original_sentence": "display my messages from kid Michaela",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:SENDER [IN:GET_CONTACT [SL:TYPE_RELATION kid ] [SL:CONTACT Michaela ] ] ] ]"
+  },
+  {
+    "original_sentence": "What did Dave's message from this morning say?",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:SENDER Dave ] [SL:DATE_TIME this morning ] ]"
+  },
+  {
+    "original_sentence": "remove 12 hours from You aren't done running till this goes off timer",
+    "mtop_parsing": "[IN:SUBTRACT_TIME_TIMER [SL:DATE_TIME 12 hours ] [SL:TIMER_NAME You aren't done running till this goes off ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "What's today's headlines form the Huffington Post?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME today ] [SL:NEWS_TYPE headlines ] [SL:NEWS_SOURCE Huffington Post ] ]"
+  },
+  {
+    "original_sentence": "play my Jacques station",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_PLAYLIST_TITLE Jacques ] [SL:MUSIC_TYPE station ] ]"
+  },
+  {
+    "original_sentence": "I need fun things to while Im in CHicago for work next week",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION CHicago ] [SL:DATE_TIME next week ] ]"
+  },
+  {
+    "original_sentence": "I'm done talking",
+    "mtop_parsing": "[IN:END_CALL ]"
+  },
+  {
+    "original_sentence": "What's the temperature low for the day?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for the day ] ]"
+  },
+  {
+    "original_sentence": "Can you remind my sons to wish their grandpa a happy birthday on September 10th?",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION sons ] ] ] [SL:TODO wish their grandpa a happy birthday ] [SL:DATE_TIME on September 10th ] ]"
+  },
+  {
+    "original_sentence": "what is the current weather in myrtle beach",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION myrtle beach ] ]"
+  },
+  {
+    "original_sentence": "Weather forecast for the next fortnight",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for the next fortnight ] ]"
+  },
+  {
+    "original_sentence": "the hottest news of lakers",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE hottest ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC lakers ] ]"
+  },
+  {
+    "original_sentence": "Please let me know what the weather will be like at noon tomorrow in Gulf Shores, AL.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME at noon tomorrow ] [SL:LOCATION Gulf Shores , AL ] ]"
+  },
+  {
+    "original_sentence": "Tell me about Michael.",
+    "mtop_parsing": "[IN:GET_INFO_CONTACT [SL:CONTACT Michael ] ]"
+  },
+  {
+    "original_sentence": "please find the top greek recipes out there that include olives",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_RATING top ] [SL:RECIPES_TYPE greek ] [SL:RECIPES_INCLUDED_INGREDIENT olives ] ]"
+  },
+  {
+    "original_sentence": "Make my work timer go off sooner.",
+    "mtop_parsing": "[IN:SUBTRACT_TIME_TIMER [SL:TIMER_NAME work ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Please remind me to buy milk tonight.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO buy milk ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "what ingredients do I need for lemon pound cake",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH lemon pound cake ] ]"
+  },
+  {
+    "original_sentence": "display video messages from my spouse Peyton",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:TYPE_CONTENT video ] [SL:SENDER [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION spouse ] [SL:CONTACT Peyton ] ] ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for 5am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 5 am ] ]"
+  },
+  {
+    "original_sentence": "What temperature should i cook this at",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE temperature ] ]"
+  },
+  {
+    "original_sentence": "get the call",
+    "mtop_parsing": "[IN:ANSWER_CALL ]"
+  },
+  {
+    "original_sentence": "Is there any news on the construction work?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC construction work ] ]"
+  },
+  {
+    "original_sentence": "start my timer over",
+    "mtop_parsing": "[IN:RESUME_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Remind me at 8pm to  watch Orange Is The New Black",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME at 8 pm ] [SL:TODO watch Orange Is The New Black ] ]"
+  },
+  {
+    "original_sentence": "Who is my Saturday lunch reminder with",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME Saturday ] [SL:TODO lunch ] ]"
+  },
+  {
+    "original_sentence": "Delete the reminder about getting an Uber for next Sunday.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO getting an Uber ] [SL:DATE_TIME for next Sunday ] ]"
+  },
+  {
+    "original_sentence": "is there anyone available",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "What reminders do I have for Tuesday the 17th after 3 PM",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED I ] [SL:DATE_TIME for Tuesday the 17th after 3 PM ] ]"
+  },
+  {
+    "original_sentence": "Do I know anyone from Dallas?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:LOCATION Dallas ] ]"
+  },
+  {
+    "original_sentence": "Make a recurring alarm that goes off on Fridays at 10am for the next 3 weeks",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME on Fridays at 10 am ] [SL:DATE_TIME for the next 3 weeks ] ]"
+  },
+  {
+    "original_sentence": "alarm restart",
+    "mtop_parsing": "[IN:CREATE_ALARM ]"
+  },
+  {
+    "original_sentence": "I will be in Atlanta on ThursdayIs there anything happening to doAfter six",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Atlanta ] [SL:DATE_TIME on ThursdayIs ] [SL:DATE_TIME doAfter six ] ]"
+  },
+  {
+    "original_sentence": "dial 5405551560",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:PHONE_NUMBER 5405551560 ] ]"
+  },
+  {
+    "original_sentence": "Remind me to submit my homework assignment before midnight.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO submit my homework assignment ] [SL:DATE_TIME before midnight ] ]"
+  },
+  {
+    "original_sentence": "Who that Mr. Simon Driggers know was born in September?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Mr . Simon Driggers ] [SL:DATE_TIME in September ] ]"
+  },
+  {
+    "original_sentence": "How many grams of protein are in a 3 ounce service on chicken",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_UNIT_NUTRITION grams ] [SL:RECIPES_TYPE_NUTRITION protein ] [SL:RECIPES_UNIT_MEASUREMENT ounce ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "original_sentence": "Are there headlines about North Korea?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE headlines ] [SL:NEWS_TOPIC North Korea ] ]"
+  },
+  {
+    "original_sentence": "where does Terrance currently work",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Terrance ] ]"
+  },
+  {
+    "original_sentence": "i want you to record a video message for Nina since she is not available now",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Nina ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for tomorrow at 5 AM",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for tomorrow at 5 AM ] ]"
+  },
+  {
+    "original_sentence": "is there anyone working in newark?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:LOCATION newark ] ]"
+  },
+  {
+    "original_sentence": "Please play Bank Account",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE Bank Account ] ]"
+  },
+  {
+    "original_sentence": "What will the weather be in Dubai on Saturday at 3pm?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Dubai ] [SL:DATE_TIME on Saturday at 3 pm ] ]"
+  },
+  {
+    "original_sentence": "Cancel the current call.",
+    "mtop_parsing": "[IN:END_CALL ]"
+  },
+  {
+    "original_sentence": "Make an alarm called bedtime for tomorrow",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:ALARM_NAME bedtime ] [SL:DATE_TIME for tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Find me a good meatball sub recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_RATING good ] [SL:RECIPES_DISH meatball sub ] ]"
+  },
+  {
+    "original_sentence": "who are my dad's friends",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my dad ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "Display all reminders pertaining to Betty Ann's recent accident.",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Display ] [SL:AMOUNT all ] [SL:TODO Betty Ann 's recent accident ] ]"
+  },
+  {
+    "original_sentence": "How many peppers go in beef pepper steak",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_INCLUDED_INGREDIENT peppers ] [SL:RECIPES_DISH beef pepper steak ] ]"
+  },
+  {
+    "original_sentence": "need to text mom tomorrow about the garden - set reminder for 11 am",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:GET_TODO [SL:TODO [IN:SEND_MESSAGE [SL:METHOD_MESSAGE text ] [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION mom ] ] ] ] ] [SL:DATE_TIME tomorrow ] [SL:TODO the garden ] ] ] [SL:DATE_TIME for 11 am ] ]"
+  },
+  {
+    "original_sentence": "Is there new news about Justin Bieber and Selena Gomez getting back together?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE new ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Justin Bieber and Selena Gomez getting back together ] ]"
+  },
+  {
+    "original_sentence": "can you phone Jorge Lin on WhatsApp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jorge Lin ] [SL:NAME_APP WhatsApp ] ]"
+  },
+  {
+    "original_sentence": "Remind remind me to tell Robbie to have her oil changed on Thursday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO tell Robbie to have her oil changed ] [SL:DATE_TIME on Thursday ] ]"
+  },
+  {
+    "original_sentence": "What birthdays are coming up in on Tuesday?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:DATE_TIME on Tuesday ] ]"
+  },
+  {
+    "original_sentence": "What amount of snow is likely today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "what will be the temperature in lubbock in 2 hours",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION lubbock ] [SL:DATE_TIME in 2 hours ] ]"
+  },
+  {
+    "original_sentence": "Start the next timer",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:ORDINAL next ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Update birthday party prep reminder to September 12th.",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:TODO birthday party prep ] [SL:DATE_TIME to September 12th ] ]"
+  },
+  {
+    "original_sentence": "How much more time is there on the timer?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER time ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "search for 10 min meals",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:DATE_TIME 10 min ] ]"
+  },
+  {
+    "original_sentence": "message Macelyn and as her if the school concert is in Blue Springs",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Macelyn ] [SL:CONTENT_EXACT if the school concert is in Blue Springs ] ]"
+  },
+  {
+    "original_sentence": "Who works at Wegmans",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER Wegmans ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for February 12th at 6am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for February 12th at 6 am ] ]"
+  },
+  {
+    "original_sentence": "call Sarah number three",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Sarah ] [SL:ORDINAL three ] ]"
+  },
+  {
+    "original_sentence": "How cold is it in London right now?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE cold ] [SL:LOCATION London ] ]"
+  },
+  {
+    "original_sentence": "how do i make a veggie burger",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH veggie burger ] ]"
+  },
+  {
+    "original_sentence": "please lengthen that timer by 40 seconds",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by 40 seconds ] ]"
+  },
+  {
+    "original_sentence": "call stop",
+    "mtop_parsing": "[IN:END_CALL ]"
+  },
+  {
+    "original_sentence": "connect to Madison dane",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Madison dane ] ]"
+  },
+  {
+    "original_sentence": "try giving a call to dane Brandon",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT dane Brandon ] ]"
+  },
+  {
+    "original_sentence": "Can I hear the latest news in soccer?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC soccer ] ]"
+  },
+  {
+    "original_sentence": "Is there any events in Melbourne tomorrow",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Melbourne ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "What's the temperature",
+    "mtop_parsing": "[IN:GET_WEATHER ]"
+  },
+  {
+    "original_sentence": "please turn off the alarm now",
+    "mtop_parsing": "[IN:SILENCE_ALARM ]"
+  },
+  {
+    "original_sentence": "Add mom to current call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED [IN:GET_CONTACT [SL:TYPE_RELATION mom ] ] ] ]"
+  },
+  {
+    "original_sentence": "Can you call Amy",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Amy ] ]"
+  },
+  {
+    "original_sentence": "Add Chris to the reminders for pool league this month.",
+    "mtop_parsing": "[IN:UPDATE_REMINDER [SL:PERSON_REMINDED Chris ] [SL:TODO pool league ] [SL:DATE_TIME this month ] ]"
+  },
+  {
+    "original_sentence": "Add a reminder to dentist visit 2 days in advance",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO dentist visit ] [SL:DATE_TIME 2 days in advance ] ]"
+  },
+  {
+    "original_sentence": "How many calories are in a slice of cheddar cheese",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_UNIT_NUTRITION calories ] [SL:RECIPES_INCLUDED_INGREDIENT cheddar cheese ] ]"
+  },
+  {
+    "original_sentence": "Tell me who works at Pizza Hut.",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER Pizza Hut ] ]"
+  },
+  {
+    "original_sentence": "Please tell me what the weather looks like today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "How many calories are in a slice of cherry pie",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_UNIT_NUTRITION calories ] [SL:RECIPES_DISH cherry pie ] ]"
+  },
+  {
+    "original_sentence": "Is it above 56 in degrees Fahrenheit here",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE above ] [SL:WEATHER_ATTRIBUTE 56 ] [SL:WEATHER_TEMPERATURE_UNIT Fahrenheit ] [SL:LOCATION here ] ]"
+  },
+  {
+    "original_sentence": "Record a video message for auntie.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION auntie ] ] ] ]"
+  },
+  {
+    "original_sentence": "cancel all upcoming reminders",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] ]"
+  },
+  {
+    "original_sentence": "rsvp yes to Insurgent Empire Book Launch",
+    "mtop_parsing": "[IN:SET_RSVP_YES [SL:TITLE_EVENT Insurgent Empire Book Launch ] ]"
+  },
+  {
+    "original_sentence": "what's on the radar for today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for today ] ]"
+  },
+  {
+    "original_sentence": "shuffle pop music",
+    "mtop_parsing": "[IN:START_SHUFFLE_MUSIC [SL:MUSIC_GENRE pop ] [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "set alarm for tomorrow at 3:30 pm",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for tomorrow at 3 : 30 pm ] ]"
+  },
+  {
+    "original_sentence": "Take 5 minutes off current timer",
+    "mtop_parsing": "[IN:SUBTRACT_TIME_TIMER [SL:DATE_TIME 5 minutes ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "I like this",
+    "mtop_parsing": "[IN:LIKE_MUSIC ]"
+  },
+  {
+    "original_sentence": "resume time for 5 more minutes",
+    "mtop_parsing": "[IN:RESUME_TIMER [SL:METHOD_TIMER time ] [SL:DATE_TIME for 5 more minutes ] ]"
+  },
+  {
+    "original_sentence": "Is it around 35 Fahrenheit new york tomorrow morning",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE around ] [SL:WEATHER_ATTRIBUTE 35 ] [SL:WEATHER_TEMPERATURE_UNIT Fahrenheit ] [SL:LOCATION new york ] [SL:DATE_TIME tomorrow morning ] ]"
+  },
+  {
+    "original_sentence": "Remind me to pick up my nephew from practice tomorrow at 4PM",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO pick up my nephew from practice ] [SL:DATE_TIME tomorrow at 4 PM ] ]"
+  },
+  {
+    "original_sentence": "List the ingredients of spaghetti sauce",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH spaghetti sauce ] ]"
+  },
+  {
+    "original_sentence": "i want to see messages from Braelyn",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:SENDER Braelyn ] ]"
+  },
+  {
+    "original_sentence": "Is it going to snow tomorrow?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Whats happening in Atlanta this weekend",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Atlanta ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "original_sentence": "start calling Stephanie Dougherty's grandma",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Stephanie Dougherty ] [SL:TYPE_RELATION grandma ] ] ] ]"
+  },
+  {
+    "original_sentence": "make a whatsapp call to Josiah",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:NAME_APP whatsapp ] [SL:CONTACT Josiah ] ]"
+  },
+  {
+    "original_sentence": "Would you add in Nikia Bihler?",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED Nikia Bihler ] ]"
+  },
+  {
+    "original_sentence": "Send a message to Janie and ask her what theme she chose for the anniversary celebration next month",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Janie ] [SL:CONTENT_EXACT what theme she chose for the anniversary celebration next month ] ]"
+  },
+  {
+    "original_sentence": "don't' answer calls for the next 15 minutes",
+    "mtop_parsing": "[IN:IGNORE_CALL [SL:DATE_TIME for the next 15 minutes ] ]"
+  },
+  {
+    "original_sentence": "give me news update from DC",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news update ] [SL:NEWS_TOPIC DC ] ]"
+  },
+  {
+    "original_sentence": "Is there any late breaking news today?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME late ] [SL:NEWS_REFERENCE breaking ] [SL:NEWS_TYPE news ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Find me all of Becky's friends?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Becky ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "call Carole Gregory",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Carole Gregory ] ]"
+  },
+  {
+    "original_sentence": "Symphony performances in Memphis in February",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT Symphony performances ] [SL:LOCATION Memphis ] [SL:DATE_TIME in February ] ]"
+  },
+  {
+    "original_sentence": "Set alarms for 10am and 2pm, Friday, weekly",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 am and 2 pm , Friday ] [SL:PERIOD weekly ] ]"
+  },
+  {
+    "original_sentence": "What's the latest news on O.J. Simpson?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC O.J . Simpson ] ]"
+  },
+  {
+    "original_sentence": "who is ava",
+    "mtop_parsing": "[IN:GET_INFO_CONTACT [SL:CONTACT ava ] ]"
+  },
+  {
+    "original_sentence": "Set a new alarm at 6pm on the 21st",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 6 pm on the 21st ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm that rings on Mondays at 7am, please.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME on Mondays at 7 am ] ]"
+  },
+  {
+    "original_sentence": "Do any of my friends work at Bud and Alleys?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:EMPLOYER Bud and Alleys ] ]"
+  },
+  {
+    "original_sentence": "set myself to unavailable",
+    "mtop_parsing": "[IN:SET_UNAVAILABLE ]"
+  },
+  {
+    "original_sentence": "Give me the weather for the first weekend of September in Prague?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for the first weekend of September ] [SL:LOCATION Prague ] ]"
+  },
+  {
+    "original_sentence": "music from the 60s",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE music ] [SL:MUSIC_GENRE 60s ] ]"
+  },
+  {
+    "original_sentence": "Record this video message, please",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] ]"
+  },
+  {
+    "original_sentence": "Reset the timer please",
+    "mtop_parsing": "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "set an alarm for 4 hours time",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 4 hours ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm every 5 minutes for 12 minutes.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:PERIOD every 5 minutes ] [SL:DATE_TIME for 12 minutes ] ]"
+  },
+  {
+    "original_sentence": "Set alarm for 10 p.m. tonight",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 p.m . tonight ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for my sons Boy Scout meeting every Monday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:ALARM_NAME my sons Boy Scout meeting ] [SL:PERIOD every Monday ] ]"
+  },
+  {
+    "original_sentence": "Begin playing the music again",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "If despacito is on I would skip it",
+    "mtop_parsing": "[IN:SKIP_TRACK_MUSIC [SL:MUSIC_TRACK_TITLE despacito ] ]"
+  },
+  {
+    "original_sentence": "who signs this song?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "timer continue",
+    "mtop_parsing": "[IN:RESUME_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "How should i cook steak on a grill",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT steak ] [SL:RECIPES_COOKING_METHOD grill ] ]"
+  },
+  {
+    "original_sentence": "Can you show me my reminders for the next two weeks?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER show ] [SL:PERSON_REMINDED my ] [SL:DATE_TIME for the next two weeks ] ]"
+  },
+  {
+    "original_sentence": "I want to replay this song again.",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Please give me a list of healthy kid-friendly meals",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_ATTRIBUTE healthy ] [SL:RECIPES_TYPE kid - friendly ] ]"
+  },
+  {
+    "original_sentence": "How much more time is left?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER time ] ]"
+  },
+  {
+    "original_sentence": "What is the most recent news for education in the state of California",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE most ] [SL:DATE_TIME recent ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC education in the state of California ] ]"
+  },
+  {
+    "original_sentence": "Ask mom if she knows any good places nearby with deep dish pizza.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION mom ] ] ] [SL:CONTENT_EXACT she knows any good places nearby with deep dish pizza ] ]"
+  },
+  {
+    "original_sentence": "Remind me on Monday to pay the bills",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME on Monday ] [SL:TODO pay the bills ] ]"
+  },
+  {
+    "original_sentence": "How hot is it outside today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE hot ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Resume the timer in 3 minutes",
+    "mtop_parsing": "[IN:RESUME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME in 3 minutes ] ]"
+  },
+  {
+    "original_sentence": "Recipe for fried chicken",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH fried chicken ] ]"
+  },
+  {
+    "original_sentence": "change the hair mask timer",
+    "mtop_parsing": "[IN:UPDATE_TIMER [SL:TIMER_NAME hair mask ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Message Lou that the check is ready",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Lou ] [SL:CONTENT_EXACT the check is ready ] ]"
+  },
+  {
+    "original_sentence": "Delete the reminder about my dentist appointment in the morning",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO my dentist appointment ] [SL:DATE_TIME in the morning ] ]"
+  },
+  {
+    "original_sentence": "Show me comfort food recipes",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE comfort food ] ]"
+  },
+  {
+    "original_sentence": "Call stepfather",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION stepfather ] ] ] ]"
+  },
+  {
+    "original_sentence": "we are gonna call Vincent Roberts",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Vincent Roberts ] ]"
+  },
+  {
+    "original_sentence": "Will it be windy this afternoon",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE windy ] [SL:DATE_TIME this afternoon ] ]"
+  },
+  {
+    "original_sentence": "I would like to be awoken at noon please",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at noon ] ]"
+  },
+  {
+    "original_sentence": "Delete reminder for the 5K run next Saturday.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO the 5K run ] [SL:DATE_TIME next Saturday ] ]"
+  },
+  {
+    "original_sentence": "tell me some asian duck recipes",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE asian ] [SL:RECIPES_DISH duck ] ]"
+  },
+  {
+    "original_sentence": "make an Oven timer for 24 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:TIMER_NAME Oven ] [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 24 minutes ] ]"
+  },
+  {
+    "original_sentence": "Who is available for chat?",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "Do I have any work reminders for Thursday in the morning?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO work ] [SL:DATE_TIME for Thursday in the morning ] ]"
+  },
+  {
+    "original_sentence": "Friends of Bob",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION Friends ] [SL:CONTACT_RELATED Bob ] ]"
+  },
+  {
+    "original_sentence": "search for Cameron James' husband",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT Cameron James ] [SL:TYPE_RELATION husband ] ]"
+  },
+  {
+    "original_sentence": "Please, video call my granny",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION granny ] ] ] ]"
+  },
+  {
+    "original_sentence": "any anime concerts soon",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT anime concerts ] ]"
+  },
+  {
+    "original_sentence": "Read local news.",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Remind me to win in fortnite",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO win in fortnite ] ]"
+  },
+  {
+    "original_sentence": "find me hardcore tracks",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE hardcore ] [SL:MUSIC_TYPE tracks ] ]"
+  },
+  {
+    "original_sentence": "Please search for the weather from May 9 to 14 ?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME from May 9 to 14 ] ]"
+  },
+  {
+    "original_sentence": "Bot, call Nikki and add her to this call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_ADDED Nikki ] ]"
+  },
+  {
+    "original_sentence": "call Hendrix my father",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT Hendrix ] [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION father ] ] ] ]"
+  },
+  {
+    "original_sentence": "call Jerry four",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Jerry ] [SL:ORDINAL four ] ]"
+  },
+  {
+    "original_sentence": "Wake me up at 6am every Saturday for 4 weeks",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 6 am every Saturday ] [SL:DATE_TIME for 4 weeks ] ]"
+  },
+  {
+    "original_sentence": "I need you to send that message via Messenger",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "SET TIMER FOR 12 MINUTES",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER TIMER ] [SL:DATE_TIME FOR 12 MINUTES ] ]"
+  },
+  {
+    "original_sentence": "Where does Tara work in Cocoa",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Tara ] [SL:LOCATION Cocoa ] ]"
+  },
+  {
+    "original_sentence": "Cancel all alarms that I have set.",
+    "mtop_parsing": "[IN:DELETE_ALARM [SL:AMOUNT all ] ]"
+  },
+  {
+    "original_sentence": "what's the heat index?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE heat index ] ]"
+  },
+  {
+    "original_sentence": "send a Messenger message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "make my timer longer by four minutes please",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by four minutes ] ]"
+  },
+  {
+    "original_sentence": "how cold is supposed to be today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE cold ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "text Evan and tell them Perfect Im outside where can I park",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Evan ] [SL:CONTENT_EXACT Perfect Im outside where can I park ] ]"
+  },
+  {
+    "original_sentence": "Reminder for final game on Saturday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO final game ] [SL:DATE_TIME on Saturday ] ]"
+  },
+  {
+    "original_sentence": "I want to listen to Ride by Twenty One Pilots",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE Ride ] [SL:MUSIC_ARTIST_NAME Twenty One Pilots ] ]"
+  },
+  {
+    "original_sentence": "Send a message to Denice asking when she’s leaving",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Denice ] [SL:CONTENT_EXACT when she ’s leaving ] ]"
+  },
+  {
+    "original_sentence": "set a reminder for my homework assignment",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED my ] [SL:TODO homework assignment ] ]"
+  },
+  {
+    "original_sentence": "tell me the headlines",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "original_sentence": "What are my reminders for all day tomorrow?",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME for all day tomorrow ] ]"
+  },
+  {
+    "original_sentence": "I need to know the weather in Sydney a week today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Sydney ] [SL:DATE_TIME a week today ] ]"
+  },
+  {
+    "original_sentence": "Play playlist Night",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE playlist ] [SL:MUSIC_PLAYLIST_TITLE Night ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for 20 minutes from now.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 20 minutes from now ] ]"
+  },
+  {
+    "original_sentence": "are there any new updates about sentencing of the former governor of Pennsylvania",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE new updates ] [SL:NEWS_TOPIC sentencing of the former governor of Pennsylvania ] ]"
+  },
+  {
+    "original_sentence": "play Foo Fighters on iheartradio",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Foo Fighters ] [SL:MUSIC_PROVIDER_NAME iheartradio ] ]"
+  },
+  {
+    "original_sentence": "timer status",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Please, set alarm at 4.00am today",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 4.00am today ] ]"
+  },
+  {
+    "original_sentence": "Remind me to change the cat litter at 3:00 PM.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO change the cat litter ] [SL:DATE_TIME at 3 : 00 PM ] ]"
+  },
+  {
+    "original_sentence": "remind me I have an appointment on Thursday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO an appointment ] [SL:DATE_TIME on Thursday ] ]"
+  },
+  {
+    "original_sentence": "Remind me to watch the presentation about comics on Saturday.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO watch the presentation about comics ] [SL:DATE_TIME on Saturday ] ]"
+  },
+  {
+    "original_sentence": "Remind me to take the laundry out in 45 minutes",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO take the laundry out ] [SL:DATE_TIME in 45 minutes ] ]"
+  },
+  {
+    "original_sentence": "What does the timer say?",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "What is the forecast going to be like for 6:00 pm today in Doral?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for 6 : 00 pm today ] [SL:LOCATION Doral ] ]"
+  },
+  {
+    "original_sentence": "Create an alarm for every Thursday at 2.15pm.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for every Thursday at 2.15pm ] ]"
+  },
+  {
+    "original_sentence": "do not play any song by lil Yachty",
+    "mtop_parsing": "[IN:REMOVE_FROM_PLAYLIST_MUSIC [SL:MUSIC_TYPE song ] [SL:MUSIC_ARTIST_NAME lil Yachty ] ]"
+  },
+  {
+    "original_sentence": "How do you cook salmon",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT salmon ] ]"
+  },
+  {
+    "original_sentence": "Set 2 minute pregnancy test timer",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:DATE_TIME 2 minute ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "what is the reminder for the dinner party on wendesday",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:TODO the dinner party ] [SL:DATE_TIME on wendesday ] ]"
+  },
+  {
+    "original_sentence": "Remind me on the 13th to send Tracie her birthday card.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME on the 13th ] [SL:TODO send Tracie her birthday card ] ]"
+  },
+  {
+    "original_sentence": "can I please add to this call?",
+    "mtop_parsing": "[IN:UPDATE_CALL ]"
+  },
+  {
+    "original_sentence": "Has Mark worked at ACS before?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Mark ] [SL:EMPLOYER ACS ] ]"
+  },
+  {
+    "original_sentence": "What were the major headlines this week?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE major ] [SL:NEWS_TYPE headlines ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "original_sentence": "Show me, my friends list.",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "I need a reminder for this afternoon to buy birthday cards",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED I ] [SL:DATE_TIME for this afternoon ] [SL:TODO buy birthday cards ] ]"
+  },
+  {
+    "original_sentence": "a good southern style mac n cheese recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_CUISINE southern ] [SL:RECIPES_DISH mac n cheese ] ]"
+  },
+  {
+    "original_sentence": "Remind me to email the HOA about the fencing company coming to do an estimate next Tuesday at 10 AM.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:SEND_MESSAGE [SL:METHOD_MESSAGE email ] [SL:RECIPIENT the HOA ] [SL:CONTENT_EXACT the fencing company coming to do an estimate ] ] ] [SL:DATE_TIME next Tuesday at 10 AM ] ]"
+  },
+  {
+    "original_sentence": "let me see friends application",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION friends ] ]"
+  },
+  {
+    "original_sentence": "What is the weather in Baltimore today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Baltimore ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "when was my ex husband hired at his current job?",
+    "mtop_parsing": "[IN:GET_EMPLOYMENT_TIME [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION ex husband ] ]"
+  },
+  {
+    "original_sentence": "What is the forecast for Friday?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for Friday ] ]"
+  },
+  {
+    "original_sentence": "Any recent news in Louisiana",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME recent ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Louisiana ] ]"
+  },
+  {
+    "original_sentence": "what is timer at now",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Kick Blake from call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_REMOVED Blake ] ]"
+  },
+  {
+    "original_sentence": "I need a blueberry Dutch baby recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH blueberry Dutch baby ] ]"
+  },
+  {
+    "original_sentence": "Are there any reminders on my calendar for Wednesday",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME for Wednesday ] ]"
+  },
+  {
+    "original_sentence": "What are the top headlines in finance today",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY top ] [SL:NEWS_TYPE headlines ] [SL:NEWS_CATEGORY finance ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Add 5 minutes to the current timer",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:DATE_TIME 5 minutes ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Does Joe  live in Puxico?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Joe ] [SL:LOCATION Puxico ] ]"
+  },
+  {
+    "original_sentence": "will the temp be higher than 70 degrees today",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Cancel my reminders",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] ]"
+  },
+  {
+    "original_sentence": "Is it going to rain thursday",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME thursday ] ]"
+  },
+  {
+    "original_sentence": "What is the name of the song currently playing?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "original_sentence": "Are Brad and Angelina still getting a divorce?",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Brad and Angelina still getting a divorce ] ]"
+  },
+  {
+    "original_sentence": "What's the dew point right now",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE dew point ] ]"
+  },
+  {
+    "original_sentence": "When does Bands on the Bayfront start?",
+    "mtop_parsing": "[IN:GET_DATE_TIME_EVENT [SL:TITLE_EVENT Bands on the Bayfront ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm in 10 please",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME in 10 ] ]"
+  },
+  {
+    "original_sentence": "How many calories are there in 2 pancakes",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_UNIT_NUTRITION calories ] [SL:RECIPES_DISH pancakes ] ]"
+  },
+  {
+    "original_sentence": "What's the weather on Monday in Honolulu?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME on Monday ] [SL:LOCATION Honolulu ] ]"
+  },
+  {
+    "original_sentence": "Find a recipe for cheesecake",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH cheesecake ] ]"
+  },
+  {
+    "original_sentence": "create one timer for 18 minutes and another for 15 minutes and another for 6 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:AMOUNT one ] [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 18 minutes ] [SL:DATE_TIME for 15 minutes ] [SL:DATE_TIME for 6 minutes ] ]"
+  },
+  {
+    "original_sentence": "Make alarm for Thursdays at 12am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for Thursdays at 12 am ] ]"
+  },
+  {
+    "original_sentence": "can you please send message to the soccer team chat",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP soccer team ] ]"
+  },
+  {
+    "original_sentence": "homemade bread recipes",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_COOKING_METHOD homemade ] [SL:RECIPES_DISH bread ] ]"
+  },
+  {
+    "original_sentence": "Check reminders for the girls retreat",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:TODO the girls retreat ] ]"
+  },
+  {
+    "original_sentence": "tell me my lap times",
+    "mtop_parsing": "[IN:GET_TIMER [SL:METHOD_TIMER times ] ]"
+  },
+  {
+    "original_sentence": "Best chicken recipe",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_RATING Best ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "original_sentence": "Pause this call",
+    "mtop_parsing": "[IN:HOLD_CALL ]"
+  },
+  {
+    "original_sentence": "Remind me to ask Todd about the new date for the party",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO ask Todd about the new date for the party ] ]"
+  },
+  {
+    "original_sentence": "are the Rolling Stones touring?",
+    "mtop_parsing": "[IN:QUESTION_MUSIC [SL:MUSIC_ARTIST_NAME the Rolling Stones ] ]"
+  },
+  {
+    "original_sentence": "Make an alarm at 6 on Monday mornings",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 6 on Monday mornings ] ]"
+  },
+  {
+    "original_sentence": "find some music to play",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "Show me who works at Publix pharmacy",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER Publix pharmacy ] ]"
+  },
+  {
+    "original_sentence": "would you text Jordan and Steven",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Jordan ] [SL:RECIPIENT Steven ] ]"
+  },
+  {
+    "original_sentence": "please stop my timer",
+    "mtop_parsing": "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "call Los Angeles group on Wechat",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP Los Angeles ] [SL:NAME_APP Wechat ] ]"
+  },
+  {
+    "original_sentence": "Tell me the news right now",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "What company does Zach work for?",
+    "mtop_parsing": "[IN:GET_EMPLOYER [SL:CONTACT Zach ] ]"
+  },
+  {
+    "original_sentence": "Send Brian a call please",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Brian ] ]"
+  },
+  {
+    "original_sentence": "Can I have the sports headlines now?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY sports ] [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "original_sentence": "Is Li still living in Seattle?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Li ] [SL:LOCATION Seattle ] ]"
+  },
+  {
+    "original_sentence": "Who works at Long John Silvers?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER Long John Silvers ] ]"
+  },
+  {
+    "original_sentence": "Have Christopher taken off the group call",
+    "mtop_parsing": "[IN:UPDATE_CALL [SL:CONTACT_REMOVED Christopher ] ]"
+  },
+  {
+    "original_sentence": "Read me local news updates?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "play the band The 1975",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME The 1975 ] ]"
+  },
+  {
+    "original_sentence": "play All of Me by John Legend",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TRACK_TITLE All of Me ] [SL:MUSIC_ARTIST_NAME John Legend ] ]"
+  },
+  {
+    "original_sentence": "Set timer for 10 minutes.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 10 minutes ] ]"
+  },
+  {
+    "original_sentence": "I need to know the weather on next Monday  morning?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME on next Monday morning ] ]"
+  },
+  {
+    "original_sentence": "what is the forecast for next weekend",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME for next weekend ] ]"
+  },
+  {
+    "original_sentence": "what are the details of Charlottesville, VA",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE details ] [SL:NEWS_TOPIC Charlottesville , VA ] ]"
+  },
+  {
+    "original_sentence": "send it to Stephanie Conrad Escobar",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Stephanie Conrad Escobar ] ]"
+  },
+  {
+    "original_sentence": "Is it going to snow on Christmas day in London?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME on Christmas day ] [SL:LOCATION London ] ]"
+  },
+  {
+    "original_sentence": "Show me the employees at the bowling alley.",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER bowling alley ] ]"
+  },
+  {
+    "original_sentence": "recipe for green bean casserole",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_DISH green bean casserole ] ]"
+  },
+  {
+    "original_sentence": "I want to listen to Karaoke music, please.",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE Karaoke ] [SL:MUSIC_TYPE music ] ]"
+  },
+  {
+    "original_sentence": "Delete my meeting reminder.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:TODO meeting ] ]"
+  },
+  {
+    "original_sentence": "get my events please",
+    "mtop_parsing": "[IN:GET_EVENT [SL:USER_ATTENDEE_EVENT my ] ]"
+  },
+  {
+    "original_sentence": "change the reminder for the chef's table group from 3 to 4",
+    "mtop_parsing": "[IN:UPDATE_REMINDER_DATE_TIME [SL:PERSON_REMINDED chef 's table ] [SL:DATE_TIME from 3 ] [SL:DATE_TIME to 4 ] ]"
+  },
+  {
+    "original_sentence": "how do you roast asparagus",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_COOKING_METHOD roast ] [SL:RECIPES_INCLUDED_INGREDIENT asparagus ] ]"
+  },
+  {
+    "original_sentence": "set up reminder to call Susan tomorrow morning",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO [IN:CREATE_CALL [SL:CONTACT Susan ] ] ] [SL:DATE_TIME tomorrow morning ] ]"
+  },
+  {
+    "original_sentence": "or anything from the bee gees",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME bee gees ] ]"
+  },
+  {
+    "original_sentence": "can you please send message to Helen and Dr. Brown",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Helen ] [SL:RECIPIENT Dr . Brown ] ]"
+  },
+  {
+    "original_sentence": "is is going to snow today?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Remind David we have a meeting at 2:30. Set an alert for 30 minutes before.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED David ] [SL:TODO [IN:GET_TODO [SL:TODO a meeting ] [SL:DATE_TIME at 2 : 30 ] ] ] [SL:DATE_TIME for 30 minutes before ] ]"
+  },
+  {
+    "original_sentence": "What's today's news update?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME today ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "How many years did it take for Corey to get his degree from Armstrong?",
+    "mtop_parsing": "[IN:GET_EDUCATION_TIME [SL:CONTACT Corey ] [SL:SCHOOL Armstrong ] ]"
+  },
+  {
+    "original_sentence": "Tell me what are the top news stories today for Dallas, Texas",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE top ] [SL:NEWS_TYPE news stories ] [SL:DATE_TIME today ] [SL:NEWS_TOPIC Dallas , Texas ] ]"
+  },
+  {
+    "original_sentence": "call Debby Gabourel 's boyfriend",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Debby Gabourel ] [SL:TYPE_RELATION boyfriend ] ] ] ]"
+  },
+  {
+    "original_sentence": "Disregard all alerts about the Debate club meeting on Wednesday.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] [SL:TODO the Debate club meeting ] [SL:DATE_TIME on Wednesday ] ]"
+  },
+  {
+    "original_sentence": "What is John's phone number?",
+    "mtop_parsing": "[IN:GET_CONTACT_METHOD [SL:CONTACT John ] [SL:CONTACT_METHOD phone number ] ]"
+  },
+  {
+    "original_sentence": "I don't want to listen to this playlist anymore",
+    "mtop_parsing": "[IN:DELETE_PLAYLIST_MUSIC [SL:MUSIC_TYPE playlist ] ]"
+  },
+  {
+    "original_sentence": "Set recurring alarm for 9am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 9 am ] ]"
+  },
+  {
+    "original_sentence": "make video call only",
+    "mtop_parsing": "[IN:UPDATE_METHOD_CALL ]"
+  },
+  {
+    "original_sentence": "set my status as maybe for Psychedelics and Social Justice",
+    "mtop_parsing": "[IN:SET_RSVP_INTERESTED [SL:TITLE_EVENT Psychedelics and Social Justice ] ]"
+  },
+  {
+    "original_sentence": "Things to do in the East Bay this weekend",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION the East Bay ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "original_sentence": "call Peyton 's brother",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Peyton ] [SL:TYPE_RELATION brother ] ] ] ]"
+  },
+  {
+    "original_sentence": "Who works for AT&T?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:EMPLOYER AT & T ] ]"
+  },
+  {
+    "original_sentence": "Would you send message to Liyi on WhatsApp",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Liyi ] [SL:NAME_APP WhatsApp ] ]"
+  },
+  {
+    "original_sentence": "Can you send that video to Jamie?",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Jamie ] ]"
+  },
+  {
+    "original_sentence": "any new news about trump today",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE new ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC trump ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "Can you remind me to fill out new tax forms on August 15th?",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO fill out new tax forms ] [SL:DATE_TIME on August 15th ] ]"
+  },
+  {
+    "original_sentence": "Give me the latest financial news",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME latest ] [SL:NEWS_CATEGORY financial ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "When did Lily attend MDC?",
+    "mtop_parsing": "[IN:GET_EDUCATION_TIME [SL:CONTACT Lily ] [SL:SCHOOL MDC ] ]"
+  },
+  {
+    "original_sentence": "What color is bacon supposed to be cooked",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_INCLUDED_INGREDIENT bacon ] ]"
+  },
+  {
+    "original_sentence": "what is new in local news",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "let's record a video message for Letitia Lombrana with instructions",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT Letitia Lombrana ] ]"
+  },
+  {
+    "original_sentence": "Do I have any family members online right now?",
+    "mtop_parsing": "[IN:GET_AVAILABILITY [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION family ] ] ] ]"
+  },
+  {
+    "original_sentence": "Are there any music events not too far away tonight",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT music ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Snooze my hairdresser's alarm.",
+    "mtop_parsing": "[IN:SNOOZE_ALARM [SL:ALARM_NAME hairdresser ] ]"
+  },
+  {
+    "original_sentence": "How many of my friends are online right now?",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "switch call now",
+    "mtop_parsing": "[IN:SWITCH_CALL ]"
+  },
+  {
+    "original_sentence": "What does our State Department say about if it's safe to travel in Spain",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC it 's safe to travel in Spain ] ]"
+  },
+  {
+    "original_sentence": "send my grandparents message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandparents ] ] ] ]"
+  },
+  {
+    "original_sentence": "Set a timer for 20 minutes.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 20 minutes ] ]"
+  },
+  {
+    "original_sentence": "Initiate a video call with my funko group",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:GROUP funko ] ]"
+  },
+  {
+    "original_sentence": "Tell me what the weather is doing on the weekend.",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME on the weekend ] ]"
+  },
+  {
+    "original_sentence": "what ingredients are in a filipino pork adobo",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_DISH filipino pork adobo ] ]"
+  },
+  {
+    "original_sentence": "Delete reminders of Friday 11th of August",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:DATE_TIME of Friday 11th of August ] ]"
+  },
+  {
+    "original_sentence": "Please read me the most recent headlines?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME the most recent ] [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "original_sentence": "are there any news about Trump and USA today?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Trump and USA ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "What new shows will be debuting on ABC in the fall",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC shows will be debuting ] [SL:NEWS_SOURCE ABC ] [SL:DATE_TIME in the fall ] ]"
+  },
+  {
+    "original_sentence": "What is the best way to sift ingredients without a sifter",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE ingredients ] [SL:RECIPES_COOKING_METHOD sifter ] ]"
+  },
+  {
+    "original_sentence": "cool concerts tonight",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT concerts ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Go back two tracks",
+    "mtop_parsing": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE tracks ] ]"
+  },
+  {
+    "original_sentence": "Can you cancel all alarms for me?",
+    "mtop_parsing": "[IN:DELETE_ALARM [SL:AMOUNT all ] ]"
+  },
+  {
+    "original_sentence": "What is the temperature at the North pole?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION North pole ] ]"
+  },
+  {
+    "original_sentence": "Can I listen to the new Ariel Pink single on Spotify?",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Ariel Pink ] [SL:MUSIC_TYPE single ] [SL:MUSIC_PROVIDER_NAME Spotify ] ]"
+  },
+  {
+    "original_sentence": "call Gregory number one",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Gregory ] [SL:ORDINAL one ] ]"
+  },
+  {
+    "original_sentence": "Will it be windy tomorrow",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE windy ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "i want to listen to justin bieber",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME justin bieber ] ]"
+  },
+  {
+    "original_sentence": "play songs by thelonious monk",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE songs ] [SL:MUSIC_ARTIST_NAME thelonious monk ] ]"
+  },
+  {
+    "original_sentence": "Who is living in Oklahoma City now?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:LOCATION Oklahoma City ] ]"
+  },
+  {
+    "original_sentence": "Turn all alarms on.",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:AMOUNT all ] ]"
+  },
+  {
+    "original_sentence": "Play something happy for me",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE happy ] ]"
+  },
+  {
+    "original_sentence": "Any news about the Dallas Cowboys",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC Dallas Cowboys ] ]"
+  },
+  {
+    "original_sentence": "Who do I know that stays in San Diego?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED I ] [SL:LOCATION San Diego ] ]"
+  },
+  {
+    "original_sentence": "Play last track of the album",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_TYPE track ] [SL:MUSIC_TYPE album ] ]"
+  },
+  {
+    "original_sentence": "get remaining time on thaw turkey timer",
+    "mtop_parsing": "[IN:GET_TIMER [SL:TIMER_NAME thaw turkey ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "what sporting events are in newport today",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT sporting ] [SL:LOCATION newport ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "contact Kinley with Messenger",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Kinley ] [SL:NAME_APP Messenger ] ]"
+  },
+  {
+    "original_sentence": "What's with the blow up chicken at the White House",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC blow up chicken at the White House ] ]"
+  },
+  {
+    "original_sentence": "Can you remove the reminder for Michelle's birthday party next week?",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:TODO Michelle 's birthday party ] [SL:DATE_TIME next week ] ]"
+  },
+  {
+    "original_sentence": "Create a wakeup alarm 8am on Sunday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:ALARM_NAME wakeup ] [SL:DATE_TIME 8 am on Sunday ] ]"
+  },
+  {
+    "original_sentence": "I want to listen to Third Eye Blind",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_ARTIST_NAME Third Eye Blind ] ]"
+  },
+  {
+    "original_sentence": "Cancel the timer for the time out.",
+    "mtop_parsing": "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Will it be around 8 Celcius inside",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE around ] [SL:WEATHER_ATTRIBUTE 8 ] [SL:WEATHER_TEMPERATURE_UNIT Celcius ] [SL:LOCATION inside ] ]"
+  },
+  {
+    "original_sentence": "call Natalia on video with Whatsapp",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Natalia ] [SL:NAME_APP Whatsapp ] ]"
+  },
+  {
+    "original_sentence": "dial Garrett right away",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Garrett ] ]"
+  },
+  {
+    "original_sentence": "i want you to record a video message for my friend Rodney Harrill",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friend ] [SL:CONTACT Rodney Harrill ] ] ] ]"
+  },
+  {
+    "original_sentence": "Can you show me radar data for southwest region",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION southwest region ] ]"
+  },
+  {
+    "original_sentence": "Please set an alarm on the 21st of March",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME on the 21st of March ] ]"
+  },
+  {
+    "original_sentence": "Are there any football matches happening soon",
+    "mtop_parsing": "[IN:GET_EVENT [SL:CATEGORY_EVENT football matches ] ]"
+  },
+  {
+    "original_sentence": "Who else is friends with Sam",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:TYPE_RELATION friends ] [SL:CONTACT_RELATED Sam ] ]"
+  },
+  {
+    "original_sentence": "Show Karlene Dwain Caroll Dads upcoming birthdays",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED Karlene Dwain Caroll ] [SL:TYPE_RELATION Dads ] ]"
+  },
+  {
+    "original_sentence": "Set up a reminder for mum's birthday on August 13th.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:TODO mum 's birthday ] [SL:DATE_TIME on August 13th ] ]"
+  },
+  {
+    "original_sentence": "timer for 6 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:DATE_TIME for 6 minutes ] ]"
+  },
+  {
+    "original_sentence": "Begin timer for 10 seconds.",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 10 seconds ] ]"
+  },
+  {
+    "original_sentence": "Is there protein in eggs",
+    "mtop_parsing": "[IN:IS_TRUE_RECIPES [SL:RECIPES_TYPE_NUTRITION protein ] [SL:RECIPES_INCLUDED_INGREDIENT eggs ] ]"
+  },
+  {
+    "original_sentence": "I like this song that Spotify is playing, what is it?",
+    "mtop_parsing": "[IN:GET_TRACK_INFO_MUSIC [SL:MUSIC_TYPE song ] [SL:MUSIC_PROVIDER_NAME Spotify ] ]"
+  },
+  {
+    "original_sentence": "How warm will it be this weekend",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE warm ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "original_sentence": "set a daily alarm for 5:30 am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME a daily alarm for 5 : 30 am ] ]"
+  },
+  {
+    "original_sentence": "who went to Yale?",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:SCHOOL Yale ] ]"
+  },
+  {
+    "original_sentence": "call Kaleb and Beau",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT Kaleb ] [SL:CONTACT Beau ] ]"
+  },
+  {
+    "original_sentence": "What are the top headlines for today",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE top ] [SL:NEWS_TYPE headlines ] [SL:DATE_TIME for today ] ]"
+  },
+  {
+    "original_sentence": "change my status to maybe for Gardening for Biodiversity in a Climate Crisis",
+    "mtop_parsing": "[IN:SET_RSVP_INTERESTED [SL:TITLE_EVENT Gardening for Biodiversity in a Climate Crisis ] ]"
+  },
+  {
+    "original_sentence": "Show all of my upcoming birthday reminders",
+    "mtop_parsing": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] [SL:TODO birthday ] ]"
+  },
+  {
+    "original_sentence": "call Gennie Goldstein 's papa",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Gennie Goldstein ] [SL:TYPE_RELATION papa ] ] ] ]"
+  },
+  {
+    "original_sentence": "respond no to C-ID Night Market",
+    "mtop_parsing": "[IN:SET_RSVP_NO [SL:TITLE_EVENT C - ID Night Market ] ]"
+  },
+  {
+    "original_sentence": "Tell Steven that the concert time has changed from 6 to 9pm.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Steven ] [SL:CONTENT_EXACT the concert time has changed from 6 to 9 pm ] ]"
+  },
+  {
+    "original_sentence": "Tell me more about Will",
+    "mtop_parsing": "[IN:GET_INFO_CONTACT [SL:CONTACT Will ] ]"
+  },
+  {
+    "original_sentence": "Delete the timer with the least time on it.",
+    "mtop_parsing": "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Add 10 more minutes to the timer",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:DATE_TIME 10 more minutes ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "when is my reminder to meet Clara for brunch?",
+    "mtop_parsing": "[IN:GET_REMINDER_DATE_TIME [SL:PERSON_REMINDED my ] [SL:TODO meet Clara for brunch ] ]"
+  },
+  {
+    "original_sentence": "remind me to cancel my date",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO cancel my date ] ]"
+  },
+  {
+    "original_sentence": "start a video call with my sister",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION sister ] ] ] ]"
+  },
+  {
+    "original_sentence": "switch to other call please",
+    "mtop_parsing": "[IN:SWITCH_CALL ]"
+  },
+  {
+    "original_sentence": "What is Canada expecting weather wise",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Canada ] ]"
+  },
+  {
+    "original_sentence": "create alarms for 1pm Monday and 2pm Friday",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 1 pm Monday and 2 pm Friday ] ]"
+  },
+  {
+    "original_sentence": "Look up the status of the healthcare bill in the news",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TOPIC healthcare bill ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "Change my work alarm to 7am",
+    "mtop_parsing": "[IN:UPDATE_ALARM [SL:ALARM_NAME work ] [SL:DATE_TIME to 7 am ] ]"
+  },
+  {
+    "original_sentence": "I need to call Dad right now",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:TYPE_RELATION Dad ] ] ] ]"
+  },
+  {
+    "original_sentence": "Who won the last presidential election in the US",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC won ] [SL:DATE_TIME the last ] [SL:NEWS_CATEGORY presidential election ] [SL:NEWS_TOPIC US ] ]"
+  },
+  {
+    "original_sentence": "start timer for 10 minutes",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 10 minutes ] ]"
+  },
+  {
+    "original_sentence": "Don't play that artist again",
+    "mtop_parsing": "[IN:REMOVE_FROM_PLAYLIST_MUSIC [SL:MUSIC_TYPE artist ] ]"
+  },
+  {
+    "original_sentence": "Resume playing this track",
+    "mtop_parsing": "[IN:RESUME_MUSIC [SL:MUSIC_TYPE track ] ]"
+  },
+  {
+    "original_sentence": "Name which of my buddies are online",
+    "mtop_parsing": "[IN:GET_AVAILABILITY ]"
+  },
+  {
+    "original_sentence": "Set an alarm for the morning tomorrow",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for the morning tomorrow ] ]"
+  },
+  {
+    "original_sentence": "please send the workgroup thread message",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP workgroup ] ]"
+  },
+  {
+    "original_sentence": "Delete all reminders for my nail appointments next month.",
+    "mtop_parsing": "[IN:DELETE_REMINDER [SL:AMOUNT all ] [SL:PERSON_REMINDED my ] [SL:TODO nail appointments ] [SL:DATE_TIME next month ] ]"
+  },
+  {
+    "original_sentence": "Please call James Glover Wilkinson",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT James Glover Wilkinson ] ]"
+  },
+  {
+    "original_sentence": "Remind me tomorrow of my dinner with my brother",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:DATE_TIME tomorrow ] [SL:TODO [IN:GET_TODO [SL:TODO my dinner ] [SL:ATTENDEE [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION brother ] ] ] ] ] ]"
+  },
+  {
+    "original_sentence": "Ask my husband what he wants for dinner.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION husband ] ] ] [SL:CONTENT_EXACT what he wants for dinner ] ]"
+  },
+  {
+    "original_sentence": "has anyone messaged me in the last hour",
+    "mtop_parsing": "[IN:GET_MESSAGE [SL:RECIPIENT me ] [SL:DATE_TIME in the last hour ] ]"
+  },
+  {
+    "original_sentence": "Message Mark and remind him he is picking us up no later than 6 to be to the concert early",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Mark ] [SL:CONTENT_EXACT he is picking us up no later than 6 to be to the concert early ] ]"
+  },
+  {
+    "original_sentence": "Where does Carla live?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:CONTACT Carla ] ]"
+  },
+  {
+    "original_sentence": "how long should lasagna bake at 350 degrees",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how long ] [SL:RECIPES_DISH lasagna ] [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_UNIT_MEASUREMENT 350 degrees ] ]"
+  },
+  {
+    "original_sentence": "Set the alarm for 3 am tomorrow",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 3 am tomorrow ] ]"
+  },
+  {
+    "original_sentence": "In three days the weather is what?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:DATE_TIME In three days ] ]"
+  },
+  {
+    "original_sentence": "change my status to going for An Evening with Debra Messing",
+    "mtop_parsing": "[IN:SET_RSVP_YES [SL:TITLE_EVENT An Evening with Debra Messing ] ]"
+  },
+  {
+    "original_sentence": "message Kayla to meet me at Citifield at 7",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Kayla ] [SL:CONTENT_EXACT meet me at Citifield at 7 ] ]"
+  },
+  {
+    "original_sentence": "make an alarm for 10h45",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10h45 ] ]"
+  },
+  {
+    "original_sentence": "how many calories in sliced turkey",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how many ] [SL:RECIPES_UNIT_NUTRITION calories ] [SL:RECIPES_INCLUDED_INGREDIENT sliced turkey ] ]"
+  },
+  {
+    "original_sentence": "how many minutes until the alarm goes off",
+    "mtop_parsing": "[IN:GET_ALARM ]"
+  },
+  {
+    "original_sentence": "is it cloudy",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE cloudy ] ]"
+  },
+  {
+    "original_sentence": "play contemporary country",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE contemporary country ] ]"
+  },
+  {
+    "original_sentence": "Any fun things to do in Orlando tonight",
+    "mtop_parsing": "[IN:GET_EVENT [SL:LOCATION Orlando ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "can you create an alarm in 2 hours",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME in 2 hours ] ]"
+  },
+  {
+    "original_sentence": "please make this timer longer by three hours",
+    "mtop_parsing": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME by three hours ] ]"
+  },
+  {
+    "original_sentence": "is 2022 lauderdale Jessica's address?",
+    "mtop_parsing": "[IN:GET_LOCATION [SL:LOCATION 2022 lauderdale ] [SL:CONTACT Jessica ] ]"
+  },
+  {
+    "original_sentence": "What did Donald Trump say at his press conference",
+    "mtop_parsing": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC Donald Trump ] [SL:NEWS_TOPIC press conference ] ]"
+  },
+  {
+    "original_sentence": "call Kayleigh 's son",
+    "mtop_parsing": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Kayleigh ] [SL:TYPE_RELATION son ] ] ] ]"
+  },
+  {
+    "original_sentence": "remind me to send the supplies list to the team",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO send the supplies list to the team ] ]"
+  },
+  {
+    "original_sentence": "turn my status to available",
+    "mtop_parsing": "[IN:SET_AVAILABLE ]"
+  },
+  {
+    "original_sentence": "What temperature should I bake quiche at",
+    "mtop_parsing": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE temperature ] [SL:RECIPES_COOKING_METHOD bake ] [SL:RECIPES_DISH quiche ] ]"
+  },
+  {
+    "original_sentence": "switch alarm on for 10 minutes before 9 am",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 10 minutes before 9 am ] ]"
+  },
+  {
+    "original_sentence": "What was my missed call from yesterday?",
+    "mtop_parsing": "[IN:GET_CALL [SL:DATE_TIME from yesterday ] ]"
+  },
+  {
+    "original_sentence": "create an alarm to go off at midnight",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at midnight ] ]"
+  },
+  {
+    "original_sentence": "What news stories are trending in China",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_TYPE news stories ] [SL:NEWS_REFERENCE trending ] [SL:NEWS_TOPIC China ] ]"
+  },
+  {
+    "original_sentence": "Read me my local news.",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY local ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "original_sentence": "salad bar ideas",
+    "mtop_parsing": "[IN:GET_RECIPES [SL:RECIPES_TYPE salad bar ] ]"
+  },
+  {
+    "original_sentence": "right now I am available",
+    "mtop_parsing": "[IN:SET_AVAILABLE ]"
+  },
+  {
+    "original_sentence": "Please message Justin and let him know I'll be at his place around 4pm.",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:RECIPIENT Justin ] [SL:CONTENT_EXACT I'll be at his place around 4 pm ] ]"
+  },
+  {
+    "original_sentence": "What dates are there reminders for football practice?",
+    "mtop_parsing": "[IN:GET_REMINDER_DATE_TIME [SL:TODO football practice ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for breakfast at 7",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME at 7 ] ]"
+  },
+  {
+    "original_sentence": "Create a new alarm for 8:30 pm please",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 8 : 30 pm ] ]"
+  },
+  {
+    "original_sentence": "Cancel last timer",
+    "mtop_parsing": "[IN:DELETE_TIMER [SL:ORDINAL last ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "original_sentence": "Can you tell me how much rain is expected tonight?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "original_sentence": "Remind me my appointment on Monday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO my appointment ] [SL:DATE_TIME on Monday ] ]"
+  },
+  {
+    "original_sentence": "check if any of my friends  working at Google",
+    "mtop_parsing": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:EMPLOYER Google ] ]"
+  },
+  {
+    "original_sentence": "Remind me to meet my friends from the school's PTO for lunch tomorrow",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO meet my friends from the school 's PTO for lunch ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "What is today's biggest international news story?",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME today ] [SL:NEWS_REFERENCE biggest ] [SL:NEWS_CATEGORY international ] [SL:NEWS_TYPE news story ] ]"
+  },
+  {
+    "original_sentence": "Shuffle all my music library and play",
+    "mtop_parsing": "[IN:START_SHUFFLE_MUSIC [SL:MUSIC_TYPE music ] [SL:MUSIC_TYPE library ] ]"
+  },
+  {
+    "original_sentence": "will it be sunny later?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME later ] ]"
+  },
+  {
+    "original_sentence": "Play the classical station on Pandora",
+    "mtop_parsing": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE classical ] [SL:MUSIC_TYPE station ] [SL:MUSIC_PROVIDER_NAME Pandora ] ]"
+  },
+  {
+    "original_sentence": "Remind me to send a message to Jill about her project today.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:SEND_MESSAGE [SL:METHOD_MESSAGE message ] [SL:RECIPIENT Jill ] [SL:CONTENT_EXACT her project ] ] ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "original_sentence": "remind me to complete my project by tomorrow night",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO complete my project ] [SL:DATE_TIME by tomorrow night ] ]"
+  },
+  {
+    "original_sentence": "set timer for 5 minutes and pause after first minute",
+    "mtop_parsing": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 5 minutes ] [SL:ORDINAL first ] ]"
+  },
+  {
+    "original_sentence": "Will it be sunny all day tomorrow?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME all day tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Set an alarm for 7 minutes from now",
+    "mtop_parsing": "[IN:CREATE_ALARM [SL:DATE_TIME for 7 minutes from now ] ]"
+  },
+  {
+    "original_sentence": "send a vide message to the smoothie chat",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:GROUP smoothie ] ]"
+  },
+  {
+    "original_sentence": "i want you to record a video message for my husband jess",
+    "mtop_parsing": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION husband ] [SL:CONTACT jess ] ] ] ]"
+  },
+  {
+    "original_sentence": "Which events are going on tomorrow",
+    "mtop_parsing": "[IN:GET_EVENT [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "What is the weather forecast for Cleveland?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:LOCATION Cleveland ] ]"
+  },
+  {
+    "original_sentence": "I need a reminder to work at 10: am next Saturday",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO work ] [SL:DATE_TIME at 10 : am next Saturday ] ]"
+  },
+  {
+    "original_sentence": "Will it storm on Saturday?",
+    "mtop_parsing": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE storm ] [SL:DATE_TIME on Saturday ] ]"
+  },
+  {
+    "original_sentence": "Remind me to pick up Joanie on my way to work tomorrow.",
+    "mtop_parsing": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO pick up Joanie on my way to work ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "original_sentence": "Tell me the most recent TMZ headlines.",
+    "mtop_parsing": "[IN:GET_STORIES_NEWS [SL:DATE_TIME the most recent ] [SL:NEWS_SOURCE TMZ ] [SL:NEWS_TYPE headlines ] ]"
+  }
+]

@@ -1,3 +1,13 @@
 probes/llama2_reps.npz
 probes/train_llama_emb.npz
 probes/siamese_probe.pth
+data/SMCalflow/train.dataflow_dialogues_sampled
+data/SMCalflow/train.dataflow_dialogues_sampled2
+data/SMCalflow/train.dataflow_dialogues_sampled3
+data/SMCalflow/train.dataflow_dialogues_sampled4
+data/SMCalflow/train.dataflow_dialogues_sampled5
+data/SMCalflow/train.dataflow_dialogues_merged
+probes/llama2_smcalflow_reps.npz
+probes/train_llama_emb_smcalflow.npz
+amnesicProbe/hidden_representations.npz
+amnesicProbe/sampled_hidden_representations.npz

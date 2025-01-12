@@ -81,19 +81,9 @@ def get_topk_embedding(st_model, index, test_sentence, top_k=5):
     D, I = index.search(query, top_k)
     return I[0].tolist()
 
-###############################################################################
-# 3) LLaMA hidden representation for "new input"
-#    We'll do real LLaMA forward pass => final hidden
-###############################################################################
 
 def get_llama_hidden_states(model, tokenizer, text, device, target_layer=None):
-    """
-    Single-sentence version for LLaMA hidden state extraction.
-    - Run forward with output_hidden_states=True
-    - If target_layer is None => use last layer
-    - Average across tokens.
-    returns shape => (1, hidden_dim)
-    """
+
     inputs = tokenizer(text, return_tensors="pt", add_special_tokens=True)
     for k,v in inputs.items():
         inputs[k] = v.to(device)
@@ -109,9 +99,6 @@ def get_llama_hidden_states(model, tokenizer, text, device, target_layer=None):
     rep = sum_hs / length
     return rep.unsqueeze(0)  # shape => (1, hidden_dim)
 
-###############################################################################
-# The main inference pipeline
-###############################################################################
 
 def main():
     parser = argparse.ArgumentParser(description="Infer ICL exemplars using Faiss + Siamese probe in LLaMA space.")
@@ -132,29 +119,21 @@ def main():
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    # 1) Load train data + build Faiss index (embedding-based)
     print(f"Loading train data from {train_path} ...")
-    train_data = load_mtop_train(train_path)  # list of dict
+    train_data = load_mtop_train(train_path) 
     train_sents = [x["original_sentence"] for x in train_data]
 
-    # build faiss index
     st_model, index, _ = build_faiss_index(train_sents)
-
-    # 2) Load pre-computed LLaMA final hidden for each train sentence (train_llama_emb.npz)
-    # shape => (N, hidden_dim)
     print(f"Loading LLaMA hidden from {llama_train_npz} ...")
     loaded = np.load(llama_train_npz)
-    train_llama_emb = loaded["hidden"]  # e.g. shape (N, 4096)
+    train_llama_emb = loaded["hidden"]  
     print("Train LLaMA embedding shape:", train_llama_emb.shape)
-
-    # 3) Load the siamese probe
-    hidden_dim = train_llama_emb.shape[1]  # e.g. 4096
+    hidden_dim = train_llama_emb.shape[1] 
     out_dim = 256
     print(f"Loading siamese probe from {probe_ckpt_path} => hidden_dim={hidden_dim}, out_dim={out_dim}")
     probe = load_probe(probe_ckpt_path, hidden_dim=hidden_dim, out_dim=out_dim, device=device)
 
-    # 4) Load LLaMA model for test input
-    # if we want real LLaMA hidden for new queries
+
     llama_model_name = "meta-llama/Llama-2-7b-hf"
     print(f"Loading LLaMA model: {llama_model_name}")
     access_token = "hf_XXXX"
@@ -168,7 +147,6 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
     model.eval()
 
-    # Interactive or batch
     if input_file is None:
         while True:
             user_in = input("Enter a sentence (or 'quit'): ")
@@ -179,33 +157,27 @@ def main():
     else:
         with open(input_file, "r", encoding="utf-8") as f:
             test_data = json.load(f)
-        # We'll produce two JSON:
+
         embed_out = []
         probe_out = []
 
         for i, item in enumerate(test_data):
             s = item["original_sentence"]
-            # Step A: top_k from embedding
+       
             embed_idxs = get_topk_embedding(st_model, index, s, top_k=top_k)
             embed_out.append({
                 "test_idx": i,
                 "embedding_topk": embed_idxs
             })
 
-            # Step B: top_(5*k)
+    
             big_k = top_k*5
             bigger_idxs = get_topk_embedding(st_model, index, s, top_k=big_k)
-
-            # user hidden from LLaMA
             user_h = get_llama_hidden_states(model, tokenizer, s, device)
-            # map user => new space
             user_z = probe(user_h.to(device)).detach().cpu().numpy()[0]
-
-            # re-rank bigger_idxs in probe space
             results_dist = []
             for idx_ in bigger_idxs:
-                # candidate hidden from LLaMA npz
-                cand_h = train_llama_emb[idx_]  # shape (4096,)
+                cand_h = train_llama_emb[idx_]  
                 cand_h_t = torch.tensor(cand_h, dtype=torch.float32, device=device).unsqueeze(0)
                 cand_z_t = probe(cand_h_t)
                 cand_z = cand_z_t.detach().cpu().numpy()[0]
@@ -219,9 +191,11 @@ def main():
                 "probe_topk": final_idxs
             })
 
-        # Save
+    
         embed_file = "embedding_results.json"
         probe_file = "probe_results.json"
+        #embed_file = "embedding_results_smcalflow.json"
+        #probe_file = "probe_results_smcalflow.json"
         with open(embed_file, "w", encoding="utf-8") as fw:
             json.dump(embed_out, fw, ensure_ascii=False, indent=2)
         with open(probe_file, "w", encoding="utf-8") as fw:
@@ -230,11 +204,7 @@ def main():
 
 
 def handle_single(sentence, top_k, st_model, index, train_data, train_llama_emb, probe, model, tokenizer, device):
-    """
-    Interactive single-sentence usage.
-    1) get topK from embedding => print
-    2) get top(5*K) => re-rank with siamese probe in LLaMA space => print
-    """
+
     embed_idxs = get_topk_embedding(st_model, index, sentence, top_k=top_k)
     print(f"\n=== Embedding top-{top_k} for: {sentence} ===")
     for idx_ in embed_idxs:
@@ -243,13 +213,12 @@ def handle_single(sentence, top_k, st_model, index, train_data, train_llama_emb,
     big_k = top_k * 5
     bigger_idxs = get_topk_embedding(st_model, index, sentence, top_k=big_k)
 
-    # get user hidden from llama
     user_h = get_llama_hidden_states(model, tokenizer, sentence, device)
     user_z = probe(user_h.to(device)).detach().cpu().numpy()[0]
 
     results_dist = []
     for idx_ in bigger_idxs:
-        cand_h = train_llama_emb[idx_]  # shape (4096,)
+        cand_h = train_llama_emb[idx_]  
         cand_h_t = torch.tensor(cand_h, dtype=torch.float32, device=device).unsqueeze(0)
         cand_z_t = probe(cand_h_t)
         cand_z = cand_z_t.detach().cpu().numpy()[0]

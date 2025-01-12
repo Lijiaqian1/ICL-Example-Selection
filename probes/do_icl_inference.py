@@ -1,52 +1,38 @@
-#!/usr/bin/env python3
-# do_icl_inference.py
-
 import argparse
 import json
 import os
 import torch
 from transformers import AutoTokenizer, LlamaForCausalLM
 
-###############################################################################
-# 1) Prompt assembly
-###############################################################################
-
 def assemble_prompt(exemplar_list, target_sentence):
-    """
-    exemplar_list: list of (train_sentence, train_parse)
-    target_sentence: the test query
-    Return: a multi-example prompt string
-    We'll add some auxiliary content + a marker for final parse.
-    """
     prompt = "Below are examples of converting user utterances into MTop semantic parses:\n"
     for i, (ex_sent, ex_parse) in enumerate(exemplar_list, start=1):
         prompt += f"\nExample {i}:\nUser: {ex_sent}\nParse: {ex_parse}\n"
     prompt += "\nNow I have a new user utterance.\n"
     prompt += f"User: {target_sentence}\n"
-    prompt += "LLAMA2 Parse: "  # marker
+    prompt += "LLAMA2 Parse: "
     return prompt
 
-def extract_parse(generated_text, marker="LLAMA2 Parse:"):
-    """
-    Attempt to locate the parse portion in the LLaMA output.
-    We'll search for the marker and extract content until the next newline.
-    """
+def extract_parse_by_bracket_balance(generated_text, marker="LLAMA2 Parse:"):
     start_idx = generated_text.find(marker)
     if start_idx == -1:
-        # no marker found, fallback
         return generated_text.strip()
 
-    parse_part = generated_text[start_idx + len(marker):]
-    end_idx = parse_part.find("\n")
-    if end_idx == -1:
-        # no newline found, return everything after marker
-        return parse_part.strip()
+    parse_part = generated_text[start_idx + len(marker):].strip()
+    
+    stack = []
+    extracted = ""
+    for char in parse_part:
+        extracted += char
+        if char in ["(", "[", "{"]:
+            stack.append(char)
+        elif char in [")", "]", "}"]:
+            if stack:
+                stack.pop()
 
-    return parse_part[:end_idx].strip()
-
-###############################################################################
-# 2) Main
-###############################################################################
+        if not stack and any(bracket in extracted for bracket in [")", "]", "}"]):
+            break
+    return extracted.strip()
 
 def main():
     parser = argparse.ArgumentParser(description="Run ICL with LLaMA2 for parse generation.")
@@ -70,7 +56,6 @@ def main():
                         help="Temperature for generation.")
     args = parser.parse_args()
 
-    # 1) Load the results file (embedding or probe)
     with open(args.results_file, "r", encoding="utf-8") as f:
         results_data = json.load(f)
 
@@ -78,22 +63,21 @@ def main():
         print("No data in results_file!")
         return
 
-    first_keys = list(results_data[0].keys())
-    candidate_key = "embedding_topk" if "embedding_topk" in first_keys else "probe_topk"
+    #first_keys = list(results_data[0].keys())
+    #candidate_key = "embedding_topk" if "embedding_topk" in first_keys else "probe_topk"
+    filename = os.path.basename(args.results_file)  # 获取文件名，例如 "embedding_results.json"
+    prefix = filename.split("_")[0]                # 提取第一个下划线前的部分，例如 "embedding"
+    candidate_key = prefix + "_topk"               # 拼接得到 "embedding_topk"
 
-    # 2) Load test file
     with open(args.test_file, "r", encoding="utf-8") as f:
         test_data = json.load(f)
 
-    # 3) Load train data
     with open(args.train_file, "r", encoding="utf-8") as f:
         train_data = json.load(f)
 
-    # 4) Load LLaMA2
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Loading LLaMA model {args.llama_model} ...")
-    #tokenizer = AutoTokenizer.from_pretrained(args.llama_model, token=args.access_token)
-    tokenizer = AutoTokenizer.from_pretrained(args.llama_model, token='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')
+    tokenizer = AutoTokenizer.from_pretrained(args.llama_model, token=args.access_token)
     model = LlamaForCausalLM.from_pretrained(
         args.llama_model,
         torch_dtype=torch.float16,
@@ -103,7 +87,6 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
     model.eval()
 
-    # 5) For each item in results_data
     final_outputs = []
 
     for item in results_data:
@@ -141,7 +124,8 @@ def main():
             )
         gen_text = tokenizer.decode(gen_output[0], skip_special_tokens=True)
 
-        parse_result = extract_parse(gen_text, marker="LLAMA2 Parse:")
+      
+        parse_result = extract_parse_by_bracket_balance(gen_text, marker="LLAMA2 Parse:")
 
         final_outputs.append({
             "idx": test_idx,

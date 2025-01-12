@@ -1,0 +1,502 @@
+[
+  {
+    "idx": 0,
+    "original_sentence": "And tomorrow? Is there one?",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (EventOnDate (Tomorrow) (^(Event) EmptyStructConstraint)))))"
+  },
+  {
+    "idx": 1,
+    "original_sentence": "Put that with John",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"John\"))))))))))"
+  },
+  {
+    "idx": 2,
+    "original_sentence": "Add an event on my calendar for Monday from 3 PM - 5 PM.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (Event.start_? (DateTimeConstraint (Afternoon) (DateTime.date_? (?= (NextDOW (Monday))))))))"
+  },
+  {
+    "idx": 3,
+    "original_sentence": "Cancel meeting with doctor harris.",
+    "generated_parse": "(Yield (DeleteCommitEventWrapper (DeletePreflightEventWrapper (Event.id (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.attendees_? (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Doctor Harris\")))))))))))"
+  },
+  {
+    "idx": 4,
+    "original_sentence": "change it to fat lunch",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (Event.subject_? (?~= \"lunch\")))))"
+  },
+  {
+    "idx": 5,
+    "original_sentence": "Do I have any meetings in the morning next week?",
+    "generated_parse": "(Yield (> (size (QueryEventResponse.results (FindEventWrapperWithDefaults (EventOnDateWithTimeRange (EventOnDate (NextDOW (Monday)) (^(Event) EmptyStructConstraint)) (Morning))))) 0L))"
+  },
+  {
+    "idx": 6,
+    "original_sentence": "I think the first one will work best for me.",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 1L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 7,
+    "original_sentence": "What else is scheduled on the 18th?",
+    "generated_parse": "(Yield (FindEventWrapperWithDefaults (EventOnDate (DateTime.date (Event.start (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint)))))) (^(Event) EmptyStructConstraint))))"
+  },
+  {
+    "idx": 8,
+    "original_sentence": "What will the weather be on oct 27 in cape girardeau missouri",
+    "generated_parse": "(Yield (WeatherQueryApi (AtPlace (FindPlace (LocationKeyphrase.apply \"cape girardeau missouri\"))) (DateTime.date_? (NextHolidayFromToday (Holiday.Halloween)))))"
+  },
+  {
+    "idx": 9,
+    "original_sentence": "what can you help with then",
+    "generated_parse": "(PleasantryCalendar)"
+  },
+  {
+    "idx": 10,
+    "original_sentence": "Okay. Schedule meeting next Tuesday and forward to Abby and Damon.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"Schedule meeting\")) (Event.start_? (DateTime.date_? (?= (NextDOW (Tuesday)))))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (Person"
+  },
+  {
+    "idx": 11,
+    "original_sentence": "The second one works best.",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 2L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 12,
+    "original_sentence": "Yes that sounds right to me",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 13,
+    "original_sentence": "when is sunrise",
+    "generated_parse": "(Yield (WeatherAggregate (WeatherQuantifier.Summarize) (sunriseTime) (WeatherQueryApi (AtPlace (Here)) (DateTime.date_? (?= (Today))))))"
+  },
+  {
+    "idx": 14,
+    "original_sentence": "good",
+    "generated_parse": "(PleasantryAnythingElseCombined)"
+  },
+  {
+    "idx": 15,
+    "original_sentence": "Take Carol off this event and change the event to lunch.",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (& (Event.subject_? (?~= \"food volunteer\")) (Event.attendees_? (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Carol\")))))))))"
+  },
+  {
+    "idx": 16,
+    "original_sentence": "Can you please add Amy and Dan to this event",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.attendees_? (& (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Amy\")))))) (AttendeeListHasRecipient"
+  },
+  {
+    "idx": 17,
+    "original_sentence": "i wanna met with lovx at 8 pm",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (?= (DateAtTimeWithDefaults (Today) (NumberPM 8L)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"lovx\")))))))))))"
+  },
+  {
+    "idx": 18,
+    "original_sentence": "yes, indeed",
+    "generated_parse": "(Yield (Execute (ChooseCreateEventFromConstraint (^(Event) EmptyStructConstraint) (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 19,
+    "original_sentence": "Schedule employee review with Elvis on Monday.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"employee review\")) (Event.start_? (DateTimeConstraint (Night) (Monday)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"El"
+  },
+  {
+    "idx": 20,
+    "original_sentence": "Food",
+    "generated_parse": "(Yield (Event.location (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.subject_? (?~= \"food\"))))))\n\nI want to convert this into SMCalflow semantic parse.\n\nI have tried the following:\n\nUser: Food\nParse: (Yield (Event.location (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.subject_? (?~= \"fo"
+  },
+  {
+    "idx": 21,
+    "original_sentence": "Hey give me the John's contact info",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (DateTime.date_? (?= (Tomorrow)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"john\")))))))))))"
+  },
+  {
+    "idx": 22,
+    "original_sentence": "Please add work event on Wednesday at 2pm",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (Event.start_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_? (DateTime.date_"
+  },
+  {
+    "idx": 23,
+    "original_sentence": "what about optometrist?",
+    "generated_parse": "(Yield (FindEventWrapperWithDefaults (Event.subject_? (?~= \"optometrist\"))))"
+  },
+  {
+    "idx": 24,
+    "original_sentence": "Yes, perfect",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 25,
+    "original_sentence": "Thanks, can you schedule a birthday breakfast too?",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.subject_? (?= \"birthday breakfast\")))))"
+  },
+  {
+    "idx": 26,
+    "original_sentence": "Make event for the day after tomorrow and name it \"Coffe with Janice\".",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"coffee\")) (Event.start_? (?= (DateAtTimeWithDefaults (NextDOW (DayAfterTomorrow)) (HourMinutePm 10L 0L)))) (Event.attendees_? (& (AttendeeListHasRecipient (Execute (refer (extensionConstraint ("
+  },
+  {
+    "idx": 27,
+    "original_sentence": "Make my meeting tomorrow last 2 hours.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (DateTimeConstraint (Morning) (Tomorrow))) (Event.duration_? (?= (toHours 2)))))))"
+  },
+  {
+    "idx": 28,
+    "original_sentence": "I think this looks good",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 29,
+    "original_sentence": "nice",
+    "generated_parse": "User: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA2 Parse: \n\nUser: nice\nLLAMA"
+  },
+  {
+    "idx": 30,
+    "original_sentence": "I need to make a meeting with Dan two days from now.",
+    "generated_parse": "(let (x0 (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Dan\"))))) (Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (DateTimeConstraint (TwoDaysAgo) (NextDOW (Today)))) (Event.attendees_? (AttendeeListHasRecipient x"
+  },
+  {
+    "idx": 31,
+    "original_sentence": "move Monday's 1 pm to 4 pm",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.start_? (DateTimeConstraint (Afternoon) (NumberPM 4L))))))"
+  },
+  {
+    "idx": 32,
+    "original_sentence": "The second one is look good",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 2L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 33,
+    "original_sentence": "Lunch appointment is at 12.",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (Event.start_? (DateTime.time_? (?= (NumberPM 12L)))))))"
+  },
+  {
+    "idx": 34,
+    "original_sentence": "Schedule a wine tasting with Mark tomorrow at 2.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"wine tasting\")) (Event.start_? (?= (DateAtTimeWithDefaults (Tomorrow) (HourMinutePm 2L))))))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Re"
+  },
+  {
+    "idx": 35,
+    "original_sentence": "The first",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 1L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 36,
+    "original_sentence": "Schedule lunch with my parents tomorrow",
+    "generated_parse": "(FenceAttendee)"
+  },
+  {
+    "idx": 37,
+    "original_sentence": "That looks great, thank you!",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 38,
+    "original_sentence": "Add a lunch at noon today",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"lunch\")) (Event.start_? (?= (DateAtTimeWithDefaults (Today) (Noon)))))))"
+  },
+  {
+    "idx": 39,
+    "original_sentence": "When am I going to the movies with Carol, Laura, Ciara, and Stacy?",
+    "generated_parse": "(Yield (Event.start (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (& (Event.subject_? (?~= \"movies\")) (Event.attendees_? (& (& (& (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Carol\"))) (AttendeeListHasRecipientConstraint"
+  },
+  {
+    "idx": 40,
+    "original_sentence": "Make for tomorrow",
+    "generated_parse": "(Yield (Execute (NewClobber (refer (^(Dynamic) ActionIntensionConstraint)) (& (^(Date) roleConstraint (Path.apply \"time\")) (extensionConstraint (^(Date) EmptyStructConstraint))) (intension (Tomorrow)))))"
+  },
+  {
+    "idx": 41,
+    "original_sentence": "Can you schedule a dentist appointment at 2pm on that day?",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"dentist appointment\")) (Event.start_? (?= (DateAtTimeWithDefaults (Execute (refer (extensionConstraint (^(Date) EmptyStructConstraint)))) (NumberPM 2L))))))))"
+  },
+  {
+    "idx": 42,
+    "original_sentence": "Will I have anything on the 24th?",
+    "generated_parse": "(Yield (> (size (QueryEventResponse.results (FindEventWrapperWithDefaults (EventOnDate (NextDOW (24)) (^(Event) EmptyStructConstraint))))) 0L))"
+  },
+  {
+    "idx": 43,
+    "original_sentence": "When is my dentist appointment scheduled>",
+    "generated_parse": "(Yield (Event.start (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.subject_? (?~= \"dentist appointment\")))))))"
+  },
+  {
+    "idx": 44,
+    "original_sentence": "Please schedule my chess game for next Wednesday at 4:30 pm",
+    "generated_parse": "(let (x0 (DateAtTimeWithDefaults (NextDOW (Wednesday)) (NumberPM 4L))) (Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"chess game\")) (Event.start_? (?= x0)) (Event.end_? (?= (TimeAfterDateTime x0 (NumberPM 30L))))))))\n\nI want to convert"
+  },
+  {
+    "idx": 45,
+    "original_sentence": "The first one is better.",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 1L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 46,
+    "original_sentence": "schedule a team meeting to discuss shift bids Friday morning sometime between 9 am and 11 am",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"team meeting\")) (Event.start_? (DateTimeAndConstraint (DateAtTimeWithDefaults (Tomorrow) (NumberPM 9L)) (DateAtTimeWithDefaults (Tomorrow) (NumberPM 11L))))))))"
+  },
+  {
+    "idx": 47,
+    "original_sentence": "What is the current temperature in Miami?",
+    "generated_parse": "(Yield (WeatherAggregate (WeatherQuantifier.Summarize) (temperature) (WeatherQueryApi (AtPlace (FindPlace (LocationKeyphrase.apply \"Miami\"))) (?= (Now)))))"
+  },
+  {
+    "idx": 48,
+    "original_sentence": "Thank you. Please move the first event to tomorrow.",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 1L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 49,
+    "original_sentence": "What's my last lunch of the day tomorrow?",
+    "generated_parse": "(Yield (Event.start (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (EventOnDate (NextDOW (Tomorrow)) (Event.subject_? (?~= \"lunch\"))))))))"
+  },
+  {
+    "idx": 50,
+    "original_sentence": "I need to remove all my appointments for November.",
+    "generated_parse": "(FenceMultiAction)"
+  },
+  {
+    "idx": 51,
+    "original_sentence": "perfect",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 52,
+    "original_sentence": "Schedule out of office on Friday from 7 to 11 am.",
+    "generated_parse": "(let (x0 (DateAtTimeWithDefaults (NextDOW (Friday)) (NumberAM 7L))) (let (x1 (NumberPM 11L)) (Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"Out of office\")) (Event.start_? (?= x0)) (Event.end_? (?= x1))) (Event.show"
+  },
+  {
+    "idx": 53,
+    "original_sentence": "Actually it will need to be a little later than that.",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (UpdateEventIntensionConstraint) (Event.end_? (DateTime.time_? (?< (Execute (refer (& (^(Time) roleConstraint (Path.apply \"start\")) (extensionConstraint (^(Time) EmptyStructConstraint)))))))))))"
+  },
+  {
+    "idx": 54,
+    "original_sentence": "Can you change the time to 2pm",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.start_? (DateTime.time_? (?= (NumberPM 2L)))))))"
+  },
+  {
+    "idx": 55,
+    "original_sentence": "Can you tell me what I have planned for 8am to 5pm on monday?",
+    "generated_parse": "(Yield (FindEventWrapperWithDefaults (EventOnDateWithTimeRange (EventOnDate (NextDOW (Monday)) (^(Event) EmptyStructConstraint)) (NumberPM 5L))))"
+  },
+  {
+    "idx": 56,
+    "original_sentence": "Change the time to 8pm",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (Event.start_? (DateTime.time_? (?= (NumberPM 8L)))))))"
+  },
+  {
+    "idx": 57,
+    "original_sentence": "Thank you",
+    "generated_parse": "(PleasantryAnythingElseCombined)"
+  },
+  {
+    "idx": 58,
+    "original_sentence": "I need to cancel my dinner with family for sales trip.",
+    "generated_parse": "(FenceMultiAction)"
+  },
+  {
+    "idx": 59,
+    "original_sentence": "Create a meeting in the afternoon on Monday",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (Event.start_? (DateTimeConstraint (Afternoon) (NextDOW (Monday)))))))"
+  },
+  {
+    "idx": 60,
+    "original_sentence": "Thanks, what else do I have that day?",
+    "generated_parse": "(Yield (FindEventWrapperWithDefaults (EventOnDate (DateTime.date (Event.start (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint)))))) (^(Event) EmptyStructConstraint))))"
+  },
+  {
+    "idx": 61,
+    "original_sentence": "hold on a first",
+    "generated_parse": "(UserPauseResponse)"
+  },
+  {
+    "idx": 62,
+    "original_sentence": "Yes this looks correct, but I need to add Josh to the meeting",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (UpdateEventIntensionConstraint) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Josh\"))))))))))"
+  },
+  {
+    "idx": 63,
+    "original_sentence": "Do I have any other events January 12th 2022?",
+    "generated_parse": "(Yield (> (size (QueryEventResponse.results (FindEventWrapperWithDefaults (EventOnDate (MDY 12L (January) (Year.apply 2022L)) (^(Event) EmptyStructConstraint))))) 0L))"
+  },
+  {
+    "idx": 64,
+    "original_sentence": "The 2nd one works better",
+    "generated_parse": "(Yield (Execute (ChooseCreateEvent 2L (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 65,
+    "original_sentence": "Remove John from the convention happening next year.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (DateTime.date_? (?= (Today)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"John\")))))))))))"
+  },
+  {
+    "idx": 66,
+    "original_sentence": "i would like to meet carol on tomorrow 9p.m.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (?= (DateAtTimeWithDefaults (Tomorrow) (NumberPM 9L)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Carol\")))))))))))"
+  },
+  {
+    "idx": 67,
+    "original_sentence": "ok proceed.",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 68,
+    "original_sentence": "please list my all events on my calander?",
+    "generated_parse": "(FenceSpecify)"
+  },
+  {
+    "idx": 69,
+    "original_sentence": "Can you add the football game i went to yesterday to the calandar",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"football game i went to yesterday\")) (Event.start_? (DateTime.date_? (?= (Yesterday))))))))"
+  },
+  {
+    "idx": 70,
+    "original_sentence": "Update the meeting with Jared's manager so it's 1pm today",
+    "generated_parse": "(let (x0 (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.attendees_? (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Jared\")))))))) (Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id x0) (Event.start_? (?= ("
+  },
+  {
+    "idx": 71,
+    "original_sentence": "Please put concert on my calendar next year on May 2nd.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"concert\")) (Event.start_? (DateTime.date_? (?= (MD 2L (May)))))))))"
+  },
+  {
+    "idx": 72,
+    "original_sentence": "Si",
+    "generated_parse": "(GenericPleasantry)"
+  },
+  {
+    "idx": 73,
+    "original_sentence": "yes",
+    "generated_parse": "(Yield (Execute (ChooseCreateEventFromConstraint (^(Event) EmptyStructConstraint) (refer (^(Dynamic) ActionIntensionConstraint)))))"
+  },
+  {
+    "idx": 74,
+    "original_sentence": "Schedule a meeting with supervisor on thursday at 10am",
+    "generated_parse": "I have tried to convert the user utterance into SMCalflow semantic parse in Lispress format.\n\nUser: Schedule a meeting with supervisor on thursday at 10am\nParse: (Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (?= (DateAtTimeWithDefaults (NextDOW (Thursday)) (HourMinutePm 10L 0L"
+  },
+  {
+    "idx": 75,
+    "original_sentence": "Cancel my 1-1 with Rob next week",
+    "generated_parse": "(DoNotConfirm)"
+  },
+  {
+    "idx": 76,
+    "original_sentence": "Grab that later one",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (UpdateEventIntensionConstraint) (Event.start_? (DateTime.time_? (?> (Execute (refer (& (^(Time) roleConstraint (Path.apply \"start\")) (extensionConstraint (^(Time) EmptyStructConstraint)))))))))))"
+  },
+  {
+    "idx": 77,
+    "original_sentence": "I want to schedule a meeting with Cher on Monday.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.start_? (DateTime.date_? (ThisWeekend))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Cher\")))))))))))"
+  },
+  {
+    "idx": 78,
+    "original_sentence": "how is my planner next week?",
+    "generated_parse": "(Yield (FindEventWrapperWithDefaults (EventDuringRange (^(Event) EmptyStructConstraint) (ThisWeek))))"
+  },
+  {
+    "idx": 79,
+    "original_sentence": "Can you add Alex to the meeting with Alice?",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id (Execute (refer (extensionConstraint (^(Event) EmptyStructConstraint))))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Alex\")))))))))\n(Yield (UpdateCommitEventWrapper"
+  },
+  {
+    "idx": 80,
+    "original_sentence": "i meant the Happy Death Day in May",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (EventDuringRange (Event.subject_? (?~= \"Happy Death Day\")) (FullMonthofMonth (May))))))"
+  },
+  {
+    "idx": 81,
+    "original_sentence": "Reschedule brunch with Marsha today to sometime next Thursday.",
+    "generated_parse": "(let (x0 (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (& (Event.subject_? (?= \"brunch\")) (Event.start_? (DateTime.date_? (?= (NextDOW (Thursday))))))))) (Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (Event.id x0) (Event.start_? (DateTime.date_? (?= (adjust"
+  },
+  {
+    "idx": 82,
+    "original_sentence": "Change the end time to 3pm",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (^(Event) ConstraintTypeIntension) (Event.end_? (DateTime.time_? (?= (NumberPM 3L)))))))"
+  },
+  {
+    "idx": 83,
+    "original_sentence": "Move workout with Jennie to 7:00 to 8:00 pm on Friday.",
+    "generated_parse": "(let (x0 (DateAtTimeWithDefaults (NextDOW (Friday)) (HourMinutePm 7L 0L))) (Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (& (Event.subject_? (?= \"workout\")) (Event.start_? (?= x0))) (Event.end_? (?= (TimeAfterDateTime x0 (NumberPM 8L"
+  },
+  {
+    "idx": 84,
+    "original_sentence": "Is there a board meeting next month?",
+    "generated_parse": "(Yield (> (size (QueryEventResponse.results (FindEventWrapperWithDefaults (EventDuringRange (Event.subject_? (?~= \"board meeting\")) (FullMonthofMonth (NextMonth)))))) 0L))"
+  },
+  {
+    "idx": 85,
+    "original_sentence": "It's unfortunate that my cousin won't let me tutor him myself, but I guess it is what it is . . .",
+    "generated_parse": "User: I'm going to be late for my piano lesson.\nLLAMA2 Parse: \n\nUser: I'm going to be late for my piano lesson.\nLLAMA2 Parse: \n\nUser: I'm going to be late for my piano lesson.\nLLAMA2 Parse: \n\nUser: I'm going to be late for my piano lesson.\nLLAMA2 Parse:"
+  },
+  {
+    "idx": 86,
+    "original_sentence": "Is Fool's Errand in Cambridge costly?",
+    "generated_parse": "(Yield (Place.price (singleton (PlaceSearchResponse.results (FindPlaceMultiResults (LocationKeyphrase.apply \"Fool's Errand in Cambridge\"))))))"
+  },
+  {
+    "idx": 87,
+    "original_sentence": "Add Daniel to that appointment please",
+    "generated_parse": "(Yield (UpdateCommitEventWrapper (UpdatePreflightEventWrapper (& (Event.id (FindLastEvent (^(Event) EmptyStructConstraint))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Daniel\")))))))))))"
+  },
+  {
+    "idx": 88,
+    "original_sentence": "Do I have anything else schedule on Thursday?",
+    "generated_parse": "(Yield (> (size (QueryEventResponse.results (FindEventWrapperWithDefaults (EventOnDate (NextDOW (Thursday)) (^(Event) EmptyStructConstraint))))) 0L))"
+  },
+  {
+    "idx": 89,
+    "original_sentence": "add dinner party with jack today",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (& (Event.subject_? (?= \"dinner party\")) (Event.start_? (DateTime.date_? (Today)))) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"jack\"))"
+  },
+  {
+    "idx": 90,
+    "original_sentence": "thanks",
+    "generated_parse": "(PleasantryAnythingElseCombined)"
+  },
+  {
+    "idx": 91,
+    "original_sentence": "Have this ending at 11:00 please",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (UpdateEventIntensionConstraint) (Event.end_? (DateTime.time_? (?= (NumberAM 11L)))))))"
+  },
+  {
+    "idx": 92,
+    "original_sentence": "Brooklyn",
+    "generated_parse": "(Yield (Execute (NewClobber (refer (^(Dynamic) ActionIntensionConstraint)) (^((Constraint Point)) roleConstraint (Path.apply \"place\")) (intension (AtPlace (FindPlace (LocationKeyphrase.apply \"Brooklyn\")))))))"
+  },
+  {
+    "idx": 93,
+    "original_sentence": "can you invite stacy too please?",
+    "generated_parse": "(Yield (Execute (ReviseConstraint (refer (^(Dynamic) roleConstraint (Path.apply \"output\"))) (UpdateEventIntensionConstraint) (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Stacy\"))))))))))"
+  },
+  {
+    "idx": 94,
+    "original_sentence": "When is my next meeting without Tina or Sarah?",
+    "generated_parse": "(Yield (Event.start (FindNumNextEvent (Event.attendees_? (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Tina\")))) 1L)))"
+  },
+  {
+    "idx": 95,
+    "original_sentence": "Delete my meeting with Robert.",
+    "generated_parse": "(let (x0 (PersonName.apply \"Robert\")) (Yield (DeleteCommitEventWrapper (DeletePreflightEventWrapper (Event.id (singleton (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.attendees_? (& (AttendeeListHasRecipientConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) x0)) (AttendeeListHasRecipient"
+  },
+  {
+    "idx": 96,
+    "original_sentence": "Please add Kim's team to the Racing Event as well.",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (& (Event.subject_? (?= \"additional meeting\")) (Event.attendees_? (& (& (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Kim\")))))) (AttendeeListHasRecipient (Execute ("
+  },
+  {
+    "idx": 97,
+    "original_sentence": "Perfect, add that for me.",
+    "generated_parse": "(Yield (Execute (^(Dynamic) ConfirmAndReturnAction)))"
+  },
+  {
+    "idx": 98,
+    "original_sentence": "yes of course good. I also need a staff meeting on Sunday morning",
+    "generated_parse": "(Yield (CreateCommitEventWrapper (CreatePreflightEventWrapper (Event.start_? (DateTime.date_? (Date.dayOfWeek_? (negate (Weekend))))))))"
+  },
+  {
+    "idx": 99,
+    "original_sentence": "Good, now show if Jake has free time",
+    "generated_parse": "(Yield (QueryEventResponse.results (FindEventWrapperWithDefaults (Event.attendees_? (AttendeeListHasRecipient (Execute (refer (extensionConstraint (RecipientWithNameLike (^(Recipient) EmptyStructConstraint) (PersonName.apply \"Jake\")))))))))"
+  }
+]

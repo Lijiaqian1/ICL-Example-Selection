@@ -1,0 +1,502 @@
+[
+  {
+    "idx": 0,
+    "original_sentence": "Remind me to call Janet about job opportunity at 8am Wednesday.",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Janet ] [SL:TYPE_RELATION job opportunity ] ] ] ] ] [SL:DATE_TIME Wednesday at 8 am ] ]"
+  },
+  {
+    "idx": 1,
+    "original_sentence": "Get me all the reminders for this week's dates with Zach.",
+    "generated_parse": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Get ] [SL:AMOUNT all ] [SL:PERSON_REMINDED me ] [SL:DATE_TIME for this week's dates ] [SL:TODO [IN:GET_TODO [SL:ATTENDEE Zach ] ] ] ]"
+  },
+  {
+    "idx": 2,
+    "original_sentence": "pull up all my reminder for doctor appointment",
+    "generated_parse": "[IN:GET_TODO [SL:PERSON_REMINDED me ] [SL:TODO doctor 's appointment ] ]"
+  },
+  {
+    "idx": 3,
+    "original_sentence": "Skip to next song",
+    "generated_parse": "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "idx": 4,
+    "original_sentence": "call Alana Ortega Smith",
+    "generated_parse": "[IN:CREATE_CALL [SL:CONTACT Alana Ortega Smith ] ]"
+  },
+  {
+    "idx": 5,
+    "original_sentence": "Pause the timer and resume in 5 minutes",
+    "generated_parse": "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME and resume in 5 minutes ] ]"
+  },
+  {
+    "idx": 6,
+    "original_sentence": "Snooze now",
+    "generated_parse": "[IN:SNOOZE_ALARM [SL:DATE_TIME now ] ]"
+  },
+  {
+    "idx": 7,
+    "original_sentence": "Snooze the set alarm until 7h15 am.",
+    "generated_parse": "[IN:SNOOZE_ALARM [SL:DATE_TIME until 7h15 am ] ]"
+  },
+  {
+    "idx": 8,
+    "original_sentence": "I want a weekend alarm to go off at 8am",
+    "generated_parse": "[IN:CREATE_ALARM [SL:PERIOD weekend ] [SL:DATE_TIME for 8 am ] ]"
+  },
+  {
+    "idx": 9,
+    "original_sentence": "News on Politics",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:NEWS_CATEGORY politics ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "idx": 10,
+    "original_sentence": "do I need a jacket for tonight?",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "idx": 11,
+    "original_sentence": "How long do I cook the turkey for",
+    "generated_parse": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How long ] [SL:RECIPES_COOKING_METHOD cook ] [SL:RECIPES_DISH turkey ] ]"
+  },
+  {
+    "idx": 12,
+    "original_sentence": "do i need sunscreen for my hike in Bend today",
+    "generated_parse": "[IN:GET_WEATHER [SL:DATE_TIME today ] [SL:WEATHER_ATTRIBUTE sunscreen ] [SL:WEATHER_ATTRIBUTE sun ] ]"
+  },
+  {
+    "idx": 13,
+    "original_sentence": "Recipe for fried chicken",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_DISH fried chicken ] ]"
+  },
+  {
+    "idx": 14,
+    "original_sentence": "change timer to 12 minutes",
+    "generated_parse": "[IN:UPDATE_TIMER [SL:DATE_TIME 12 minutes ] [SL:TIMER_NAME Reading ] [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "idx": 15,
+    "original_sentence": "Show friends of Jolene",
+    "generated_parse": "[IN:GET_CONTACT [SL:CONTACT_RELATED Jolene ] [SL:TYPE_RELATION friend ] ]"
+  },
+  {
+    "idx": 16,
+    "original_sentence": "When did Lily attend MDC?",
+    "generated_parse": "[IN:GET_EDUCATION_TIME [SL:CONTACT Lily ] [SL:LIFE_EVENT attended ] [SL:SCHOOL MDC ] ]"
+  },
+  {
+    "idx": 17,
+    "original_sentence": "what is the current weather in myrtle beach",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION Myrtle Beach ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "idx": 18,
+    "original_sentence": "I want to replay this song again.",
+    "generated_parse": "[IN:REPLAY_MUSIC [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "idx": 19,
+    "original_sentence": "hang up Savannah Stachura",
+    "generated_parse": "[IN:HANG_UP [SL:PERSON Savannah Stachura ] ]"
+  },
+  {
+    "idx": 20,
+    "original_sentence": "delete alert regarding picking up denise",
+    "generated_parse": "[IN:DELETE_REMINDER [SL:TODO [IN:GET_TODO [SL:TODO picking up denise ] [SL:DATE_TIME ] ] ] ]"
+  },
+  {
+    "idx": 21,
+    "original_sentence": "theater events in toronto this week",
+    "generated_parse": "[IN:GET_EVENT [SL:CATEGORY_EVENT theater ] [SL:LOCATION toronto ] [SL:DATE_TIME this week ] ]"
+  },
+  {
+    "idx": 22,
+    "original_sentence": "now add nieces to the call",
+    "generated_parse": "[IN:UPDATE_CALL [SL:CONTACT_ADDED [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION nieces ] ] ] ]"
+  },
+  {
+    "idx": 23,
+    "original_sentence": "whats up in bayside",
+    "generated_parse": "[IN:GET_EVENT [SL:LOCATION bayside ] [SL:DATE_TIME this weekend ] ]"
+  },
+  {
+    "idx": 24,
+    "original_sentence": "Message Mom about what time I should arrive at the Ace Basin triathlon in the morning.",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:RECIPIENT [IN:GET_CONTACT [SL:TYPE_RELATION Mom ] ] ] [SL:CONTENT_EXACT what time should I arrive at the Ace Basin triathlon in the morning ] ]"
+  },
+  {
+    "idx": 25,
+    "original_sentence": "Will it rain on Saturday afternoon",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME on Saturday afternoon ] ]"
+  },
+  {
+    "idx": 26,
+    "original_sentence": "Increase current timer by 6 minutes",
+    "generated_parse": "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME after 6 minutes ] ]"
+  },
+  {
+    "idx": 27,
+    "original_sentence": "What is the weather forecast for Lisbon?",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION Lisbon ] ]"
+  },
+  {
+    "idx": 28,
+    "original_sentence": "Create an alarm for Friday at 6",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME for Friday at 6 ] ]"
+  },
+  {
+    "idx": 29,
+    "original_sentence": "How will the weather be at lunchtime in Milton Keynes?",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION Milton Keynes ] [SL:DATE_TIME at lunchtime ] ]"
+  },
+  {
+    "idx": 30,
+    "original_sentence": "What goes good with chicken",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_DISH chicken ] ]"
+  },
+  {
+    "idx": 31,
+    "original_sentence": "Please search for the weather from May 9 to 14 ?",
+    "generated_parse": "[IN:GET_WEATHER [SL:DATE_TIME for May 9 to 14 ] ]"
+  },
+  {
+    "idx": 32,
+    "original_sentence": "call Carson and King",
+    "generated_parse": "[IN:CREATE_CALL [SL:CONTACT Carson ] [SL:CONTACT King ] ]"
+  },
+  {
+    "idx": 33,
+    "original_sentence": "Suggest interesting concert in Stamford tonight",
+    "generated_parse": "[IN:GET_EVENT [SL:CATEGORY_EVENT concerts ] [SL:LOCATION Stamford ] [SL:DATE_TIME tonight ] ]"
+  },
+  {
+    "idx": 34,
+    "original_sentence": "begin a timer for 30 minutes for me",
+    "generated_parse": "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 30 minutes ] [SL:TIMER_NAME me ] ]"
+  },
+  {
+    "idx": 35,
+    "original_sentence": "Who is Ryan's roommate Jonathon?",
+    "generated_parse": "[IN:GET_INFO_CONTACT [SL:CONTACT Ryan ] [SL:TYPE_RELATION roommate ] [SL:CONTACT_RELATED Jonathon ] ]"
+  },
+  {
+    "idx": 36,
+    "original_sentence": "Symphony performances in Memphis in February",
+    "generated_parse": "[IN:GET_EVENT [SL:CATEGORY_EVENT symphony performances ] [SL:LOCATION Memphis ] [SL:DATE_TIME in February ] ]"
+  },
+  {
+    "idx": 37,
+    "original_sentence": "when does it start getting dark out",
+    "generated_parse": "[IN:GET_SUNSET [SL:DATE_TIME it ] ]"
+  },
+  {
+    "idx": 38,
+    "original_sentence": "change alarm to 1:30",
+    "generated_parse": "[IN:CHANGE_ALARM [SL:DATE_TIME for 1 : 30 am ] ]"
+  },
+  {
+    "idx": 39,
+    "original_sentence": "get peanut butter recipe",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_DISH peanut butter ] ]"
+  },
+  {
+    "idx": 40,
+    "original_sentence": "How long should I cook baked chicken",
+    "generated_parse": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How long ] [SL:RECIPES_COOKING_METHOD baked ] [SL:RECIPES_INCLUDED_INGREDIENT chicken ] ]"
+  },
+  {
+    "idx": 41,
+    "original_sentence": "what is the current barometric pressure",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE barometric pressure ] ]"
+  },
+  {
+    "idx": 42,
+    "original_sentence": "i would like to message the biology class thread message",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:GROUP biology class ] ]"
+  },
+  {
+    "idx": 43,
+    "original_sentence": "please terminate call now",
+    "generated_parse": "[IN:END_CALL ]"
+  },
+  {
+    "idx": 44,
+    "original_sentence": "Show all of my upcoming birthday reminders",
+    "generated_parse": "[IN:GET_REMINDER [SL:METHOD_RETRIEVAL_REMINDER Show ] [SL:AMOUNT all ] [SL:PERSON_REMINDED My ] [SL:DATE_TIME upcoming ] ]"
+  },
+  {
+    "idx": 45,
+    "original_sentence": "Will it rain in any part of the metroplex today?",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE rain ] [SL:LOCATION any part of the metroplex ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "idx": 46,
+    "original_sentence": "any new news about trump today",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:DATE_TIME any new news ] [SL:NEWS_TYPE news ] [SL:NEWS_TOPIC trump ] ]"
+  },
+  {
+    "idx": 47,
+    "original_sentence": "call Dora",
+    "generated_parse": "[IN:CREATE_CALL [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED Dora ] ] ] ]"
+  },
+  {
+    "idx": 48,
+    "original_sentence": "Who was the suspect in the latest car bombing?",
+    "generated_parse": "[IN:QUESTION_NEWS [SL:NEWS_TOPIC suspect in the latest car bombing ] ]"
+  },
+  {
+    "idx": 49,
+    "original_sentence": "How is it like the climate in Paris?",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION Paris ] ]"
+  },
+  {
+    "idx": 50,
+    "original_sentence": "What is Taylor Swift's most popular song",
+    "generated_parse": "[IN:QUESTION_MUSIC [SL:MUSIC_GENRE most popular ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "idx": 51,
+    "original_sentence": "Ask Crystal if she wants to go to Hawaii with me from the 18th until the 23rd.",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:RECIPIENT Crystal ] [SL:CONTENT_EXACT she wants to go to Hawaii with me from the 18th until the 23rd ] ]"
+  },
+  {
+    "idx": 52,
+    "original_sentence": "delete the reminder for tomorrow",
+    "generated_parse": "[IN:DELETE_REMINDER [SL:PERSON_REMINDED my ] [SL:DATE_TIME tomorrow ] ]"
+  },
+  {
+    "idx": 53,
+    "original_sentence": "What's the top story on the New York Times",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE top ] [SL:NEWS_SOURCE New York Times ] [SL:NEWS_TYPE story ] ]"
+  },
+  {
+    "idx": 54,
+    "original_sentence": "Did any of my friends go to Daytona State College?",
+    "generated_parse": "[IN:GET_CONTACT [SL:TYPE_RELATION friends ] [SL:SCHOOL Daytona State College ] ]"
+  },
+  {
+    "idx": 55,
+    "original_sentence": "Can you get Percy's twitter?",
+    "generated_parse": "[IN:GET_TWITTER [SL:RECIPIENT Percy ] ]"
+  },
+  {
+    "idx": 56,
+    "original_sentence": "Show Karlene Dwain Caroll Dads upcoming birthdays",
+    "generated_parse": "[IN:GET_CONTACT [SL:CONTACT_RELATED Karlene Dwain Caroll ] [SL:TYPE_RELATION Dads ] ]"
+  },
+  {
+    "idx": 57,
+    "original_sentence": "cancel all my existing alarms",
+    "generated_parse": "[IN:DELETE_ALARM [SL:AMOUNT all ] ]"
+  },
+  {
+    "idx": 58,
+    "original_sentence": "send leeanna a text and let her know we will be meeting up at 6 instead of 7",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:RECIPIENT leeanna ] [SL:CONTENT_EXACT we will be meeting up at 6 instead of 7 ] ]"
+  },
+  {
+    "idx": 59,
+    "original_sentence": "Remind me to check on car status.",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO check on car status ] [SL:DATE_TIME at 9 am ] ]"
+  },
+  {
+    "idx": 60,
+    "original_sentence": "should I put on a swimming costume today",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE swimming costume ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "idx": 61,
+    "original_sentence": "i would like to message my grandparents video message",
+    "generated_parse": "[IN:SEND_MESSAGE [SL:TYPE_CONTENT video ] [SL:RECIPIENT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION grandparents ] ] ] ]"
+  },
+  {
+    "idx": 62,
+    "original_sentence": "Create alarm called 'wake up' at 6am tomorrow.",
+    "generated_parse": "[IN:CREATE_ALARM [SL:ALARM_NAME wake up ] [SL:DATE_TIME for tomorrow at 6 am ] ]"
+  },
+  {
+    "idx": 63,
+    "original_sentence": "What is the fastest way to chop an onion",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_ATTRIBUTE fastest way ] [SL:RECIPES_COOKING_METHOD chop ] [SL:RECIPES_INCLUDED_INGREDIENT onion ] ]"
+  },
+  {
+    "idx": 64,
+    "original_sentence": "Are any of my friends going to GeekCraft Expo?",
+    "generated_parse": "[IN:GET_ATTENDEE_EVENT [SL:TITLE_EVENT GeekCraft Expo ] ]"
+  },
+  {
+    "idx": 65,
+    "original_sentence": "what is the latest new york post headlines",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:NEWS_SOURCE New York Post ] [SL:NEWS_REFERENCE latest ] [SL:NEWS_TYPE headlines ] ]"
+  },
+  {
+    "idx": 66,
+    "original_sentence": "Change my alarm to 11 p.m.",
+    "generated_parse": "[IN:UPDATE_ALARM [SL:DATE_TIME for 11 p.m. ] ]"
+  },
+  {
+    "idx": 67,
+    "original_sentence": "Is my mommy online?",
+    "generated_parse": "[IN:GET_AVAILABILITY [SL:CONTACT [IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION mommy ] ] ] ]"
+  },
+  {
+    "idx": 68,
+    "original_sentence": "Play a slow song",
+    "generated_parse": "[IN:PLAY_MUSIC [SL:MUSIC_GENRE slow ] [SL:MUSIC_TYPE song ] ]"
+  },
+  {
+    "idx": 69,
+    "original_sentence": "List of employees at Key Bank please",
+    "generated_parse": "[IN:GET_CONTACT [SL:EMPLOYER Key Bank ] ]"
+  },
+  {
+    "idx": 70,
+    "original_sentence": "Can I verify I have reminders set for Show Choir practice?",
+    "generated_parse": "[IN:GET_REMINDER [SL:PERSON_REMINDED I ] [SL:TODO Show Choir practice ] ]"
+  },
+  {
+    "idx": 71,
+    "original_sentence": "Stop being a video call.",
+    "generated_parse": "[IN:END_CALL ]"
+  },
+  {
+    "idx": 72,
+    "original_sentence": "Schedule repeating alarm every day at 7pm",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME every day at 7 pm ] ]"
+  },
+  {
+    "idx": 73,
+    "original_sentence": "I want to see popular events",
+    "generated_parse": "[IN:GET_EVENT [SL:ATTRIBUTE_EVENT popular ] ]"
+  },
+  {
+    "idx": 74,
+    "original_sentence": "Stop sending the video message to Mckenzie",
+    "generated_parse": "[IN:STOP_SENDING_MESSAGE [SL:RECIPIENT Mckenzie ] ]"
+  },
+  {
+    "idx": 75,
+    "original_sentence": "how's the weather at 7pm",
+    "generated_parse": "[IN:GET_WEATHER [SL:DATE_TIME at 7 pm ] ]"
+  },
+  {
+    "idx": 76,
+    "original_sentence": "Who is working for the local Starbucks?",
+    "generated_parse": "[IN:GET_CONTACT [SL:CONTACT_RELATED my ] [SL:TYPE_RELATION friends ] [SL:EMPLOYER Starbucks ] ]"
+  },
+  {
+    "idx": 77,
+    "original_sentence": "How about sleet today?",
+    "generated_parse": "[IN:GET_WEATHER [SL:WEATHER_ATTRIBUTE sleet ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "idx": 78,
+    "original_sentence": "Anything fun happening this Monday",
+    "generated_parse": "[IN:GET_EVENT [SL:DATE_TIME this Monday ] ]"
+  },
+  {
+    "idx": 79,
+    "original_sentence": "hey repeat all my music",
+    "generated_parse": "[IN:REPEAT_ALL_MUSIC ]"
+  },
+  {
+    "idx": 80,
+    "original_sentence": "Can you get my past events please?",
+    "generated_parse": "[IN:GET_EVENT [SL:USER_HISTORY ] ]"
+  },
+  {
+    "idx": 81,
+    "original_sentence": "remind me to call the dr today",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:GET_TODO [SL:TODO [IN:CREATE_CALL [SL:CONTACT the dr ] ] ] [SL:TODO call the dr ] ] ] ]"
+  },
+  {
+    "idx": 82,
+    "original_sentence": "Set an alarm for 4 p.m.",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME for 4 p.m. ] ]"
+  },
+  {
+    "idx": 83,
+    "original_sentence": "Remind me to start getting ready for the meeting at 3 pm today",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO start getting ready for the meeting ] [SL:DATE_TIME at 3 pm today ] ]"
+  },
+  {
+    "idx": 84,
+    "original_sentence": "What is the weather on Mount Kilimanjaro at this moment?",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION Mount Kilimanjaro ] [SL:DATE_TIME at this moment ] ]"
+  },
+  {
+    "idx": 85,
+    "original_sentence": "read me the headlines from last night",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:DATE_TIME from last night ] [SL:NEWS_CATEGORY headlines ] [SL:NEWS_TYPE news ] ]"
+  },
+  {
+    "idx": 86,
+    "original_sentence": "How many calories is in a tuna sub",
+    "generated_parse": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE How many ] [SL:RECIPES_TYPE_NUTRITION calories ] [SL:RECIPES_DISH tuna sub ] ]"
+  },
+  {
+    "idx": 87,
+    "original_sentence": "Turn on an alarm for 4 am",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME for 4 am ] ]"
+  },
+  {
+    "idx": 88,
+    "original_sentence": "How long do I cook a 4-pound beef roast",
+    "generated_parse": "[IN:GET_INFO_RECIPES [SL:RECIPES_ATTRIBUTE how long ] [SL:RECIPES_COOKING_METHOD roast ] [SL:RECIPES_UNIT_MEASUREMENT pound ] [SL:RECIPES_INCLUDED_INGREDIENT beef ] ]"
+  },
+  {
+    "idx": 89,
+    "original_sentence": "I'd like  peanut butter based dessert-please find a recipe",
+    "generated_parse": "[IN:GET_RECIPES [SL:RECIPES_DISH peanut butter based dessert ] ]"
+  },
+  {
+    "idx": 90,
+    "original_sentence": "Remind me 30 mins before that there will be a work meeting at 6 tonight.",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO the meeting ] [SL:DATE_TIME at 6 tonight ] [SL:DATE_TIME 30 mins before ] ]"
+  },
+  {
+    "idx": 91,
+    "original_sentence": "Remind me to pick up Denise's birthday cake.",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:PERSON_REMINDED me ] [SL:TODO [IN:GET_TODO [SL:TODO pick up Denise's birthday cake ] ] ] ]"
+  },
+  {
+    "idx": 92,
+    "original_sentence": "Add Terri to the call with Dave.",
+    "generated_parse": "[IN:UPDATE_CALL [SL:CONTACT_ADDED Terri ] [SL:CONTACT_ADDED Dave ] ]"
+  },
+  {
+    "idx": 93,
+    "original_sentence": "timer continue",
+    "generated_parse": "[IN:RESUME_TIMER [SL:METHOD_TIMER timer ] ]"
+  },
+  {
+    "idx": 94,
+    "original_sentence": "Weather New York",
+    "generated_parse": "[IN:GET_WEATHER [SL:LOCATION New York ] ]"
+  },
+  {
+    "idx": 95,
+    "original_sentence": "Set an alarm to walk the dog at 4",
+    "generated_parse": "[IN:CREATE_ALARM [SL:DATE_TIME at 4 ] [SL:ALARM_NAME walk the dog ] ]"
+  },
+  {
+    "idx": 96,
+    "original_sentence": "read national news headlines",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:DATE_TIME national ] [SL:NEWS_TYPE news headlines ] ]"
+  },
+  {
+    "idx": 97,
+    "original_sentence": "Create a reminder about watering the vegetable garden starting today",
+    "generated_parse": "[IN:CREATE_REMINDER [SL:TODO watering the vegetable garden ] [SL:DATE_TIME starting today ] ]"
+  },
+  {
+    "idx": 98,
+    "original_sentence": "what was the biggest news story today",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:NEWS_REFERENCE biggest ] [SL:NEWS_TYPE news story ] [SL:DATE_TIME today ] ]"
+  },
+  {
+    "idx": 99,
+    "original_sentence": "What are the headlines for today in the news?",
+    "generated_parse": "[IN:GET_STORIES_NEWS [SL:DATE_TIME today ] [SL:NEWS_TYPE headlines ] [SL:NEWS_REFERENCE news ] ]"
+  }
+]

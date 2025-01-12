@@ -7,12 +7,8 @@ import faiss
 from sentence_transformers import SentenceTransformer
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-# 从 mtop_parse_sim 里导入 parse-level 相似度函数(基于ZSS)
 from mtop_parse_sim import mtop_tree_similarity
 
-#############################################
-# 顶层函数: 给子进程使用
-#############################################
 
 def _process_chunk(task_batch, data, parse_thr):
     """
@@ -25,7 +21,6 @@ def _process_chunk(task_batch, data, parse_thr):
     results = []
     for (ai, aj, is_topk) in task_batch:
         if not is_topk:
-            # outside topK => 直接 label=neg, parse_similarity=None
             results.append({
                 "anchor_idx": ai,
                 "candidate_idx": aj,
@@ -55,21 +50,14 @@ def gather_contrastive_pairs_parallel(
     chunk_size=200,
     max_workers=4
 ):
-    """
-    1) 读取 MTop 数据(含 original_sentence, mtop_parsing)
-    2) 对 original_sentence 做 GPU embedding, Faiss检索 topK
-    3) 生成 candidate pairs
-       - topK => 并行计算 parse相似度 => pos/neg
-       - outside => neg
-    4) 写出 final pairs
-    """
+
     with open(mtop_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     N = len(data)
     print(f"Loaded {N} samples from {mtop_json_path}.")
 
-    # === GPU embedding in main process ===
+ 
     model_name = "all-MiniLM-L6-v2"
     embedder = SentenceTransformer(model_name)
     utterances = [item["original_sentence"] for item in data]
@@ -104,7 +92,7 @@ def gather_contrastive_pairs_parallel(
 
     print(f"Total raw candidate pairs: {len(candidate_pairs)}")
 
-    # 分 chunk
+    #  chunk
     chunked_tasks = []
     for start in range(0, len(candidate_pairs), chunk_size):
         chunk = candidate_pairs[start:start+chunk_size]
@@ -114,9 +102,7 @@ def gather_contrastive_pairs_parallel(
 
     print(f"Start parallel parse-sim calc: #chunks={len(chunked_tasks)}, chunk_size={chunk_size}, max_workers={max_workers}")
 
-    # === 这里 parse-level similarity 在子进程进行 ===
-    #    但不会 re-init GPU, 因为 zss/embedding is typically CPU-based
-    #    or if it uses GPU => we need spawn mode
+
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         futures = []
         for batch in chunked_tasks:
@@ -135,18 +121,16 @@ def gather_contrastive_pairs_parallel(
     print(f"POS: {pos_count}, NEG: {neg_count}")
 
 
-########################
-# Main
-########################
+
 if __name__ == "__main__":
-    # 在 Linux, 如果默认 "fork" 导致 CUDA re-init错误 => 强制 spawn
+
     import multiprocessing
     try:
         multiprocessing.set_start_method("spawn", force=True)
     except RuntimeError:
-        pass  # 可能已经设置过
+        pass  
 
-    # 你可以把路径改成实际文件
+
     mtop_json = "../data/mtop/en/mtop_train_sampled.json"
     output_pairs = "mtop_contrastive_pairs.json"
 
